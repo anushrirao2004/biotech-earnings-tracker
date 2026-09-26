@@ -1,0 +1,531 @@
+[
+ {
+  "ticker": "BNTX",
+  "name": "BioNTech SE",
+  "ir_host": "investors.biontech.de",
+  "sources": [
+   {
+    "url": "https://investors.biontech.de/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=BNTX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "6-K filer, quarterly. Results 6-K accepted ~07:00 ET (last six quarters); the date notice comes ~2 weeks ahead ('BioNTech to Report Second Quarter 2026 Financial Results ... on August 4')."
+ },
+ {
+  "ticker": "CATX",
+  "name": "Perspective Therapeutics",
+  "ir_host": "www.perspectivetherapeutics.com",
+  "sources": [
+   {
+    "url": "https://www.perspectivetherapeutics.com/api/rss",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Corporate-site RSS, 50 items with dates; ir.perspectivetherapeutics.com no longer resolves. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=CATX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "Titles its releases '... Reports 2Q 2026 Results'; 5 of the last 6 results 8-Ks accepted 16:10-16:30 ET."
+ },
+ {
+  "ticker": "CGEM",
+  "name": "Cullinan Therapeutics",
+  "ir_host": "investors.cullinantherapeutics.com",
+  "sources": [
+   {
+    "url": "https://investors.cullinantherapeutics.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=CGEM&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted ~07:00 ET every quarter; no separate date notice seen in the feed (results arrive unannounced)."
+ },
+ {
+  "ticker": "CGON",
+  "name": "CG Oncology",
+  "ir_host": "ir.cgoncology.com",
+  "sources": [
+   {
+    "url": "https://ir.cgoncology.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=CGON&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted 08:15-08:45 ET every quarter. cgoncology.com/feed/ (WordPress) carries no financial releases, so it is not listed."
+ },
+ {
+  "ticker": "CLDX",
+  "name": "Celldex Therapeutics",
+  "ir_host": "ir.celldex.com",
+  "sources": [
+   {
+    "url": "https://ir.celldex.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=CLDX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted 16:01 ET every quarter. Titles omit the year ('Reports Second Quarter Financial Results'), handled by the season window."
+ },
+ {
+  "ticker": "ENGN",
+  "name": "enGene Holdings",
+  "ir_host": "engene.com",
+  "sources": [
+   {
+    "url": "https://engene.com/category/press-releases/",
+    "kind": "html_list",
+    "verified": true,
+    "body_readable": true,
+    "note": "WordPress press-release category page; the date is read from the card text ('June 15, 2026'). The WordPress /feed/ endpoints return empty feeds and there is no investors.engene.com. Verified 2026-09-26."
+   },
+   {
+    "url": "https://news.google.com/rss/search?q=%22enGene%22+OR+%22enGene+Therapeutics%22+financial+results&hl=en-US&gl=US&ceid=US:en",
+    "kind": "google_news",
+    "verified": true,
+    "body_readable": false,
+    "note": "Headline-only fallback carried over from the old monitor; links are JS redirects, so dates are left to Nasdaq."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=ENGN&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 10,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": true,
+  "active": true,
+  "note": "Fiscal year ends 31 October: fiscal Q2 FY26 ended 30 Apr 2026 (reported 15 Jun), fiscal Q3 ended 31 Jul (reported 8 Sep). Last three results 8-Ks accepted 07:00-09:15 ET; the two before were after close."
+ },
+ {
+  "ticker": "IOVA",
+  "name": "Iovance Biotherapeutics",
+  "ir_host": "ir.iovance.com",
+  "sources": [
+   {
+    "url": "https://ir.iovance.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=IOVA&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "Last four results 8-Ks accepted 07:05-09:18 ET (the two before that were after close). Date notice ~2 weeks ahead ('Iovance to Report Second Quarter 2026 Financial Results on August 6, 2026')."
+ },
+ {
+  "ticker": "JANX",
+  "name": "Janux Therapeutics",
+  "ir_host": "investors.januxrx.com",
+  "sources": [
+   {
+    "url": "https://investors.januxrx.com/feed/PressRelease.svc/GetPressReleaseList?apiKey=BF185719B0464B3CB809D23926182246&pageSize=40&year=-1&bodyType=2&pressReleaseDateFilter=3&LanguageId=1",
+    "kind": "ir_json",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 classic public press-release JSON service (standard public apiKey); up to 40 items with the full HTML body inline, so no detail fetch is needed. Verified 2026-09-26."
+   },
+   {
+    "url": "https://investors.januxrx.com/rss/pressrelease.aspx",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 classic IR site RSS, fixed at 10 most recent items; detail pages are server-rendered. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=JANX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "note": "Results 8-K accepted 16:08-16:16 ET every quarter; no separate date notice."
+ },
+ {
+  "ticker": "JSPR",
+  "name": "Jasper Therapeutics",
+  "ir_host": "ir.jaspertherapeutics.com",
+  "sources": [
+   {
+    "url": "https://ir.jaspertherapeutics.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=JSPR&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "5 of the last 6 results 8-Ks accepted 16:05-17:35 ET; no separate date notice."
+ },
+ {
+  "ticker": "KURA",
+  "name": "Kura Oncology",
+  "ir_host": "ir.kuraoncology.com",
+  "sources": [
+   {
+    "url": "https://ir.kuraoncology.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=KURA&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "note": "Mixed: 2Q26 and 1Q26 after close (16:10 ET), 4Q25 and 3Q25 before open (06:35 ET). Notice form: 'Kura Oncology to Host Second Quarter 2026 Financial Results Conference Call on August 12'."
+ },
+ {
+  "ticker": "KYMR",
+  "name": "Kymera Therapeutics",
+  "ir_host": "investors.kymeratx.com",
+  "sources": [
+   {
+    "url": "https://investors.kymeratx.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=KYMR&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted 07:10 ET every quarter. Notice ~1 week ahead ('Kymera Therapeutics to Report Second Quarter 2026 Financial Results on August 5, 2026')."
+ },
+ {
+  "ticker": "NRIX",
+  "name": "Nurix Therapeutics",
+  "ir_host": "ir.nurixtx.com",
+  "sources": [
+   {
+    "url": "https://ir.nurixtx.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NRIX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 11,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "note": "Fiscal year ends 30 November: fiscal Q2 FY26 ended 31 May 2026 (reported 9 Jul), fiscal Q3 ended 31 Aug (due ~10 Oct). 5 of the last 6 results 8-Ks accepted 16:02-16:10 ET."
+ },
+ {
+  "ticker": "SMMT",
+  "name": "Summit Therapeutics",
+  "ir_host": "www.smmttx.com",
+  "sources": [
+   {
+    "url": "https://www.smmttx.com/feed/PressRelease.svc/GetPressReleaseList?apiKey=BF185719B0464B3CB809D23926182246&pageSize=40&year=-1&bodyType=2&pressReleaseDateFilter=3&LanguageId=1",
+    "kind": "ir_json",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 classic public press-release JSON service (standard public apiKey); up to 40 items with the full HTML body inline, so no detail fetch is needed. Verified 2026-09-26."
+   },
+   {
+    "url": "https://www.smmttx.com/rss/pressrelease.aspx",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 classic IR site RSS, fixed at 10 most recent items; detail pages are server-rendered. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SMMT&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "note": "Q4 classic site on the corporate host (no ir. subdomain). 5 of the last 6 results 8-Ks accepted 16:07-17:13 ET. Notice ~1 week ahead ('to Host Second Quarter 2026 Financial Results & Operational Progress Conference Call')."
+ },
+ {
+  "ticker": "SNDX",
+  "name": "Syndax Pharmaceuticals",
+  "ir_host": "ir.syndax.com",
+  "sources": [
+   {
+    "url": "https://ir.syndax.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SNDX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted 16:02 ET every quarter. Notice ~1 week ahead ('Syndax to Announce Second Quarter 2026 Financial Results and Host Conference Call and Webcast on August 4')."
+ },
+ {
+  "ticker": "TYRA",
+  "name": "Tyra Biosciences",
+  "ir_host": "ir.tyra.bio",
+  "sources": [
+   {
+    "url": "https://ir.tyra.bio/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=TYRA&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "New in this tracker (not in the old monitor). 5 of the last 6 results 8-Ks accepted 16:04-16:12 ET; no separate date notice. Tried /rss/pressrelease.aspx (404) and the Q4 JSON service (403) on ir.tyra.bio, and tyra.bio/feed/ (404)."
+ },
+ {
+  "ticker": "NBTX",
+  "name": "Nanobiotix",
+  "ir_host": "ir.nanobiotix.com",
+  "sources": [
+   {
+    "url": "https://ir.nanobiotix.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS, fixed at the 10 most recent items; detail pages are server-rendered. The Q4 JSON press-release service answers 403 on this host and /rss/pressrelease.aspx 404. Verified 2026-09-26."
+   },
+   {
+    "url": "https://ir.nanobiotix.com/news-events/press-releases",
+    "kind": "html_list",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 listing page as a backstop for the 10-item RSS; entries are undated so they are processed last. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NBTX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": true,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "French 6-K filer reporting H1 (with Q2) and full year (with Q4) only; Q1/Q3 are not applicable. Results 6-K accepted 16:15-16:50 ET; H1 arrives 86-115 days after 30 June (24 Sep 2026, 30 Sep 2025). Its Q1 'Operational and Financial Update' is a cash update, not results."
+ },
+ {
+  "ticker": "NUVL",
+  "name": "Nuvalent",
+  "ir_host": "investors.nuvalent.com",
+  "sources": [
+   {
+    "url": "https://investors.nuvalent.com/news",
+    "kind": "html_list",
+    "verified": true,
+    "body_readable": true,
+    "note": "PR Newswire-hosted IR site, no RSS (every /rss, /feed variant is 404 or empty); the date is read from the link path (/2026-05-07-...). Verified 2026-09-26."
+   },
+   {
+    "url": "https://www.prnewswire.com/news/nuvalent%2C-inc./",
+    "kind": "html_list",
+    "verified": true,
+    "body_readable": true,
+    "note": "PR Newswire company page; the anchor text starts with 'May 07, 2026, 06:30 ET', which scan.py strips and uses as the date. Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NUVL&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": false,
+  "active": true,
+  "note": "Results 8-K accepted 06:35 ET every quarter; no separate date notice. GSK agreed to acquire Nuvalent on 9 Jun 2026 and no 2Q26 results 8-K was filed; biotech_universe.json lists NUVL as inactive. Kept active here on instruction; set active:false once the deal closes."
+ },
+ {
+  "ticker": "TLX",
+  "name": "Telix Pharmaceuticals",
+  "ir_host": "ir.telixpharma.com",
+  "sources": [
+   {
+    "url": "https://ir.telixpharma.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Q4 IR site RSS (10 items) - busy newsflow, so results scroll off within weeks; the corporate WordPress feed below is the backstop. Verified 2026-09-26."
+   },
+   {
+    "url": "https://telixpharma.com/feed/",
+    "kind": "ir_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Corporate WordPress feed, 10 items, carried 'Telix H1 2026 Results: Investor Webcast Notification' (30 Jul) and 'Telix 2026 Half-Year Results' (19 Aug). Verified 2026-09-26."
+   },
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=TLX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed, 15-20 items, mirrors GlobeNewswire/BW/PRN releases with a readable article body; third-party stories (Zacks, Motley Fool) are filtered by the headline-is-ours and third-party checks in scan.py. Verified 2026-09-26."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": true,
+  "usual_session": "after close",
+  "pinned": false,
+  "active": true,
+  "note": "ASX-listed 6-K filer reporting H1 (with Q2) and full year (with Q4) only; Q1/Q3 are not applicable. Releases in the ASX morning = US evening: the H1 2026 6-K was accepted 19 Aug 21:48 ET (EDGAR filing date 20 Aug), i.e. an after-close release for India's next-morning slot. Its quarterly revenue 'trading updates' (Telix Q2 Revenue ...) are not results and are skipped by period_kind.",
+  "release_tz": "Australia/Melbourne"
+ }
+]

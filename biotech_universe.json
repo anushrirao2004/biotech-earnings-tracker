@@ -1,0 +1,4626 @@
+{
+  "_comment": "One-time-derived reference for the biotech earnings sweep universe, built by build_universe.py from EDGAR (authoritative). CIK, fiscal_year_end, filer_type, half_yearly and the results history do not change quarter to quarter - do NOT re-derive them per run. Biotechs have no supplemental: the press release furnished as EX-99 on the results 8-K (results_source edgar_8k_ex99) or 6-K (edgar_6k) is the primary document, backed by the 10-Q/10-K or the 6-K quarterly/half-year report.",
+  "_how_results_are_detected": "By reading the heading of the EX-99 exhibit(s) on each candidate filing, NOT by Item code alone: biotechs furnish Item 2.02 8-Ks in January for preliminary cash / JPM releases (SNDX, KURA, KYMR, SMMT, CATX), which are not results and are listed per company under other_item_202_8ks. Foreign private issuers (BNTX, NBTX, TLX) file 6-K with no Item codes; their results 6-K is told apart from routine 6-Ks by the same heading test, and their quarterly/half-year report 6-K by reportDate == period end != filing date (BNTX form6-kq22026quarterlyrepo.htm, NBTX nbx-20260630.htm, TLX tlx-20260630.htm). See edgar_common.RESULTS_RE for the calibrated pattern.",
+  "_quarter_labels": "Labels follow each company's fiscal calendar: ENGN (FYE 31 Oct) 3Q26 = quarter ended 2026-07-31, NRIX (FYE 30 Nov) 3Q26 = 2026-08-31; everyone else fiscal == calendar. Half-yearly reporters (NBTX, TLX) use 1Hyy (June period) and FYyy (December period); a 2Qyy target maps to 1Hyy and 4Qyy to FYyy, and 1Q/3Q targets have nothing to wait for. TLX's quarterly revenue 'trading update' 6-Ks are listed under other_periodic_6ks as interim_update and are not results.",
+  "_scheduling_note": "Use reporting_lag_days per ticker: start watching at (period end + min lag - 2 days) and stop once the results filing is seen. Half-yearly names report ~50-90 days after 30 June / 31 December, far later than the US quarterly names (~35-45 days).",
+  "_unresolved_tickers": [],
+  "_inactive_tickers": [
+    "NUVL"
+  ],
+  "_needs_one_time_check": [],
+  "_built": "2026-09-25",
+  "companies": {
+    "BNTX": {
+      "company_name": "BioNTech SE",
+      "cik": "0001776985",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "2M",
+      "filer_type": "6-K",
+      "filer_type_source": "pinned in COMPANY_CONFIG; EDGAR forms in last 24 months agree",
+      "annual_form": "20-F",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 20-F period 2025-12-31 (bntx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_6k",
+      "results_detection": "6-K whose EX-99 heading announces quarterly/half-year/full-year financial results (no Item codes on a 6-K); the quarterly/half-year report is the 6-K whose reportDate is the period end and differs from the filing date",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-04",
+          "accession": "0001776985-26-000054",
+          "form": "6-K",
+          "primary_doc": "form6-kq22026earningsprear.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 35,
+          "heading": "BioNTech Announces Second Quarter 2026 Financial Results and Corporate Update \u2022Guido Oelkers, Ph.D., appointed to BioNTech Management Board as Chief Executive Officer, taking office by February 1, 202",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a991bntx_q22026pressreleas.htm",
+            "type": "EX-99.1",
+            "kb": 478
+          },
+          "companion_report": {
+            "accession": "0001776985-26-000055",
+            "filing_date": "2026-08-04",
+            "report_date": "2026-06-30",
+            "doc": {
+              "name": "bntxq22026ex991quarterlyre.htm",
+              "type": "EX-99.1",
+              "kb": 2747
+            }
+          }
+        },
+        {
+          "filing_date": "2026-05-05",
+          "accession": "0001776985-26-000030",
+          "form": "6-K",
+          "primary_doc": "form6-kq12026earningsprear.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 35,
+          "heading": "BioNTech Announces First Quarter 2026 Financial Results and Corporate Update \u2022Five additional pivotal trials for pumitamig initiated during 2026 in collaboration with Bristol Myers Squibb \u2022Oncology pi",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a991_bntxq12026pressreleas.htm",
+            "type": "EX-99.1",
+            "kb": 352
+          },
+          "companion_report": {
+            "accession": "0001776985-26-000031",
+            "filing_date": "2026-05-05",
+            "report_date": "2026-03-31",
+            "doc": {
+              "name": "bntxq12026ex991quarterlyre.htm",
+              "type": "EX-99.1",
+              "kb": 2477
+            }
+          }
+        },
+        {
+          "filing_date": "2026-03-10",
+          "accession": "0001776985-26-000016",
+          "form": "6-K",
+          "primary_doc": "form6-kq4fy202510mar2026.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 69,
+          "heading": "BioNTech Announces Fourth Quarter and Full Year 2025 Financial Results and Corporate Update \u2022BioNTech on track for a catalyst-rich year with six late-stage data readouts expected across immunomodulato",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a991bntxq4_pr.htm",
+            "type": "EX-99.1",
+            "kb": 570
+          }
+        },
+        {
+          "filing_date": "2025-11-03",
+          "accession": "0001776985-25-000064",
+          "form": "6-K",
+          "primary_doc": "form6-kq32025earningsprear.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 34,
+          "heading": "BioNTech Announces Third Quarter 2025 Financial Results and Corporate Update \u2022Continued clinical execution of oncology strategy with focus on two pan-tumor programs, including combination approaches t",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a99120251103_bntxq32025pre.htm",
+            "type": "EX-99.1",
+            "kb": 328
+          },
+          "companion_report": {
+            "accession": "0001776985-25-000065",
+            "filing_date": "2025-11-03",
+            "report_date": "2025-09-30",
+            "doc": {
+              "name": "bnt_2025q3ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 2668
+            }
+          }
+        },
+        {
+          "filing_date": "2025-08-04",
+          "accession": "0001776985-25-000049",
+          "form": "6-K",
+          "primary_doc": "form6-kq22025earningsprear.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 35,
+          "heading": "BioNTech Announces Second Quarter 2025 Financial Results and Corporate Update \u2022Continued execution of BioNTech\u2019s oncology strategy with focus on two pan-tumor programs including two announced transact",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a991bntxq22025pressrelease.htm",
+            "type": "EX-99.1",
+            "kb": 314
+          },
+          "companion_report": {
+            "accession": "0001776985-25-000051",
+            "filing_date": "2025-08-04",
+            "report_date": "2025-06-30",
+            "doc": {
+              "name": "bnt_2025q2ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 2645
+            }
+          }
+        },
+        {
+          "filing_date": "2025-05-05",
+          "accession": "0001776985-25-000026",
+          "form": "6-K",
+          "primary_doc": "form6-kq12025earningsprear.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 35,
+          "heading": "BioNTech Announces First Quarter 2025 Financial Results and Corporate Update \u2022Continued oncology pipeline advancement with a strategic focus on two priority pan-tumor programs: next-generation immunom",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "ex991bntxq12025pressreleas.htm",
+            "type": "EX-99.1",
+            "kb": 237
+          }
+        },
+        {
+          "filing_date": "2025-03-10",
+          "accession": "0001776985-25-000011",
+          "form": "6-K",
+          "primary_doc": "form6-kq4fy202410mar2025.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 69,
+          "heading": "BioNTech Announces Fourth Quarter and Full Year 2024 Financial Results and Corporate Update \u2022Advanced oncology pipeline including more than 20 active Phase 2 and Phase 3 clinical trials with a strateg",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "ex99250310_bntxxprxq42024x.htm",
+            "type": "EX-99.1",
+            "kb": 293
+          }
+        },
+        {
+          "filing_date": "2024-11-04",
+          "accession": "0001776985-24-000089",
+          "form": "6-K",
+          "primary_doc": "form6-kq32024earningsprear.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 35,
+          "heading": "BioNTech Announces Third Quarter 2024 Financial Results and Corporate Update \u2022Presented clinical data for multiple assets across modalities, including bispecific antibody candidate BNT327/PM8002 and m",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a99120241104_bntxq32024pre.htm",
+            "type": "EX-99.1",
+            "kb": 301
+          },
+          "companion_report": {
+            "accession": "0001776985-24-000091",
+            "filing_date": "2024-11-04",
+            "report_date": "2024-09-30",
+            "doc": {
+              "name": "bnt_2024q3ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 2083
+            }
+          }
+        },
+        {
+          "filing_date": "2024-08-05",
+          "accession": "0001776985-24-000066",
+          "form": "6-K",
+          "primary_doc": "form6-kq22024earningsprear.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 36,
+          "heading": "BioNTech Announces Second Quarter 2024 Financial Results and Corporate Update \u2022Announced positive data from multiple mRNA cancer vaccine clinical trials, including topline results from the ongoing Pha",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a991bntxq22024pressrelease.htm",
+            "type": "EX-99.1",
+            "kb": 278
+          },
+          "companion_report": {
+            "accession": "0001776985-24-000068",
+            "filing_date": "2024-08-05",
+            "report_date": "2024-06-30",
+            "doc": {
+              "name": "bnt_2024q2ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 2088
+            }
+          }
+        },
+        {
+          "filing_date": "2024-05-06",
+          "accession": "0001776985-24-000038",
+          "form": "6-K",
+          "primary_doc": "form6-kq12024earningsprear.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 36,
+          "heading": "BioNTech Announces First Quarter 2024 Financial Results and Corporate Update \u2022Advancing toward goal of ten or more potentially registrational trials running by the end of 2024: first patient dosed in ",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a99_1bntxq12024pressrelease.htm",
+            "type": "EX-99.1",
+            "kb": 178
+          },
+          "companion_report": {
+            "accession": "0001776985-24-000040",
+            "filing_date": "2024-05-06",
+            "report_date": "2024-03-31",
+            "doc": {
+              "name": "bnt_2024q1ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 1593
+            }
+          }
+        },
+        {
+          "filing_date": "2024-03-20",
+          "accession": "0001776985-24-000025",
+          "form": "6-K",
+          "primary_doc": "form6-kq4fy202320mar2024.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 80,
+          "heading": "BioNTech Announces Fourth Quarter and Full Year 2023 Financial Results and Corporate Update \u2022Advanced oncology pipeline in mid- and late-stage with plans to have ten or more potentially registrational",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a99_1finalxbntxq42023press.htm",
+            "type": "EX-99.1",
+            "kb": 267
+          }
+        },
+        {
+          "filing_date": "2023-11-06",
+          "accession": "0001776985-23-000069",
+          "form": "6-K",
+          "primary_doc": "form6-kq32023earningsprear.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 37,
+          "heading": "BioNTech Announces Third Quarter 2023 Financial Results and Corporate Update \u2022Positive clinical data updates across multiple drug classes including antibody-drug conjugate (ADC) candidates BNT323/DB-1",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a99_120231106xbntxq32023pr.htm",
+            "type": "EX-99.1",
+            "kb": 251
+          },
+          "companion_report": {
+            "accession": "0001776985-23-000071",
+            "filing_date": "2023-11-06",
+            "report_date": "2023-09-30",
+            "doc": {
+              "name": "bnt_2023q3ex99x1quarterlyr.htm",
+              "type": "EX-99.1",
+              "kb": 1695
+            }
+          }
+        }
+      ],
+      "other_periodic_6ks": [
+        {
+          "filing_date": "2026-01-12",
+          "accession": "0001776985-26-000002",
+          "kind": "preliminary",
+          "report_date": "2026-01-12",
+          "heading": "BioNTech Provides Strategic Business Update and Outlines 2026 Areas of Focus at 44th Annual J.P. Morgan Healthcare Confe"
+        },
+        {
+          "filing_date": "2025-05-27",
+          "accession": "0001776985-25-000037",
+          "kind": "advisory",
+          "report_date": "2025-05-27",
+          "heading": "BioNTech to Present Progress Across Diversified Oncology Pipeline at the 2025 ASCO Annual Meeting MAINZ, Germany, May 27"
+        },
+        {
+          "filing_date": "2025-04-24",
+          "accession": "0001776985-25-000021",
+          "kind": "advisory",
+          "report_date": "2025-04-24",
+          "heading": "BioNTech to Present Clinical and Preclinical Data Across mRNA and Next-Generation Immuno-Oncology Priority Programs at A"
+        },
+        {
+          "filing_date": "2024-09-05",
+          "accession": "0001776985-24-000079",
+          "kind": "advisory",
+          "report_date": "2024-09-05",
+          "heading": "BioNTech to Present Clinical Data Updates Across mRNA and Immunomodulatory Oncology Portfolio at ESMO Congress 2024 MAIN"
+        },
+        {
+          "filing_date": "2024-05-21",
+          "accession": "0001776985-24-000044",
+          "kind": "advisory",
+          "report_date": "2024-05-21",
+          "heading": "BioNTech to Present Clinical Data Updates for Next-Generation Immunotherapy Candidates at the ASCO Annual Meeting 2024 M"
+        },
+        {
+          "filing_date": "2024-03-11",
+          "accession": "0001776985-24-000017",
+          "kind": "advisory",
+          "report_date": "2024-03-11",
+          "heading": "BioNTech to Present Clinical Data Updates For Personalized mRNA-based and Targeted Oncology Candidates at AACR 2024 MAIN"
+        },
+        {
+          "filing_date": "2024-01-31",
+          "accession": "0001776985-24-000007",
+          "kind": "preliminary",
+          "report_date": "2024-01-31",
+          "heading": "BioNTech and DualityBio Receive FDA Fast Track Designation for Next-Generation Antibody-Drug Conjugate Candidate BNT325/"
+        },
+        {
+          "filing_date": "2024-01-09",
+          "accession": "0001776985-24-000002",
+          "kind": "preliminary",
+          "report_date": "2024-01-09",
+          "heading": "BioNTech Outlines 2024 Strategic Priorities at the 42nd Annual J.P. Morgan Healthcare Conference \u2022Plans to have ten or m"
+        },
+        {
+          "filing_date": "2023-10-16",
+          "accession": "0001776985-23-000061",
+          "kind": "advisory",
+          "report_date": "2023-10-16",
+          "heading": "BioNTech to Present Multiple Program Updates Across Modalities at ESMO Congress 2023 \u2022Program updates include new data f"
+        }
+      ],
+      "six_k_scanned": 109,
+      "six_k_window_from": "2023-10-11",
+      "reporting_lag_days": {
+        "median": 36,
+        "min": 34,
+        "max": 80,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-04",
+        "accession": "0001776985-26-000054",
+        "results_exhibit": {
+          "name": "a991bntx_q22026pressreleas.htm",
+          "type": "EX-99.1",
+          "kb": 478
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "CATX": {
+      "company_name": "Perspective Therapeutics, Inc.",
+      "cik": "0000728387",
+      "cik_source": "company_tickers.json",
+      "exchange": "NYSE",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (catx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-10",
+          "accession": "0001193125-26-342495",
+          "form": "8-K",
+          "primary_doc": "catx-20260810.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 41,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports 2Q 2026 Results \u2022 Advancing VMT-\u03b1-NET toward a Phase 3 study in neuroendocrine tumors, subject to regulatory alignment: regulat",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 355
+          }
+        },
+        {
+          "filing_date": "2026-05-11",
+          "accession": "0001193125-26-216777",
+          "form": "8-K",
+          "primary_doc": "catx-20260511.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 41,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports 1Q 2026 Results \u2022 Differentiated \u00b2\u00b9\u00b2Pb radiopharmaceutical platform designed to optimize tumor killing, safety, patient conveni",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 261
+          }
+        },
+        {
+          "filing_date": "2026-03-16",
+          "accession": "0000728387-26-000003",
+          "form": "8-K",
+          "primary_doc": "catx-20260316.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 75,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports Full Year 2025 Results \u2022 Lead program VMT-\u03b1-NET in neuroendocrine tumors continues to demonstrate a favorable tolerability prof",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 292
+          }
+        },
+        {
+          "filing_date": "2025-11-10",
+          "accession": "0001193125-25-274318",
+          "form": "8-K",
+          "primary_doc": "catx-20251110.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 41,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports 3Q 2025 Results \u2022 Updated interim results from the Company\u2019s [212Pb]VMT-\u03b1-NET Phase 1/2a study supporting the therapy\u2019s compell",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 370
+          }
+        },
+        {
+          "filing_date": "2025-08-13",
+          "accession": "0000950170-25-107609",
+          "form": "8-K",
+          "primary_doc": "catx-20250813.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 44,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports 2Q 2025 Results \u2022 [212Pb]VMT-\u03b1-NET study update presented at the 2025 ASCO Annual Meeting, based on updated interim results fro",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 370
+          }
+        },
+        {
+          "filing_date": "2025-05-12",
+          "accession": "0000950170-25-069301",
+          "form": "8-K",
+          "primary_doc": "catx-20250512.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 42,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports 1Q 2025 Results \u2022 First of several clinical updates through mid-2026 accepted for presentation at the 2025 American Society of ",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 320
+          }
+        },
+        {
+          "filing_date": "2025-03-26",
+          "accession": "0000950170-25-045227",
+          "form": "8-K",
+          "primary_doc": "catx-20250326.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 85,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports Full Year 2024 Results \u2022 On track for multiple clinical updates through mid-2026, including further progress from two ongoing c",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 311
+          }
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0000950170-24-125353",
+          "form": "8-K",
+          "primary_doc": "catx-20241112.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 43,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports Fiscal 3Q 2024 Results \u2022 Advancing investigation of [212Pb]VMT01 as a monotherapy and in combination with the anti-PD-1 antibod",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 211
+          }
+        },
+        {
+          "filing_date": "2024-05-15",
+          "accession": "0000950170-24-060028",
+          "form": "8-K",
+          "primary_doc": "catx-20240515.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 45,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports Fiscal Q1 2024 Results \u2022 Continued progress enrolling in its VMT-\u03b1-NET and VMT01 clinical trials \u2022 Disclosed a new internally d",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "catx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 160
+          }
+        },
+        {
+          "filing_date": "2024-03-28",
+          "accession": "0001437749-24-009691",
+          "form": "8-K",
+          "primary_doc": "isr20240327_8k.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 88,
+          "heading": "Perspective Therapeutics Provides Recent Business Highlights and Reports Fiscal Year 2023 Financial Results SEATTLE \u2013 March 28, 2024 \u2013 Perspective, Therapeutics, Inc. (NYSE AMERICAN: CATX), a radiopha",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ex_646652.htm",
+            "type": "EX-99.1",
+            "kb": 180
+          }
+        },
+        {
+          "filing_date": "2023-11-14",
+          "accession": "0001437749-23-031996",
+          "form": "8-K",
+          "primary_doc": "isr20231113_8k.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 45,
+          "heading": "Perspective Therapeutics Reports Third Quarter Fiscal 2023 Results and Recent Business Highlights SEATTLE \u2013 November 14, 2023 \u2013 Perspective Therapeutics, Inc. (NYSE AMERICAN: CATX), today announced th",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ex_597074.htm",
+            "type": "EX-99.1",
+            "kb": 165
+          }
+        },
+        {
+          "filing_date": "2023-08-11",
+          "accession": "0001437749-23-023162",
+          "form": "8-K",
+          "primary_doc": "isr20230809_8k.htm",
+          "quarter_end": "2023-06-30",
+          "period_label": "2Q23",
+          "days_after_quarter_end": 42,
+          "heading": "Perspective Therapeutics Reports Second Quarter Fiscal 2023 Results and Recent Business Highlights \u25cf Phase I/2a clinical trials initiated: VMT- \u03b1-NET for neuroendocrine tumors, and VMT01 for melanoma.",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ex_559118.htm",
+            "type": "EX-99.1",
+            "kb": 173
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-05-04",
+          "accession": "0001193125-26-204161",
+          "kind": "other",
+          "heading": "Agenda Engineering the Alpha Advantage in Targeted Oncology Optimizing the Entire System Expanding the Addressable Marke"
+        },
+        {
+          "filing_date": "2026-02-02",
+          "accession": "0001193125-26-032706",
+          "kind": "other",
+          "heading": "Redefining Oncology Treatment with Next-Generation Radiopharmaceuticals Why Radiotherapy, Why Perspective: Realizing the"
+        },
+        {
+          "filing_date": "2026-01-09",
+          "accession": "0001193125-26-008277",
+          "kind": "other",
+          "heading": "Perspective Therapeutics Presents Updated Interim Data of [212Pb]VMT-\u03b1-NET in its Ongoing Phase 1/2a Clinical Trial at t"
+        },
+        {
+          "filing_date": "2025-10-20",
+          "accession": "0001193125-25-242912",
+          "kind": "other",
+          "heading": "Perspective Therapeutics Presents Updated Interim Data from its Ongoing Phase 1/2a Clinical Trial of [212Pb]VMT-\u03b1-NET at"
+        },
+        {
+          "filing_date": "2025-01-13",
+          "accession": "0000950170-25-004595",
+          "kind": "other",
+          "heading": "Perspective Therapeutics Provides Business Updates and Strategic Priorities Ahead of Presentation at 43rd Annual J.P. Mo"
+        },
+        {
+          "filing_date": "2024-01-17",
+          "accession": "0001437749-24-001533",
+          "kind": "other",
+          "heading": ""
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 44,
+        "min": 41,
+        "max": 88,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-10",
+        "accession": "0001193125-26-342495",
+        "results_exhibit": {
+          "name": "catx-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 355
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "CGEM": {
+      "company_name": "Cullinan Therapeutics, Inc.",
+      "cik": "0001789972",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (cgem-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001193125-26-336700",
+          "form": "8-K",
+          "primary_doc": "cgem-20260806.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Second Quarter 2026 Financial Results CLN-978 (CD19 TCE) multi-dose regimen data in RA in Q3 2026 and SLE in Q4 2026; Phase 2 expansion stud",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 167
+          }
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001193125-26-210290",
+          "form": "8-K",
+          "primary_doc": "cgem-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports First Quarter 2026 Financial Results Initial clinical data in SLE and RA for CLN-978, a CD19 T cell engager, to be presented at the EULAR 20",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 125
+          }
+        },
+        {
+          "filing_date": "2026-03-10",
+          "accession": "0001193125-26-099355",
+          "form": "8-K",
+          "primary_doc": "cgem-20260310.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 69,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Fourth Quarter and Full Year 2025 Financial Results Initial clinical data for CLN-978 in SLE and RA confirmed for Q2 2026; repeat dosing dat",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 188
+          }
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001193125-25-268041",
+          "form": "8-K",
+          "primary_doc": "cgem-20251106.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 37,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Third Quarter 2025 Financial Results Promising Phase 1 clinical data for CLN-049, a FLT3xCD3 bispecific T cell engager, demonstrating ~30% C",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 181
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0000950170-25-104547",
+          "form": "8-K",
+          "primary_doc": "cgem-20250807.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Second Quarter 2025 Financial Results CLN-978 program now actively enrolling across Phase 1 studies in systemic lupus erythematosus (SLE), r",
+          "period_basis": "heading",
+          "items": "2.02,5.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 212
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0000950170-25-066382",
+          "form": "8-K",
+          "primary_doc": "cgem-20250508.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports First Quarter 2025 Financial Results Company received approval from European Medicines Agency (EMA) for CLN-978; Phase 1 study in active, di",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 142
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0000950170-25-028343",
+          "form": "8-K",
+          "primary_doc": "cgem-20250227.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Fourth Quarter and Full Year 2024 Financial Results Initial clinical data from global Phase 1 study of CLN-978 in Systemic Lupus Erythematos",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 194
+          }
+        },
+        {
+          "filing_date": "2024-11-07",
+          "accession": "0000950170-24-122778",
+          "form": "8-K",
+          "primary_doc": "cgem-20241107.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Third Quarter 2024 Financial Results Global Phase 1 study of CLN-978 in systemic lupus erythematosus (SLE) cleared to initiate in U.S. and A",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 169
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0000950170-24-093314",
+          "form": "8-K",
+          "primary_doc": "cgem-20240808.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports Second Quarter 2024 Financial Results Investigational New Drug (IND) application for CLN-978 in systemic lupus erythematosus (SLE) remains o",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 164
+          }
+        },
+        {
+          "filing_date": "2024-05-15",
+          "accession": "0000950170-24-060481",
+          "form": "8-K",
+          "primary_doc": "cgem-20240509.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 45,
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Reports First Quarter 2024 Financial Results Combination and monotherapy solid tumor dose escalation data for CLN-619 to be presented in a poster se",
+          "period_basis": "heading",
+          "items": "2.02,5.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 128
+          }
+        },
+        {
+          "filing_date": "2024-03-14",
+          "accession": "0000950170-24-031140",
+          "form": "8-K",
+          "primary_doc": "cgem-20240314.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 74,
+          "heading": "Cullinan Oncology Provides Corporate Update and Reports Fourth Quarter and Full Year 2023 Financial Results Cullinan remains on track to report additional solid tumor dose escalation data for CLN-619 ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 181
+          }
+        },
+        {
+          "filing_date": "2023-11-08",
+          "accession": "0000950170-23-060673",
+          "form": "8-K",
+          "primary_doc": "cgem-20231108.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 39,
+          "heading": "Cullinan Oncology Provides Corporate Update and Reports Third Quarter 2023 Financial Results Cullinan to provide clinical data updates on three novel targeted oncology programs and complete enrollment",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "cgem-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 241
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-08",
+          "accession": "0001193125-26-006998",
+          "kind": "other",
+          "heading": "Cullinan Therapeutics Provides Corporate Update and Highlights Anticipated 2026 Milestones Data readouts planned for CLN"
+        },
+        {
+          "filing_date": "2023-02-14",
+          "accession": "0001193125-23-036285",
+          "kind": "other",
+          "heading": "Cullinan Oncology Licenses U.S. Rights to the First Clinical-Stage B7H4 x 4-1BB Bispecific Immune Activator from Harbour"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 39,
+        "min": 37,
+        "max": 74,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-06",
+        "accession": "0001193125-26-336700",
+        "results_exhibit": {
+          "name": "cgem-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 167
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "CGON": {
+      "company_name": "CG Oncology, Inc.",
+      "cik": "0001991792",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (ck0001991792-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001193125-26-336886",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20260806.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "CG Oncology Reports Second Quarter 2026 Financial Results and Provides Business Updates \u2022 PIVOT-006 Phase 3 topline data evaluating cretostimogene monotherapy as an adjuvant therapy in intermediate-ri",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 173
+          }
+        },
+        {
+          "filing_date": "2026-05-08",
+          "accession": "0001193125-26-213440",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20260508.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 38,
+          "heading": "CG Oncology Reports First Quarter 2026 Financial Results and Provides Business Updates \u2022 Following alignment discussions with FDA, BLA completion for HR BCG-unresponsive NMIBC is expected fourth quart",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 122
+          }
+        },
+        {
+          "filing_date": "2026-02-27",
+          "accession": "0001193125-26-079452",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20260227.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 58,
+          "heading": "CG Oncology Reports 2025 Year End Financial Results and Provides Business Updates \u2022 PIVOT-006 Phase 3 topline data evaluating cretostimogene monotherapy as an adjuvant therapy in intermediate-risk NMI",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 124
+          }
+        },
+        {
+          "filing_date": "2025-11-14",
+          "accession": "0001193125-25-281672",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20251114.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 45,
+          "heading": "CG Oncology Reports Third Quarter 2025 Financial Results and Provides Business Updates \u2022 Initiated rolling Biologics License Application (BLA) submission to U.S. FDA for cretostimogene monotherapy in ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 173
+          }
+        },
+        {
+          "filing_date": "2025-08-08",
+          "accession": "0000950170-25-105487",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20250808.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 39,
+          "heading": "CG Oncology Reports Second Quarter 2025 Financial Results and Provides Business Updates - Announced best-in-disease durability data in BOND-003 Cohort C and promising early signal in Cohort P for cret",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 154
+          }
+        },
+        {
+          "filing_date": "2025-05-13",
+          "accession": "0000950170-25-069825",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20250513.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 43,
+          "heading": "CG Oncology Reports First Quarter 2025 Financial Results and Provides Business Updates - Updated BOND-003 clinical results presented at AUA showing best-in-disease durability and tolerability data for",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 178
+          }
+        },
+        {
+          "filing_date": "2025-03-28",
+          "accession": "0000950170-25-046335",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20250328.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 87,
+          "heading": "CG Oncology Reports 2024 Year End Financial Results and Provides Business Updates - Cretostimogene Monotherapy Demonstrated Sustained, Durable Complete Responses in High-Risk Bacillus Calmette Gu\u00e9rin ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 195
+          }
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0000950170-24-124636",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20241112.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 43,
+          "heading": "CG Oncology Reports Third Quarter 2024 Financial Results and Provides Business Updates - Late-Breaking Abstract on Results of Phase 3 BOND-003 Trial of Cretostimogene Monotherapy in BCG-Unresponsive N",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 25
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0000950170-24-093237",
+          "form": "8-K",
+          "primary_doc": "ck0001991792-20240808.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "CG Oncology Reports Second Quarter 2024 Financial Results and Provides Business Updates \u2013 Final positive safety and efficacy findings from CORE-001 study of Cretostimogene Grenadenorepvec in combinati",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ck0001991792-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 36
+          }
+        },
+        {
+          "filing_date": "2024-05-09",
+          "accession": "0001193125-24-134805",
+          "form": "8-K",
+          "primary_doc": "d774503d8k.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 39,
+          "heading": "CG Oncology Reports First Quarter 2024 Financial Results and Provides Business Updates \u2022 Cretostimogene Monotherapy Demonstrated 75.2% Complete Response (CR) Rate at Any Time in Bacillus Calmette Guer",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "d774503dex991.htm",
+            "type": "EX-99.1",
+            "kb": 18
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 43,
+        "min": 37,
+        "max": 87,
+        "n": 10,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-06",
+        "accession": "0001193125-26-336886",
+        "results_exhibit": {
+          "name": "ck0001991792-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 173
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "CLDX": {
+      "company_name": "Celldex Therapeutics, Inc.",
+      "cik": "0000744218",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "In Vitro & In Vivo Diagnostic Substances",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (cldx-20251231x10k.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001171843-26-005316",
+          "form": "8-K",
+          "primary_doc": "f8k_080626.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Celldex Reports Second Quarter Financial Results and Provides Corporate Update Barzolvolimab Phase 3 chronic spontaneous urticaria studies (EMBARQ-CSU 1 and 2) ongoing, topline data expected in Sept/O",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 68
+          }
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001171843-26-003153",
+          "form": "8-K",
+          "primary_doc": "f8k_050726.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Celldex Reports First Quarter Financial Results and Provides Corporate Update Enrollment completed six months ahead of guidance in both barzolvolimab Phase 3 chronic spontaneous urticaria studies (EMB",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 53
+          }
+        },
+        {
+          "filing_date": "2026-02-25",
+          "accession": "0001171843-26-001098",
+          "form": "8-K",
+          "primary_doc": "f8k_022526.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 56,
+          "heading": "Celldex Reports Fourth Quarter and Year End 2025 Financial Results and Provides Corporate Update Enrollment completed in both Phase 3 chronic spontaneous urticaria global registration studies (EMBARQ-",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 73
+          }
+        },
+        {
+          "filing_date": "2025-11-10",
+          "accession": "0001171843-25-007179",
+          "form": "8-K",
+          "primary_doc": "f8k_111025.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 41,
+          "heading": "Celldex Reports Third Quarter 2025 Financial Results and Provides Corporate Update Strong execution and continued progress across pipeline Positive Phase 2 barzolvolimab data in Chronic Spontaneous Ur",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 76
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0001171843-25-005181",
+          "form": "8-K",
+          "primary_doc": "f8k_080625.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Celldex Reports Second Quarter 2025 Financial Results and Provides Corporate Update Strong execution and continued progress across pipeline Unprecedented data delivered from Phase 2 CSU study demonstr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 57
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0001171843-25-002980",
+          "form": "8-K",
+          "primary_doc": "f8k_050825.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Celldex Reports First Quarter 2025 Financial Results and Provides Corporate Update Strong execution and progress across pipeline with multiple key data read outs expected in 2025 Late breaking oral pr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 51
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0001171843-25-001126",
+          "form": "8-K",
+          "primary_doc": "f8k_022725.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Celldex Reports Fourth Quarter and Year End 2024 Financial Results and Provides Corporate Update Enrollment ongoing in Phase 3 barzolvolimab CSU studies; Phase 3 program in CIndU under development Pha",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 66
+          }
+        },
+        {
+          "filing_date": "2024-11-06",
+          "accession": "0001171843-24-006056",
+          "form": "8-K",
+          "primary_doc": "f8k_110624.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 37,
+          "heading": "Celldex Reports Third Quarter 2024 Financial Results and Provides Corporate Update Enrollment continues in Phase 3 barzolvolimab CSU studies; Phase 3 program in CIndU under development All primary and",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 53
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0001171843-24-004603",
+          "form": "8-K",
+          "primary_doc": "f8k_080824.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Celldex Reports Second Quarter 2024 Financial Results and Provides Corporate Update Phase 3 CSU studies initiated July 2024 Positive topline Phase 2 CIndU 12 week data reported July 2024 supporting Ph",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2024-05-06",
+          "accession": "0001171843-24-002570",
+          "form": "8-K",
+          "primary_doc": "f8k_050624.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 36,
+          "heading": "Celldex Reports First Quarter 2024 Financial Results and Provides Corporate Update - Phase 3 CSU studies expected to initiate in summer 2024 - - Positive Phase 2 CSU 12 week data reported in late brea",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 45
+          }
+        },
+        {
+          "filing_date": "2024-02-26",
+          "accession": "0001171843-24-000966",
+          "form": "8-K",
+          "primary_doc": "f8k_022524.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 57,
+          "heading": "Celldex Reports Fourth Quarter and Year End 2023 Financial Results and Provides Corporate Update - Phase 3 CSU studies expected to initiate in summer 2024 - - Positive Phase 2 CSU 12 week data reporte",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 66
+          }
+        },
+        {
+          "filing_date": "2023-11-02",
+          "accession": "0001171843-23-006668",
+          "form": "8-K",
+          "primary_doc": "f8k_110223.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 33,
+          "heading": "Celldex Reports Third Quarter 2023 Financial Results and Provides Corporate Update - Phase 2 CSU enrollment complete; topline data by YE 2023 - - Phase 1b PN data accepted at World Congress on Itch - ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 71
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2022-06-23",
+          "accession": "0001104659-22-073889",
+          "kind": "other",
+          "heading": ""
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 38,
+        "min": 33,
+        "max": 58,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-06",
+        "accession": "0001171843-26-005316",
+        "results_exhibit": {
+          "name": "exh_991.htm",
+          "type": "EX-99.1",
+          "kb": 68
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "ENGN": {
+      "company_name": "enGene Therapeutics Inc.",
+      "cik": "0001980845",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "Z4",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "10-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-10-31 (engn-20251031.htm)",
+      "fye_month": 10,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-09-08",
+          "accession": "0001193125-26-384380",
+          "form": "8-K",
+          "primary_doc": "engn-20260908.htm",
+          "quarter_end": "2026-07-31",
+          "period_label": "3Q26",
+          "days_after_quarter_end": 39,
+          "heading": "enGene Reports Third Quarter 2026 Financial Results and Provides Business Update Data update on key regulatory endpoints, complete response (CR) at any time and maturing durability, as well as landmar",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 168
+          }
+        },
+        {
+          "filing_date": "2026-06-15",
+          "accession": "0001193125-26-270384",
+          "form": "8-K",
+          "primary_doc": "engn-20260613.htm",
+          "quarter_end": "2026-04-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 46,
+          "heading": "enGene Reports Second Quarter 2026 Financial Results and Provides Business Update 12-month complete response data from LEGEND pivotal cohort and subsequent FDA engagement planned for 2H 2026 Initiatio",
+          "period_basis": "heading",
+          "items": "2.02,2.05,5.02,7.01,8.01,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 162
+          }
+        },
+        {
+          "filing_date": "2026-03-09",
+          "accession": "0001193125-26-097534",
+          "form": "8-K",
+          "primary_doc": "engn-20260309.htm",
+          "quarter_end": "2026-01-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "enGene Reports First Quarter 2026 Financial Results and Provides Business Update LEGEND pivotal cohort update planned for a spring 2026 medical conference 12-month complete response data from LEGEND p",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 113
+          }
+        },
+        {
+          "filing_date": "2025-12-22",
+          "accession": "0001193125-25-328706",
+          "form": "8-K",
+          "primary_doc": "engn-20251222.htm",
+          "quarter_end": "2025-10-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 52,
+          "heading": "enGene Reports Full Year 2025 Financial Results and Provides Business Update Completed enrollment in LEGEND\u2019s pivotal cohort with 125 patients in high-risk, BCG-unresponsive NMIBC with carcinoma in si",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 118
+          }
+        },
+        {
+          "filing_date": "2025-09-11",
+          "accession": "0000950170-25-114220",
+          "form": "8-K",
+          "primary_doc": "engn-20250911.htm",
+          "quarter_end": "2025-07-31",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 42,
+          "heading": "enGene Reports Third Quarter 2025 Financial Results and Provides Business Update Achieved target enrollment milestone for LEGEND trial pivotal cohort in high-risk BCG unresponsive NMIBC with carcinoma",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 154
+          }
+        },
+        {
+          "filing_date": "2025-06-12",
+          "accession": "0000950170-25-085138",
+          "form": "8-K",
+          "primary_doc": "engn-20250612.htm",
+          "quarter_end": "2025-04-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 43,
+          "heading": "enGene Reports Second Quarter 2025 Financial Results and Provides Business Update Additional preliminary data from ongoing LEGEND study of detalimogene in pivotal cohort of BCG-unresponsive NMIBC with",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 143
+          }
+        },
+        {
+          "filing_date": "2025-03-10",
+          "accession": "0000950170-25-036264",
+          "form": "8-K",
+          "primary_doc": "engn-20250310.htm",
+          "quarter_end": "2025-01-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "enGene Reports First Quarter 2025 Financial Results and Provides Business Update Additional preliminary data from ongoing LEGEND study of detalimogene in BCG-unresponsive NMIBC with CIS, including piv",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 96
+          }
+        },
+        {
+          "filing_date": "2024-12-19",
+          "accession": "0000950170-24-138446",
+          "form": "8-K",
+          "primary_doc": "engn-20241219.htm",
+          "quarter_end": "2024-10-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 49,
+          "heading": "enGene Reports Full Year 2024 Financial Results and Provides a Business Update BLA filing for detalimogene in BCG-unresponsive NMIBC with CIS on track for mid-2026 All cohorts of the Phase 2 LEGEND st",
+          "period_basis": "heading",
+          "items": "1.01,2.02,2.03,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 77
+          }
+        },
+        {
+          "filing_date": "2024-09-10",
+          "accession": "0000950170-24-105175",
+          "form": "8-K",
+          "primary_doc": "engn-20240910.htm",
+          "quarter_end": "2024-07-31",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 41,
+          "heading": "enGene Reports Third Quarter 2024 Financial Results and Provides a Business Update Company remains on track to report preliminary LEGEND data in September 2024 Cash and cash equivalents of $257.7 mill",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 94
+          }
+        },
+        {
+          "filing_date": "2024-06-14",
+          "accession": "0000950170-24-073326",
+          "form": "8-K",
+          "primary_doc": "engn-20240614.htm",
+          "quarter_end": "2024-04-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 45,
+          "heading": "enGene Reports Second Quarter 2024 Financial Results and Provides a Business Update Company announces plans for initial indication expansion for EG-70 into high-risk papillary only NMIBC BOSTON and MO",
+          "period_basis": "heading",
+          "items": "2.02,7.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 101
+          }
+        },
+        {
+          "filing_date": "2024-03-11",
+          "accession": "0000950170-24-029396",
+          "form": "8-K",
+          "primary_doc": "engn-20240311.htm",
+          "quarter_end": "2024-01-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 40,
+          "heading": "enGene Reports First Quarter 2024 Financial Results and Recent Corporate Progress Pivotal phase 2 LEGEND study of EG-70 in BCG-unresponsive non-muscle invasive bladder cancer (NMIBC) remains on track ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 76
+          }
+        },
+        {
+          "filing_date": "2024-01-29",
+          "accession": "0000950170-24-008123",
+          "form": "8-K",
+          "primary_doc": "engn-20240129.htm",
+          "quarter_end": "2023-10-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 90,
+          "heading": "enGene Reports Full Year 2023 Financial Results and Recent Operational Progress Achieved primary and secondary endpoints in Phase 1 portion of LEGEND study in non-muscle invasive bladder cancer (NIMBC",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "engn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 77
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 43,
+        "min": 37,
+        "max": 90,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "3Q26",
+        "quarter_end": "2026-07-31",
+        "filing_date": "2026-09-08",
+        "accession": "0001193125-26-384380",
+        "results_exhibit": {
+          "name": "engn-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 168
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "IOVA": {
+      "company_name": "IOVANCE BIOTHERAPEUTICS, INC.",
+      "cik": "0001425205",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (iova-20251231x10k.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001104659-26-091619",
+          "form": "8-K",
+          "primary_doc": "tm2622322d1_8k.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Iovance Biotherapeutics Reports Record Second Quarter 2026 Revenue of ~$99M, Business Achievements, and Corporate Updates U.S. Amtagvi Revenue Reaches ~$91M and Total Revenue Increased 66% Year-over-Y",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2622322d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 101
+          }
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001104659-26-056782",
+          "form": "8-K",
+          "primary_doc": "tm2613648d1_8k.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Iovance Biotherapeutics Highlights Positive First Quarter 2026 Results, Business Achievements and Corporate Updates 1Q26 Total Revenue of ~$71M Delivers ~45% Year-over-Year Growth 2Q26 Revenue Guidanc",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2613648d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 78
+          }
+        },
+        {
+          "filing_date": "2026-02-24",
+          "accession": "0001104659-26-018837",
+          "form": "8-K",
+          "primary_doc": "tm266992d1_8k.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 55,
+          "heading": "Iovance Biotherapeutics Highlights Strong Fourth Quarter and Full Year 2025 Results, Business Achievements and Corporate Updates ~30% Quarterly Revenue Growth Driven by Amtagvi Demand Gross Margin Inc",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "tm266992d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 88
+          }
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001104659-25-107426",
+          "form": "8-K",
+          "primary_doc": "tm2530236d1_8k.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 37,
+          "heading": "Iovance Biotherapeutics Highlights Business Achievements, Pipeline Milestones, and Third Quarter 2025 Results Quarterly Revenue Growth of 13% to ~$68 Million Gross Margin Increased to 43% on Improved ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2530236d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 80
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0001104659-25-075175",
+          "form": "8-K",
+          "primary_doc": "tm2522769d1_8k.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Iovance Biotherapeutics Reports Financial Results and Corporate Updates for Second Quarter and First Half 2025 $60.0M in 2Q25 Total Product Revenue More than 100 Patients Treated with Amtagvi\u00ae in 2Q25",
+          "period_basis": "heading",
+          "items": "2.02,5.02,9.01",
+          "results_exhibit": {
+            "name": "tm2522769d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 95
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0001104659-25-046101",
+          "form": "8-K",
+          "primary_doc": "tm2514273d1_8k.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Iovance Biotherapeutics Reports Financial Results and Corporate Updates for First Quarter 2025 1Q25 Total Product Revenue of $49.3M FY25 Total Product Revenue Guidance Revised to $250M-$300M FY25 Oper",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2514273d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 79
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0001104659-25-018212",
+          "form": "8-K",
+          "primary_doc": "tm257755d1_8k.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Iovance Biotherapeutics Reports Financial Results and Corporate Updates for Fourth Quarter and Full Year 2024 Significant Demand for Amtagvi\u00ae (Lifileucel) Continues with Total Product Revenue of $73.7",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm257755d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 107
+          }
+        },
+        {
+          "filing_date": "2024-11-07",
+          "accession": "0001104659-24-115300",
+          "form": "8-K",
+          "primary_doc": "tm2427769d1_8k.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Iovance Biotherapeutics Reports Financial Results and Corporate Updates for Third Quarter and Year to Date 2024 Significant Demand for Amtagvi\u2122 (Lifileucel) Continues with $58.6M in Total 3Q24 Product",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2427769d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 91
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0001104659-24-087259",
+          "form": "8-K",
+          "primary_doc": "tm2421110d1_8k.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Iovance Biotherapeutics Reports Financial Results and Corporate Updates for Second Quarter and First Half 2024 Strong Momentum Continues for Amtagvi\u2122 (Lifileucel) U.S. Launch with $31.1 Million in Tot",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2421110d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 98
+          }
+        },
+        {
+          "filing_date": "2024-05-09",
+          "accession": "0001104659-24-059322",
+          "form": "8-K",
+          "primary_doc": "tm2413980d1_8k.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Iovance Biotherapeutics Reports First Quarter 2024 Financial Results and Corporate Updates Strong Momentum for Amtagvi\u2122 (Lifileucel) U.S. Launch Following U.S. Food and Drug Administration (FDA) Appro",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2413980d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 78
+          }
+        },
+        {
+          "filing_date": "2024-02-28",
+          "accession": "0001104659-24-028704",
+          "form": "8-K",
+          "primary_doc": "tm247491d1_8k.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 59,
+          "heading": "Iovance Biotherapeutics Reports Fourth Quarter and Full Year 2023 Financial Results and Corporate Updates Amtagvi\u2122 (lifileucel) U.S. Launch Fully Underway Following U.S. Food and Drug Administration (",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm247491d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2023-11-07",
+          "accession": "0001104659-23-115226",
+          "form": "8-K",
+          "primary_doc": "tm2330006d1_8k.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 38,
+          "heading": "Iovance Biotherapeutics Reports Third Quarter and Year-to-Date 2023 Financial Results and Corporate Updates FDA Priority Review of Biologics License Application (BLA) on Track for Lifileucel in Advanc",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2330006d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 80
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2024-02-20",
+          "accession": "0001104659-24-025082",
+          "kind": "other",
+          "heading": "Iovance\u2019s AMTAGVITM (lifileucel) Receives U.S. FDA Accelerated Approval for Advanced Melanoma AMTAGVI is the first FDA-a"
+        },
+        {
+          "filing_date": "2023-07-10",
+          "accession": "0001104659-23-079684",
+          "kind": "other",
+          "heading": ""
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 38,
+        "min": 37,
+        "max": 59,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-06",
+        "accession": "0001104659-26-091619",
+        "results_exhibit": {
+          "name": "tm2622322d1_ex99-1.htm",
+          "type": "EX-99.1",
+          "kb": 101
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "JANX": {
+      "company_name": "Janux Therapeutics, Inc.",
+      "cik": "0001817713",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (janx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001193125-26-337977",
+          "form": "8-K",
+          "primary_doc": "janx-20260806.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Janux Therapeutics Reports Second Quarter 2026 Financial Results and Business Highlights \u2022 JANX007 Phase 1b enrollment continues across taxane-na\u00efve monotherapy and darolutamide combination cohorts \u2022 ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 209
+          }
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001193125-26-211964",
+          "form": "8-K",
+          "primary_doc": "janx-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Janux Therapeutics Reports First Quarter 2026 Financial Results and Business Highlights \u2022 JANX007 continues to enroll in its Phase 1b taxane-na\u00efve patient population, including combination cohorts wit",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 174
+          }
+        },
+        {
+          "filing_date": "2026-02-26",
+          "accession": "0001193125-26-076627",
+          "form": "8-K",
+          "primary_doc": "janx-20260226.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 57,
+          "heading": "Janux Therapeutics Reports Fourth Quarter and Full Year 2025 Financial Results and Business Highlights \u2022 Continued clinical execution across TRACTr programs JANX007 and JANX008 \u2022 JANX007 enrolling in ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 208
+          }
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001193125-25-269518",
+          "form": "8-K",
+          "primary_doc": "janx-20251106.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 37,
+          "heading": "Janux Therapeutics Reports Third Quarter 2025 Financial Results and Business Highlights \u2022 Enrollment ongoing for JANX007 and JANX008 \u2022 Updates on JANX007 and JANX008 expected in the fourth quarter of ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 197
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0000950170-25-105010",
+          "form": "8-K",
+          "primary_doc": "janx-20250807.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Janux Therapeutics Reports Second Quarter 2025 Financial Results and Business Highlights \u2022 R&D Day highlighted TRACTr, TRACIr, and ARM pipeline progress and best-in-class potential of novel bispecific",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 203
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0000950170-25-066969",
+          "form": "8-K",
+          "primary_doc": "janx-20250508.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Janux Therapeutics Reports First Quarter 2025 Financial Results and Business Highlights \u2022 Phase 1b expansion study initiated with JANX007 in taxane-na\u00efve mCRPC patients \u2022 Updated JANX007 data from Pha",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 157
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0000950170-25-029165",
+          "form": "8-K",
+          "primary_doc": "janx-20250227.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Janux Therapeutics Reports Fourth Quarter and Full Year 2024 Financial Results and Business Highlights \u2022 Recently presented positive Phase 1 clinical trial data for PSMA-TRACTr JANX007 in mCRPC \u2022 Enro",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 195
+          }
+        },
+        {
+          "filing_date": "2024-11-06",
+          "accession": "0000950170-24-122279",
+          "form": "8-K",
+          "primary_doc": "janx-20241106.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 37,
+          "heading": "Janux Therapeutics Reports Third Quarter 2024 Financial Results and Business Highlights \u2022 Enrollment ongoing for PSMA-TRACTr (JANX007) in prostate cancer and EGFR-TRACTr (JANX008) in solid tumors \u2022 Up",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 144
+          }
+        },
+        {
+          "filing_date": "2024-08-07",
+          "accession": "0000950170-24-092830",
+          "form": "8-K",
+          "primary_doc": "janx-20240807.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Janux Therapeutics Reports Second Quarter 2024 Financial Results and Business Highlights \u2022 Enrollment ongoing for PSMA-TRACTr (JANX007) in prostate cancer and EGFR-TRACTr (JANX008) in solid tumors \u2022 U",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 152
+          }
+        },
+        {
+          "filing_date": "2024-05-08",
+          "accession": "0000950170-24-054950",
+          "form": "8-K",
+          "primary_doc": "janx-20240507.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Janux Therapeutics Reports First Quarter 2024 Financial Results and Business Highlights \u2022 Enrollment ongoing for PSMA-TRACTr (JANX007) in prostate cancer \u2022 Enrollment ongoing for EGFR-TRACTr (JANX008)",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 118
+          }
+        },
+        {
+          "filing_date": "2024-03-08",
+          "accession": "0000950170-24-028647",
+          "form": "8-K",
+          "primary_doc": "janx-20240308.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 68,
+          "heading": "Janux Therapeutics Reports Fourth Quarter and Full Year 2023 Financial Results and Business Highlights \u2022 Recently presented positive Phase 1 clinical trial data for PSMA-TRACTr JANX007 in mCRPC and fo",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 157
+          }
+        },
+        {
+          "filing_date": "2023-11-07",
+          "accession": "0000950170-23-060238",
+          "form": "8-K",
+          "primary_doc": "janx-20231107.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 38,
+          "heading": "Janux Therapeutics Reports Third Quarter 2023 Financial Results and Business Highlights \u2022 Enrollment ongoing for PSMA-TRACTr (JANX007) in prostate cancer \u2022 Enrollment ongoing for EGFR-TRACTr (JANX008)",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "janx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 202
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2023-07-17",
+          "accession": "0001193125-23-187702",
+          "kind": "other",
+          "heading": "Janux Therapeutics Announces Positive Interim Clinical Data from Phase 1a Dose Escalation for PSMA-TRACTr JANX007 and an"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 38,
+        "min": 37,
+        "max": 68,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-06",
+        "accession": "0001193125-26-337977",
+        "results_exhibit": {
+          "name": "janx-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 209
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "JSPR": {
+      "company_name": "Jasper Therapeutics, Inc.",
+      "cik": "0001788028",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (ea0282128-10k_jasper.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-14",
+          "accession": "0001213900-26-090055",
+          "form": "8-K",
+          "primary_doc": "ea0302049-8k_jasper.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 45,
+          "heading": "Jasper Therapeutics Reports Second Quarter 2026 Financial Results and Provides Corporate Update Acquisition of Kira Pharmaceuticals closed in July creating a combined company with a robust portfolio o",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea030204901ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 56
+          }
+        },
+        {
+          "filing_date": "2026-05-14",
+          "accession": "0001213900-26-056596",
+          "form": "8-K",
+          "primary_doc": "ea0290792-8k_jasper.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 44,
+          "heading": "Jasper Therapeutics Reports First Quarter 2026 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., May 14, 2026 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jasper), ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea029079201ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 45
+          }
+        },
+        {
+          "filing_date": "2026-03-30",
+          "accession": "0001213900-26-036448",
+          "form": "8-K",
+          "primary_doc": "ea0283364-8k_jasper.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 89,
+          "heading": "Jasper Therapeutics Reports Fourth Quarter and Year-End 2025 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., March 30, 2026 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea028336401ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 69
+          }
+        },
+        {
+          "filing_date": "2025-11-10",
+          "accession": "0001213900-25-107874",
+          "form": "8-K",
+          "primary_doc": "ea0264586-8k_jasper.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 41,
+          "heading": "Jasper Therapeutics Reports Third Quarter 2025 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., November 10, 2025 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jasp",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea026458601ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 71
+          }
+        },
+        {
+          "filing_date": "2025-08-13",
+          "accession": "0001213900-25-075678",
+          "form": "8-K",
+          "primary_doc": "ea0252991-8k_jasper.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 44,
+          "heading": "Jasper Therapeutics Reports Second Quarter 2025 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., August 13, 2025 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jaspe",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea025299101ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 61
+          }
+        },
+        {
+          "filing_date": "2025-05-12",
+          "accession": "0001213900-25-042017",
+          "form": "8-K",
+          "primary_doc": "ea0241732-8k_jasper.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 42,
+          "heading": "Jasper Therapeutics Reports First Quarter 2025 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., May 12, 2025 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jasper), ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea024173201ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 51
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0001213900-25-017656",
+          "form": "8-K",
+          "primary_doc": "ea0232349-8k_jasper.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Jasper Therapeutics Reports Fourth Quarter and Full-Year 2024 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., February 27, 2025 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasd",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea023234901ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 65
+          }
+        },
+        {
+          "filing_date": "2024-11-07",
+          "accession": "0001213900-24-095175",
+          "form": "8-K",
+          "primary_doc": "ea0220162-8k_jasper.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Jasper Therapeutics Reports Third Quarter 2024 Financial Results and Provides Corporate Update REDWOOD CITY, Calif., November 7, 2024 (GLOBE NEWSWIRE) \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jaspe",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea0220162ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 64
+          }
+        },
+        {
+          "filing_date": "2024-03-04",
+          "accession": "0001213900-24-019249",
+          "form": "8-K",
+          "primary_doc": "ea0201079-8k_jasper.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 64,
+          "heading": "Jasper Therapeutics Reports Fiscal 2023 Financial Results and Recent Corporate Developments REDWOOD CITY, Calif., March 4, 2024 \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jasper), a biotechnology com",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea0201079ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 87
+          }
+        },
+        {
+          "filing_date": "2023-11-09",
+          "accession": "0001213900-23-084938",
+          "form": "8-K",
+          "primary_doc": "ea187963-8k_jasper.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 40,
+          "heading": "Jasper Therapeutics Reports Third Quarter 2023 Financial Results and Provides Business Update REDWOOD CITY, Calif., November 9, 2023 \u2013 Jasper Therapeutics, Inc. (Nasdaq: JSPR) (Jasper), a biotechnolog",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea187963ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 58
+          }
+        },
+        {
+          "filing_date": "2023-08-11",
+          "accession": "0001213900-23-066233",
+          "form": "8-K",
+          "primary_doc": "ea183229-8k_jasperthera.htm",
+          "quarter_end": "2023-06-30",
+          "period_label": "2Q23",
+          "days_after_quarter_end": 42,
+          "heading": "Jasper Therapeutics Reports Second Quarter 2023 Financial Results and Provides a Business Update \u25cf First Patient Dosed in Phase 1 trial of Briquilimab in Lower-Risk Myelodysplastic Syndrome \u25cf Strength",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea183229ex99-1_jasperthera.htm",
+            "type": "EX-99.1",
+            "kb": 73
+          }
+        },
+        {
+          "filing_date": "2023-05-12",
+          "accession": "0001213900-23-038997",
+          "form": "8-K",
+          "primary_doc": "ea178442-8k_jasper.htm",
+          "quarter_end": "2023-03-31",
+          "period_label": "1Q23",
+          "days_after_quarter_end": 42,
+          "heading": ". Exhibit 99.1 Jasper Therapeutics Reports First Quarter 2023 Financial Results and Provides a Business Update \u25cf Announced Planned Development Expansion of Briquilimab in Chronic Spontaneous Urticaria",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "ea178442ex99-1_jasper.htm",
+            "type": "EX-99.1",
+            "kb": 68
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 44,
+        "min": 38,
+        "max": 89,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-14",
+        "accession": "0001213900-26-090055",
+        "results_exhibit": {
+          "name": "ea030204901ex99-1.htm",
+          "type": "EX-99.1",
+          "kb": 56
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "KURA": {
+      "company_name": "Kura Oncology, Inc.",
+      "cik": "0001422143",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (kura-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-12",
+          "accession": "0001193125-26-346856",
+          "form": "8-K",
+          "primary_doc": "kura-20260812.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 43,
+          "heading": "Kura Oncology Reports SECOND Quarter 2026 Financial Results \u2013 KOMZIFTI\u00ae(ziftomenib) generated $9.1 million in net product revenue, up 57% over 1Q, and approximately 115 new patient starts, up 35% over",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 267
+          }
+        },
+        {
+          "filing_date": "2026-05-12",
+          "accession": "0001193125-26-219422",
+          "form": "8-K",
+          "primary_doc": "kura-20260512.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 42,
+          "heading": "Kura Oncology Reports FIRST Quarter 2026 Financial Results \u2013 $5.8 million in KOMZIFTI\u2122 (ziftomenib) net product revenue in first full quarter of commercialization \u2013 \u2013 Robust new patient starts and ear",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 192
+          }
+        },
+        {
+          "filing_date": "2026-03-05",
+          "accession": "0001193125-26-092465",
+          "form": "8-K",
+          "primary_doc": "kura-20260305.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 64,
+          "heading": "Kura Oncology Reports Fourth Quarter and full year 2025 Financial Results \u2013 KOMZIFTI\u2122 (ziftomenib) launch generating early revenue momentum and rapid payer coverage decisions \u2013 \u2013 Market feedback empha",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 237
+          }
+        },
+        {
+          "filing_date": "2025-11-04",
+          "accession": "0001193125-25-263491",
+          "form": "8-K",
+          "primary_doc": "kura-20251104.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 35,
+          "heading": "Kura Oncology Reports Third Quarter 2025 Financial Results \u2013 KOMET 017 Phase 3 trials to evaluate ziftomenib in combination with intensive and non-intensive chemotherapy in frontline AML are accelerat",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 177
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0000950170-25-105024",
+          "form": "8-K",
+          "primary_doc": "kura-20250807.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Kura Oncology Reports Second Quarter 2025 Financial Results \u2013 FDA Priority Review of New Drug Application (NDA) for ziftomenib in adults with R/R NPM1-m AML with Prescription Drug User Fee Act (PDUFA)",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 168
+          }
+        },
+        {
+          "filing_date": "2025-05-01",
+          "accession": "0000950170-25-061836",
+          "form": "8-K",
+          "primary_doc": "kura-20250501.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 31,
+          "heading": "Kura Oncology Reports First Quarter 2025 Financial Results \u2013 NDA submitted in 1Q 2025 for ziftomenib for the treatment of adult patients with relapsed or refractory AML with an NPM1 mutation \u2013 \u2013 Data ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 134
+          }
+        },
+        {
+          "filing_date": "2025-02-26",
+          "accession": "0000950170-25-027706",
+          "form": "8-K",
+          "primary_doc": "kura-20250226.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 57,
+          "heading": "Kura Oncology Reports Fourth Quarter and Full Year 2024 Financial Results \u2013 KOMET-001 registrational trial in R/R NPM1-mutant AML achieved primary endpoint \u2013 \u2013 Alignment reached with FDA and EMA on ke",
+          "period_basis": "heading",
+          "items": "2.02",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 173
+          }
+        },
+        {
+          "filing_date": "2024-11-07",
+          "accession": "0000950170-24-123321",
+          "form": "8-K",
+          "primary_doc": "kura-20241107.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Kura Oncology Reports Third Quarter 2024 Financial Results \u2013 Topline results from registration-directed trial of ziftomenib in R/R NPM1-mutant AML expected in early 2025; Phase 1 results published in ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 125
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0000950170-24-093945",
+          "form": "8-K",
+          "primary_doc": "kura-20240808.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Kura Oncology Reports Second Quarter 2024 Financial Results \u2013 Topline data from registration-directed trial of ziftomenib in R/R NPM1-mutant AML expected in early 2025 \u2013 \u2013 Breakthrough Therapy Designa",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 123
+          }
+        },
+        {
+          "filing_date": "2024-05-02",
+          "accession": "0000950170-24-052109",
+          "form": "8-K",
+          "primary_doc": "kura-20240502.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 32,
+          "heading": "Kura Oncology Reports First Quarter 2024 Financial Results \u2013 Breakthrough Therapy Designation for ziftomenib in NPM1-mutant AML \u2013 \u2013 Registration-directed trial of ziftomenib in NPM1-mutant AML on trac",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 98
+          }
+        },
+        {
+          "filing_date": "2024-02-27",
+          "accession": "0000950170-24-021087",
+          "form": "8-K",
+          "primary_doc": "kura-20240227.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 58,
+          "heading": "Kura Oncology Reports Fourth Quarter and Full Year 2023 Financial Results \u2013 Positive preliminary combination data from KOMET-007 trial of ziftomenib in NPM1-m and KMT2A-r AML, including effective miti",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 131
+          }
+        },
+        {
+          "filing_date": "2023-11-02",
+          "accession": "0000950170-23-058157",
+          "form": "8-K",
+          "primary_doc": "kura-20231102.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 33,
+          "heading": "Kura Oncology Reports Third Quarter 2023 Financial Results \u2013 Completion of enrollment in KOMET-001 registration-directed trial of ziftomenib in NPM1-mutant AML expected by mid-2024 \u2013 \u2013 Preliminary dat",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kura-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 156
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-12",
+          "accession": "0001193125-26-009649",
+          "kind": "preliminary",
+          "heading": "Kura Oncology Highlights Recent Accomplishments, Preliminary KOMZIFTI Revenue and Anticipated 2026 Milestones \u2013 Launched"
+        },
+        {
+          "filing_date": "2024-01-30",
+          "accession": "0001193125-24-018713",
+          "kind": "preliminary",
+          "heading": "DEVELOPING PRECISION MEDICINES FOR THE TREATMENT OF CANCER Preliminary Data from KOMET-007 \u2013 January 30, 2024 WELCOME AN"
+        },
+        {
+          "filing_date": "2023-01-09",
+          "accession": "0001193125-23-004159",
+          "kind": "other",
+          "heading": "DEVELOPING PRECISION MEDICINES FOR THE TREATMENT OF CANCER Corporate Presentation \u2013 January 2023 Exhibit 99.1 FORWARD-LO"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 39,
+        "min": 31,
+        "max": 64,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-12",
+        "accession": "0001193125-26-346856",
+        "results_exhibit": {
+          "name": "kura-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 267
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "KYMR": {
+      "company_name": "Kymera Therapeutics, Inc.",
+      "cik": "0001815442",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (kymr-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-05",
+          "accession": "0001193125-26-333834",
+          "form": "8-K",
+          "primary_doc": "kymr-20260805.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 36,
+          "heading": "Kymera Therapeutics Announces Second Quarter 2026 Financial Results and Provides a Business Update Enrollment completed in KT-621 (STAT6) BROADEN2 Phase 2b AD trial nearly six months ahead of anticipa",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 170
+          }
+        },
+        {
+          "filing_date": "2026-04-30",
+          "accession": "0001193125-26-193957",
+          "form": "8-K",
+          "primary_doc": "kymr-20260430.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 30,
+          "heading": "Kymera Therapeutics Announces First Quarter 2026 Financial Results and Provides a Business Update KT-621 (STAT6) parallel Phase 2b trials, BROADEN2 in atopic dermatitis and BREADTH in asthma, ongoing ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 137
+          }
+        },
+        {
+          "filing_date": "2026-02-26",
+          "accession": "0001193125-26-073386",
+          "form": "8-K",
+          "primary_doc": "kymr-20260226.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 57,
+          "heading": "Kymera Therapeutics Announces Fourth Quarter and Full Year 2025 Financial Results and Provides a Business Update KT-621 (STAT6) BROADEN2 Phase 2b trial in atopic dermatitis (AD) ongoing, with data exp",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 158
+          }
+        },
+        {
+          "filing_date": "2025-11-04",
+          "accession": "0001193125-25-263540",
+          "form": "8-K",
+          "primary_doc": "kymr-20251104.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 35,
+          "heading": "Kymera Therapeutics Announces Third Quarter 2025 Financial Results and Provides a Business Update Enrollment and dosing completed in KT-621 (STAT6) BroADen Phase 1b trial in atopic dermatitis (AD) pat",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 150
+          }
+        },
+        {
+          "filing_date": "2025-08-11",
+          "accession": "0000950170-25-106227",
+          "form": "8-K",
+          "primary_doc": "kymr-20250811.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 42,
+          "heading": "Kymera Therapeutics Announces Second Quarter 2025 Financial Results and Provides a Business Update Reported positive KT-621 (STAT6) Phase 1 healthy volunteer data surpassing Kymera\u2019s target product pr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 161
+          }
+        },
+        {
+          "filing_date": "2025-05-09",
+          "accession": "0001193125-25-116443",
+          "form": "8-K",
+          "primary_doc": "d27625d8k.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 39,
+          "heading": "Kymera Therapeutics Announces First Quarter 2025 Financial Results and Provides a Business Update Completed KT-621 (STAT6) SAD/MAD Phase 1 healthy volunteer trial with data to be reported in June 2025",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "d27625dex991.htm",
+            "type": "EX-99.1",
+            "kb": 58
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0001193125-25-037588",
+          "form": "8-K",
+          "primary_doc": "d922874d8k.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Kymera Therapeutics Announces Fourth Quarter and Full Year 2024 Financial Results and Provides a Business Update KT-621 (STAT6) Phase 1 healthy volunteer trial ongoing, complete SAD/MAD data expected ",
+          "period_basis": "heading",
+          "items": "2.02,5.02,9.01",
+          "results_exhibit": {
+            "name": "d922874dex991.htm",
+            "type": "EX-99.1",
+            "kb": 63
+          }
+        },
+        {
+          "filing_date": "2024-10-31",
+          "accession": "0000950170-24-119245",
+          "form": "8-K",
+          "primary_doc": "kymr-20241031.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 31,
+          "heading": "Kymera Therapeutics Announces Third Quarter 2024 Financial Results and Provides a Business Update KT-621 (STAT6) IND cleared by FDA and dosing in the Phase 1 clinical trial initiated, with data expect",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 140
+          }
+        },
+        {
+          "filing_date": "2024-08-07",
+          "accession": "0000950170-24-092272",
+          "form": "8-K",
+          "primary_doc": "kymr-20240807.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Kymera Therapeutics Announces Second Quarter 2024 Financial Results and Provides a Business Update Sanofi plans to expand KT-474/SAR444656 (IRAK4) Phase 2 clinical trials in HS and AD to accelerate ov",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 139
+          }
+        },
+        {
+          "filing_date": "2024-05-02",
+          "accession": "0000950170-24-051566",
+          "form": "8-K",
+          "primary_doc": "kymr-20240502.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 32,
+          "heading": "Kymera Therapeutics Announces First Quarter 2024 Financial Results and Provides a Business Update KT-474/SAR444656 (IRAK4) Phase 2 clinical trials ongoing in HS and AD with data expected in the first ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 105
+          }
+        },
+        {
+          "filing_date": "2024-02-22",
+          "accession": "0000950170-24-018413",
+          "form": "8-K",
+          "primary_doc": "kymr-20240222.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 53,
+          "heading": "Kymera Therapeutics Announces Fourth Quarter and Full Year 2023 Financial Results and Provides a Business Update KT-474/SAR444656 (IRAK4) Phase 2 program advancing in HS and AD with data expected in f",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "kymr-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 144
+          }
+        },
+        {
+          "filing_date": "2023-11-02",
+          "accession": "0001193125-23-268815",
+          "form": "8-K",
+          "primary_doc": "d579034d8k.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 33,
+          "heading": "Kymera Therapeutics Announces Third Quarter 2023 Financial Results and Provides a Business Update First patient dosed in KT-474/SAR444656 (IRAK4) Phase 2 HS clinical trial, generating a $40 million mi",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "d579034dex991.htm",
+            "type": "EX-99.1",
+            "kb": 67
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-13",
+          "accession": "0001193125-26-011104",
+          "kind": "preliminary",
+          "heading": "Kymera Therapeutics Outlines Key 2026 Objectives and Strategy to Advance Industry Leading Portfolio of Oral Immunology P"
+        },
+        {
+          "filing_date": "2025-01-14",
+          "accession": "0001193125-25-006124",
+          "kind": "preliminary",
+          "heading": "Kymera Therapeutics Outlines Key 2025 Objectives and Strategy to Advance Industry Leading Portfolio of Oral Immunology P"
+        },
+        {
+          "filing_date": "2024-01-05",
+          "accession": "0001193125-24-003373",
+          "kind": "other",
+          "heading": "Kymera Therapeutics Announces Proposed Public Offering Watertown, Mass. (January 4, 2024) \u2013 Kymera Therapeutics, Inc. (N"
+        },
+        {
+          "filing_date": "2023-01-10",
+          "accession": "0001193125-23-005171",
+          "kind": "preliminary",
+          "heading": "Kymera Therapeutics Shares Key 2023 Goals to Support its Evolution into a Fully Integrated Degrader Medicines Company WA"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 38,
+        "min": 30,
+        "max": 58,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-05",
+        "accession": "0001193125-26-333834",
+        "results_exhibit": {
+          "name": "kymr-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 170
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "NRIX": {
+      "company_name": "Nurix Therapeutics, Inc.",
+      "cik": "0001549595",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "11-30",
+      "fiscal_year_end_source": "latest 10-K period 2025-11-30 (nrix-20251130.htm)",
+      "fye_month": 11,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-07-09",
+          "accession": "0001549595-26-000038",
+          "form": "8-K",
+          "primary_doc": "nrix-20260709.htm",
+          "quarter_end": "2026-05-31",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 39,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Second Quarter 2026 Financial Results and Provides Corporate Update Entered into global collaboration with Roche for bexobrutideg, with potential total payments",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20260709xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 96
+          }
+        },
+        {
+          "filing_date": "2026-04-08",
+          "accession": "0001549595-26-000024",
+          "form": "8-K",
+          "primary_doc": "nrix-20260408.htm",
+          "quarter_end": "2026-02-28",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 39,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports First Quarter 2026 Financial Results and Provides a Corporate Update Enrolling Phase 2 DAYBreak CLL-201 bexobrutideg trial designed to support Accelerated Appro",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20260408xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2026-01-28",
+          "accession": "0001549595-26-000013",
+          "form": "8-K",
+          "primary_doc": "nrix-20260128.htm",
+          "quarter_end": "2025-11-30",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 59,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Fourth Quarter and Fiscal Year 2025 Financial Results and Provides a Corporate Update First patients dosed in DAYBreak\u2122 registrational program for bexobrutideg ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20260128xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 101
+          }
+        },
+        {
+          "filing_date": "2025-10-09",
+          "accession": "0001549595-25-000112",
+          "form": "8-K",
+          "primary_doc": "nrix-20251009.htm",
+          "quarter_end": "2025-08-31",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 39,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Third Quarter 2025 Financial Results and Provides a Corporate Update Announced clinical development plans for bexobrutideg, including the initiation of pivotal ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20251009xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 89
+          }
+        },
+        {
+          "filing_date": "2025-07-09",
+          "accession": "0001549595-25-000094",
+          "form": "8-K",
+          "primary_doc": "nrix-20250709.htm",
+          "quarter_end": "2025-05-31",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 39,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Second Quarter 2025 Financial Results and Provides a Corporate Update Presented updated data for bexobrutideg (NX-5948) at EHA2025 and ICML-18, demonstrating a ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20250709xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 93
+          }
+        },
+        {
+          "filing_date": "2025-04-08",
+          "accession": "0001549595-25-000053",
+          "form": "8-K",
+          "primary_doc": "nrix-20250408.htm",
+          "quarter_end": "2025-02-28",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 39,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports First Quarter 2025 Financial Results and Provides a Corporate Update NX-5948 assigned the nonproprietary name \u201cbexobrutideg\u201d U.S. FDA Orphan Drug Designation gr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20250408xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 81
+          }
+        },
+        {
+          "filing_date": "2025-01-28",
+          "accession": "0001549595-25-000014",
+          "form": "8-K",
+          "primary_doc": "nrix-20250128.htm",
+          "quarter_end": "2024-11-30",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 59,
+          "heading": "[Nurix logo] Exhibit 99.1 Nurix Therapeutics Reports Fourth Quarter and Fiscal Year 2024 Financial Results and Provides a Corporate Update Reported a robust objective response rate of 75.5% from the P",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20250128xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 97
+          }
+        },
+        {
+          "filing_date": "2024-10-11",
+          "accession": "0001549595-24-000130",
+          "form": "8-K",
+          "primary_doc": "nrix-20241011.htm",
+          "quarter_end": "2024-08-31",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 41,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Third Quarter Fiscal 2024 Financial Results and Provides a Corporate Update Initiated Phase 1b dose expansion of NX-5948 in chronic lymphocytic leukemia patient",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20241010xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 91
+          }
+        },
+        {
+          "filing_date": "2024-07-11",
+          "accession": "0001549595-24-000097",
+          "form": "8-K",
+          "primary_doc": "nrix-20240711.htm",
+          "quarter_end": "2024-05-31",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 41,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Second Quarter Fiscal 2024 Financial Results and Provides a Corporate Update Presented positive clinical data at the European Hematology Association Congress su",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "nrix-20240711xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 91
+          }
+        },
+        {
+          "filing_date": "2024-04-10",
+          "accession": "0001549595-24-000048",
+          "form": "8-K",
+          "primary_doc": "nrix-20240410.htm",
+          "quarter_end": "2024-02-29",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 41,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports First Quarter Fiscal 2024 Financial Results and Provides a Corporate Update Extended the Strategic Collaboration with Gilead Sciences Extended the Strategic Col",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20240410xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2024-02-15",
+          "accession": "0001549595-24-000024",
+          "form": "8-K",
+          "primary_doc": "nrix-20240215.htm",
+          "quarter_end": "2023-11-30",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 77,
+          "heading": "[Nurix logo] Nurix Therapeutics Reports Fourth Quarter and Fiscal Year 2023 Financial Results and Provides a Corporate Update NX-5948 received fast track designation from the FDA NX-5948 showed positi",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nrix-20240215xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 91
+          }
+        },
+        {
+          "filing_date": "2023-10-12",
+          "accession": "0001549595-23-000046",
+          "form": "8-K",
+          "primary_doc": "nrix-20231012.htm",
+          "quarter_end": "2023-08-31",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 42,
+          "heading": "Nurix Therapeutics Reports Third Quarter Fiscal 2023 Financial Results and Provides a Corporate Update Announced strategic collaboration with Seagen to develop a portfolio of Degrader-Antibody Conjuga",
+          "period_basis": "heading",
+          "items": "2.02",
+          "results_exhibit": {
+            "name": "nrix-20231012xexx991.htm",
+            "type": "EX-99.1",
+            "kb": 86
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2025-01-13",
+          "accession": "0001549595-25-000005",
+          "kind": "preliminary",
+          "heading": "[Nurix Logo] Nurix Therapeutics Outlines 2025 Goals and Objectives for Advancement of Its Robust Pipeline in Cancer and "
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 41,
+        "min": 39,
+        "max": 77,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-05-31",
+        "filing_date": "2026-07-09",
+        "accession": "0001549595-26-000038",
+        "results_exhibit": {
+          "name": "nrix-20260709xexx991.htm",
+          "type": "EX-99.1",
+          "kb": 96
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "SMMT": {
+      "company_name": "Summit Therapeutics Inc.",
+      "cik": "0001599298",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (smmt-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-07-23",
+          "accession": "0001599298-26-000067",
+          "form": "8-K",
+          "primary_doc": "smmt-20260723.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 23,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Second Quarter and Six Months Ended June 30, 2026 Consistent Overall Survival Observed in Western, Asian Patients in Upda",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "a2026_prx0723xq22026earn.htm",
+            "type": "EX-99.1",
+            "kb": 37
+          }
+        },
+        {
+          "filing_date": "2026-04-30",
+          "accession": "0001599298-26-000037",
+          "form": "8-K",
+          "primary_doc": "smmt-20260430.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 30,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the First Quarter Ended March 31, 2026 Overall Survival Data to be Featured at ASCO 2026 Plenary Session as Late-Breaking Abs",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "a2026_prx0506xq12026earn.htm",
+            "type": "EX-99.1",
+            "kb": 32
+          }
+        },
+        {
+          "filing_date": "2026-02-23",
+          "accession": "0001599298-26-000014",
+          "form": "8-K",
+          "primary_doc": "smmt-20260223.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 54,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Fourth Quarter and Year Ended December 31, 2025 HARMONi-3 Squamous Cohort of Global Phase III 1L NSCLC Study: Interim PFS",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "a2026_prx0223xq4ye2025ea.htm",
+            "type": "EX-99.1",
+            "kb": 33
+          }
+        },
+        {
+          "filing_date": "2025-10-20",
+          "accession": "0001599298-25-000156",
+          "form": "8-K",
+          "primary_doc": "smmt-20251017.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 20,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Third Quarter and Nine Months Ended September 30, 2025 Summit Plans to Submit a BLA in Q4 2025 for Ivonescimab based on H",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "a2025_prx1020xq32025earn.htm",
+            "type": "EX-99.1",
+            "kb": 43
+          }
+        },
+        {
+          "filing_date": "2025-08-11",
+          "accession": "0001599298-25-000128",
+          "form": "8-K",
+          "primary_doc": "smmt-20250811.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 42,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Second Quarter Ended June 30, 2025 Ivonescimab in Combination with Chemotherapy Showed Statistically Significant and Clin",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "a2025_prx0811xq22025earn.htm",
+            "type": "EX-99.1",
+            "kb": 38
+          }
+        },
+        {
+          "filing_date": "2025-05-01",
+          "accession": "0001599298-25-000088",
+          "form": "8-K",
+          "primary_doc": "smmt-20250501.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 31,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the First Quarter Ended March 31, 2025 Ivonescimab in Combination with Chemotherapy Achieves Statistically Significant Superi",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "a2025_prx0501xq12025earn.htm",
+            "type": "EX-99.1",
+            "kb": 34
+          }
+        },
+        {
+          "filing_date": "2025-02-24",
+          "accession": "0001599298-25-000044",
+          "form": "8-K",
+          "primary_doc": "smmt-20250224.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 55,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Fourth Quarter and Twelve Months Ended December 31, 2024 Clinical Trial Collaboration with Pfizer Evaluating Ivonescimab ",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "pressreleaseq4december20.htm",
+            "type": "EX-99.1",
+            "kb": 30
+          }
+        },
+        {
+          "filing_date": "2024-10-30",
+          "accession": "0001599298-24-000156",
+          "form": "8-K",
+          "primary_doc": "smmt-20241030.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 30,
+          "heading": "Summit Therapeutics Reports Operational Progress and Financial Results for the Third Quarter and Nine Months Ended September 30, 2024 Ivonescimab Monotherapy Became First Drug to Achieve Clinically Me",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "a2024_prx1030xq32024earn.htm",
+            "type": "EX-99.1",
+            "kb": 39
+          }
+        },
+        {
+          "filing_date": "2024-08-06",
+          "accession": "0001599298-24-000113",
+          "form": "8-K",
+          "primary_doc": "smmt-20240806.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 37,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Second Quarter and Six Months Ended June 30, 2024 Ivonescimab Monotherapy Achieved Statistically Significant & Clinically",
+          "period_basis": "heading",
+          "items": "2.02,7.01,9.01",
+          "results_exhibit": {
+            "name": "pressreleaseq2june2024.htm",
+            "type": "EX-99.1",
+            "kb": 186
+          }
+        },
+        {
+          "filing_date": "2024-05-01",
+          "accession": "0001599298-24-000087",
+          "form": "8-K",
+          "primary_doc": "smmt-20240501.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 31,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the First Quarter Ended March 31, 2024 HARMONi and HARMONi-3 Enrollment Continues Promising Intracranial Anti-Tumor Activity ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "pressreleaseq1march2024.htm",
+            "type": "EX-99.1",
+            "kb": 151
+          }
+        },
+        {
+          "filing_date": "2024-02-20",
+          "accession": "0001599298-24-000032",
+          "form": "8-K",
+          "primary_doc": "smmt-20240220.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 51,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Fourth Quarter and Year Ended December 31, 2023 Actively Enrolling Two Phase III Clinical Studies in NSCLC for Ivonescima",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "pressreleaseq4december2023.htm",
+            "type": "EX-99.1",
+            "kb": 172
+          }
+        },
+        {
+          "filing_date": "2023-11-07",
+          "accession": "0001599298-23-000096",
+          "form": "8-K",
+          "primary_doc": "smmt-20231107.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 38,
+          "heading": "Summit Therapeutics Reports Financial Results and Operational Progress for the Third Quarter and Nine Months Ended September 30, 2023 Enrollment Initiated in Second Phase III Clinical Study for Ivones",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "pressreleaseq3september2023.htm",
+            "type": "EX-99.1",
+            "kb": 88
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-12",
+          "accession": "0001599298-26-000004",
+          "kind": "other",
+          "heading": "th Annual J.P. Morgan Healthcare Conference January 12, 2026 BOB DUGGAN Chairman & Co-Chief Executive Officer DR. MAKY Z"
+        },
+        {
+          "filing_date": "2025-01-13",
+          "accession": "0001599298-25-000034",
+          "kind": "other",
+          "heading": "rd Annual J.P. Morgan Healthcare Conference January 13, 2025 Mission Vision BOB DUGGAN, Chairman & CEO DR. MAKY ZANGANEH"
+        },
+        {
+          "filing_date": "2024-01-08",
+          "accession": "0001599298-24-000019",
+          "kind": "other",
+          "heading": "Summit Therapeutics Announces Updated Phase II Data for Ivonescimab at 42nd Annual J.P. Morgan Healthcare Conference Pha"
+        },
+        {
+          "filing_date": "2023-08-02",
+          "accession": "0001599298-23-000069",
+          "kind": "advisory",
+          "heading": "Summit Therapeutics to Host Q2 2023 Financial Results & Operational Progress Call on August 9, 2023 Conference Call to b"
+        },
+        {
+          "filing_date": "2023-01-09",
+          "accession": "0001599298-23-000009",
+          "kind": "other",
+          "heading": "J.P. Morgan 41st Annual Healthcare Conference 2023 Bob Duggan Dr. Maky Zanganeh Chairman & CEO Co-CEO, President & Board"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 37,
+        "min": 20,
+        "max": 55,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-07-23",
+        "accession": "0001599298-26-000067",
+        "results_exhibit": {
+          "name": "a2026_prx0723xq22026earn.htm",
+          "type": "EX-99.1",
+          "kb": 37
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "SNDX": {
+      "company_name": "Syndax Pharmaceuticals Inc",
+      "cik": "0001395937",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (sndx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-04",
+          "accession": "0001193125-26-332736",
+          "form": "8-K",
+          "primary_doc": "sndx-20260804.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 35,
+          "heading": "Syndax Reports Second Quarter 2026 Financial Results and Provides Business Update \u2022 Total revenue of $73 million in 2Q26, a 92% year-over-year increase \u2013 \u2022 Revuforj\u00ae (revumenib) net revenue of $54.7 m",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 284
+          }
+        },
+        {
+          "filing_date": "2026-04-30",
+          "accession": "0001193125-26-197124",
+          "form": "8-K",
+          "primary_doc": "sndx-20260430.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 30,
+          "heading": "Syndax Reports First Quarter 2026 Financial Results and Provides Business Update \u2022 Total revenue of $64.9 million in 1Q26, a 224% year-over-year increase \u2013 \u2022 Revuforj\u00ae (revumenib) net revenue of $48.9",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 206
+          }
+        },
+        {
+          "filing_date": "2026-02-26",
+          "accession": "0001193125-26-076522",
+          "form": "8-K",
+          "primary_doc": "sndx-20260226.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 57,
+          "heading": "Syndax Reports Fourth Quarter and Full Year 2025 Financial Results and Provides Business Update \u2022 Total revenue of $68.7 million in 4Q25 and $172.4 million in FY2025 \u2013 \u2022 Revuforj\u00ae (revumenib) net reve",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 265
+          }
+        },
+        {
+          "filing_date": "2025-11-03",
+          "accession": "0001193125-25-262509",
+          "form": "8-K",
+          "primary_doc": "sndx-20251103.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 34,
+          "heading": "Syndax Reports Third Quarter 2025 Financial Results and Provides Business Update \u2022 $45.9 million in total revenue, representing 21% growth over 2Q25 \u2013 \u2022 $32.0 million Revuforj\u00ae (revumenib) net revenue",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 254
+          }
+        },
+        {
+          "filing_date": "2025-08-04",
+          "accession": "0000950170-25-101974",
+          "form": "8-K",
+          "primary_doc": "sndx-20250804.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 35,
+          "heading": "Syndax Reports Second Quarter 2025 Financial Results and Provides Business Update \u2022 $28.6 million of Revuforj\u00ae (revumenib) net revenue, representing 43% growth over 1Q25 \u2013 \u2022 $36.2 million of Niktimvo\u2122",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 260
+          }
+        },
+        {
+          "filing_date": "2025-05-05",
+          "accession": "0000950170-25-063514",
+          "form": "8-K",
+          "primary_doc": "sndx-20250505.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 35,
+          "heading": "Syndax Reports First Quarter 2025 Financial Results and Provides Business Update \u2022 $20.0 million in Revuforj\u00ae (revumenib) net revenue in first full quarter of launch \u2013 \u2022 $13.6 million in Niktimvo\u2122 (ax",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 201
+          }
+        },
+        {
+          "filing_date": "2025-03-03",
+          "accession": "0000950170-25-030392",
+          "form": "8-K",
+          "primary_doc": "sndx-20250303.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 62,
+          "heading": "Syndax Reports Fourth Quarter and Full Year 2024 Financial Results and Provides Business Update \u2022 $7.7 million in Revuforj\u00ae (revumenib) net product revenue in initial five weeks of launch \u2013 \u2022 Launched",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 240
+          }
+        },
+        {
+          "filing_date": "2024-11-05",
+          "accession": "0000950170-24-121437",
+          "form": "8-K",
+          "primary_doc": "sndx-20241105.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 36,
+          "heading": "Syndax Reports Third Quarter 2024 Financial Results and Provides Business Update \u2013 New revumenib and Niktimvo\u2122clinical data will be highlighted at 66th ASH Annual Meeting \u2013 \u2013 mNPM1 AML topline data fr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 184
+          }
+        },
+        {
+          "filing_date": "2024-08-01",
+          "accession": "0000950170-24-089235",
+          "form": "8-K",
+          "primary_doc": "sndx-20240801.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 32,
+          "heading": "Syndax Reports Second Quarter 2024 Financial Results and Provides Clinical and Business Update \u2013 Axatilimab BLA in refractory chronic GVHD is under Priority Review; PDUFA action date of August 28, 202",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 173
+          }
+        },
+        {
+          "filing_date": "2024-05-08",
+          "accession": "0000950170-24-055052",
+          "form": "8-K",
+          "primary_doc": "sndx-20240508.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Syndax Pharmaceuticals Reports First Quarter 2024 Financial Results and Provides Clinical and Business Update \u2013 NDA filing for revumenib in R/R KMT2Ar acute leukemia granted Priority Review under RTOR",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 145
+          }
+        },
+        {
+          "filing_date": "2024-02-27",
+          "accession": "0000950170-24-021086",
+          "form": "8-K",
+          "primary_doc": "sndx-20240227.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 58,
+          "heading": "Syndax Pharmaceuticals Reports Fourth Quarter and Full Year 2023 Financial Results and Provides Clinical and Business Update \u2013 BLA filing for axatilimab in chronic GVHD granted Priority Review; PDUFA ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 162
+          }
+        },
+        {
+          "filing_date": "2023-11-02",
+          "accession": "0000950170-23-058156",
+          "form": "8-K",
+          "primary_doc": "sndx-20231102.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 33,
+          "heading": "Syndax Pharmaceuticals Reports Third Quarter 2023 Financial Results and Provides Clinical and Business Update \u2013 NDA submission initiated for revumenib in R/R KMT2Ar acute leukemia under RTOR \u2013 \u2013 mNPM1",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "sndx-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 218
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-12",
+          "accession": "0001193125-26-010486",
+          "kind": "preliminary",
+          "heading": "Syndax Reports Preliminary 2025 Financial Highlights and Provides Business Updates at the 44th Annual J.P. Morgan Health"
+        },
+        {
+          "filing_date": "2022-12-14",
+          "accession": "0000950170-22-026546",
+          "kind": "other",
+          "heading": "Syndax Announces Closing of Public Offering of Common Stock and Full Exercise of Underwriters' Option to Purchase Additi"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 35,
+        "min": 30,
+        "max": 62,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-04",
+        "accession": "0001193125-26-332736",
+        "results_exhibit": {
+          "name": "sndx-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 284
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "TYRA": {
+      "company_name": "Tyra Biosciences, Inc.",
+      "cik": "0001863127",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (tyra-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-04",
+          "accession": "0001193125-26-332752",
+          "form": "8-K",
+          "primary_doc": "tyra-20260804.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 35,
+          "heading": "Tyra Biosciences Reports Second Quarter 2026 Financial Results and Recent Highlights - Initial Ph2 data from SURF302 expected in September 2026 (n>40 enrolled to date) - - Initial Ph2 data from safety",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 229
+          }
+        },
+        {
+          "filing_date": "2026-05-13",
+          "accession": "0001193125-26-220638",
+          "form": "8-K",
+          "primary_doc": "tyra-20260513.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 43,
+          "heading": "Tyra Biosciences Reports First Quarter 2026 Financial Results and Recent Highlights - Advanced \u201cdabogratinib 3x3\u201d strategy to pursue 3 late-stage clinical studies in LG-UTUC, IR NMIBC and ACH - - Firs",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 193
+          }
+        },
+        {
+          "filing_date": "2026-03-02",
+          "accession": "0001193125-26-085399",
+          "form": "8-K",
+          "primary_doc": "tyra-20260302.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 61,
+          "heading": "Tyra Biosciences Reports Fourth Quarter and Full-Year 2025 Financial Results and Recent Highlights - Launched \u201cdabogratinib 3x3\u201d strategy to pursue 3 late-stage clinical studies in LG-UTUC, IR NMIBC a",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 235
+          }
+        },
+        {
+          "filing_date": "2025-11-05",
+          "accession": "0001193125-25-266916",
+          "form": "8-K",
+          "primary_doc": "tyra-20251105.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 36,
+          "heading": "Tyra Biosciences Reports Third Quarter 2025 Financial Results and Highlights - Dosed first patients with dabogratinib in BEACH301 and SURF302; interim results from both studies expected in 2026 - - Ex",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 231
+          }
+        },
+        {
+          "filing_date": "2025-08-14",
+          "accession": "0000950170-25-108876",
+          "form": "8-K",
+          "primary_doc": "tyra-20250814.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 45,
+          "heading": "Tyra Biosciences Reports Second Quarter 2025 Financial Results and Highlights - Dosed first patient in SURF302 for intermediate risk non-muscle invasive bladder cancer (IR NMIBC) - - Cash, cash equiva",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 227
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0000950170-25-066924",
+          "form": "8-K",
+          "primary_doc": "tyra-20250508.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Tyra Biosciences Reports First Quarter 2025 Financial Results and Highlights - BEACH301 study of TYRA-300 for Pediatric Achondroplasia (ACH) Open for Enrollment - - Initiated patient dosing in SURF431",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 194
+          }
+        },
+        {
+          "filing_date": "2025-03-27",
+          "accession": "0000950170-25-046064",
+          "form": "8-K",
+          "primary_doc": "tyra-20250327.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 86,
+          "heading": "Tyra Biosciences Reports Fourth Quarter and Full Year 2024 Financial Results and Highlights - Three INDs cleared by US FDA for TYRA\u2019s proprietary precision small molecules - - TYRA-300 to be evaluated",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 222
+          }
+        },
+        {
+          "filing_date": "2024-11-07",
+          "accession": "0000950170-24-123286",
+          "form": "8-K",
+          "primary_doc": "tyra-20241107.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Tyra Biosciences Reports Third Quarter 2024 Financial Results and Highlights - Reported positive interim clinical proof-of-concept results for TYRA-300 in mUC from SURF301 Ph1/2 study - - IND cleared ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 133
+          }
+        },
+        {
+          "filing_date": "2024-08-07",
+          "accession": "0000950170-24-092756",
+          "form": "8-K",
+          "primary_doc": "tyra-20240807.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Tyra Biosciences Reports Second Quarter 2024 Financial Results and Highlights - SURF301 Ph1 initial results and ACH IND submission expected in 2H24 - - Reported preclinical proof-of-concept with TYRA-",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 131
+          }
+        },
+        {
+          "filing_date": "2024-05-09",
+          "accession": "0000950170-24-056935",
+          "form": "8-K",
+          "primary_doc": "tyra-20240509.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Tyra Biosciences Reports First Quarter 2024 Financial Results and Highlights - TYRA-300 on track in ACH and oncology; SURF301 Ph1 initial results and ACH IND submission expected in 2H24 - - Cash, cash",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 93
+          }
+        },
+        {
+          "filing_date": "2024-03-19",
+          "accession": "0000950170-24-033455",
+          "form": "8-K",
+          "primary_doc": "tyra-20240319.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 79,
+          "heading": "Tyra Biosciences Reports Fourth Quarter and Full Year 2023 Financial Results and Highlights - Advanced SURF301 Phase 1 oncology study; Initial Phase 1 results to be reported in 2H 2024 - - TYRA-300 Ph",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 133
+          }
+        },
+        {
+          "filing_date": "2023-11-07",
+          "accession": "0000950170-23-060235",
+          "form": "8-K",
+          "primary_doc": "tyra-20231107.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 38,
+          "heading": "Tyra Biosciences Reports Third Quarter 2023 Financial Results and Highlights - Enrollment and dose escalation ongoing in SURF301 Phase 1/2 oncology - - Presented additional preclinical data on TYRA-30",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tyra-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 149
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 39,
+        "min": 35,
+        "max": 86,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-04",
+        "accession": "0001193125-26-332752",
+        "results_exhibit": {
+          "name": "tyra-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 229
+        }
+      },
+      "has_model": true,
+      "active": true
+    },
+    "NBTX": {
+      "company_name": "Nanobiotix S.A.",
+      "cik": "0001760854",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "I0",
+      "filer_type": "6-K",
+      "filer_type_source": "pinned in COMPANY_CONFIG; EDGAR forms in last 24 months agree",
+      "annual_form": "20-F",
+      "half_yearly": true,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 20-F period 2025-12-31 (nbx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_6k",
+      "results_detection": "6-K whose EX-99 heading announces quarterly/half-year/full-year financial results (no Item codes on a 6-K); the quarterly/half-year report is the 6-K whose reportDate is the period end and differs from the filing date",
+      "earnings_history": [
+        {
+          "filing_date": "2026-09-24",
+          "accession": "0001171843-26-006217",
+          "form": "6-K",
+          "primary_doc": "f6k_092426.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "1H26",
+          "days_after_quarter_end": 86,
+          "heading": "NANOBIOTIX Provides First Half 2026 Operational and Financial Update Promising early results reported from full cohort analysis of the completed dose-escalation and expansion phases of a Phase 1 study",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 19
+          },
+          "companion_report": {
+            "accession": "0001760854-26-000006",
+            "filing_date": "2026-09-24",
+            "report_date": "2026-06-30",
+            "doc": {
+              "name": "nbx-20260630.htm",
+              "type": "6-K",
+              "kb": 1686
+            }
+          }
+        },
+        {
+          "filing_date": "2026-03-31",
+          "accession": "0001171843-26-002097",
+          "form": "6-K",
+          "primary_doc": "f6k_033126.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "FY25",
+          "days_after_quarter_end": 90,
+          "heading": "NANOBIOTIX Provides Business Update and Reports Full Year 2025 Financial Results Global development program for JNJ-1900 (NBTXR3) proceeded as planned, building toward opportunity to address one of th",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 45
+          }
+        },
+        {
+          "filing_date": "2025-09-30",
+          "accession": "0001171843-25-006189",
+          "form": "6-K",
+          "primary_doc": "f6k_093025.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "1H25",
+          "days_after_quarter_end": 92,
+          "heading": "NANOBIOTIX Provides Business Update and Reports Half Year 2025 Financial Results PARIS and CAMBRIDGE, Mass., Sept. 30, 2025 (GLOBE NEWSWIRE) -- NANOBIOTIX (Euronext: NANO - NASDAQ: NBTX - the \u201cCompany",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 13
+          },
+          "companion_report": {
+            "accession": "0001628280-25-043232",
+            "filing_date": "2025-09-30",
+            "report_date": "2025-06-30",
+            "doc": {
+              "name": "nbx-20250630.htm",
+              "type": "6-K",
+              "kb": 1702
+            }
+          }
+        },
+        {
+          "filing_date": "2025-04-02",
+          "accession": "0001171843-25-001970",
+          "form": "6-K",
+          "primary_doc": "f6k_040225.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "FY24",
+          "days_after_quarter_end": 92,
+          "heading": "NANOBIOTIX Provides Business Update and Reports Full Year 2024 Financial Results Global development program for JNJ-1900 (NBTXR3) proceeding as planned, with opportunity to address one of the largest ",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 43
+          }
+        },
+        {
+          "filing_date": "2024-09-18",
+          "accession": "0001171843-24-005248",
+          "form": "6-K",
+          "primary_doc": "f6k_091824.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "1H24",
+          "days_after_quarter_end": 80,
+          "heading": "NANOBIOTIX Provides Business Update and Reports Half Year 2024 Financial Results RT-NBTXR3 followed by anti-PD-1 demonstrated favorable safety profile, disease control and tumor response in patients b",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 20
+          },
+          "companion_report": {
+            "accession": "0001760854-24-000010",
+            "filing_date": "2024-09-18",
+            "report_date": "2024-06-30",
+            "doc": {
+              "name": "nbx-20240630.htm",
+              "type": "6-K",
+              "kb": 1910
+            }
+          }
+        },
+        {
+          "filing_date": "2024-04-24",
+          "accession": "0001171843-24-002185",
+          "form": "6-K",
+          "primary_doc": "f6k_042424.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "FY23",
+          "days_after_quarter_end": 115,
+          "heading": "NANOBIOTIX Provides Business Update and Reports Full Year 2023 Financial Results Global licensing, co-development, and commercialization agreement with Janssen Pharmaceutica NV (\u201cJanssen\u201d) expands wor",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "exh_991.htm",
+            "type": "EX-99.1",
+            "kb": 41
+          }
+        }
+      ],
+      "other_periodic_6ks": [
+        {
+          "filing_date": "2026-06-02",
+          "accession": "0001171843-26-003884",
+          "kind": "interim_update",
+          "report_date": "2026-06-02",
+          "heading": "Nanobiotix Provides First Quarter 2026 Operational and Financial Update Completed a follow-on offering in May 2026 for a"
+        },
+        {
+          "filing_date": "2026-03-26",
+          "accession": "0001171843-26-001941",
+          "kind": "advisory",
+          "report_date": "2026-03-26",
+          "heading": "NANOBIOTIX to Announce Fourth Quarter and Full Year 2025 Operational and Financial Update on March 31st, 2026 Conference"
+        },
+        {
+          "filing_date": "2025-11-24",
+          "accession": "0001171843-25-007543",
+          "kind": "interim_update",
+          "report_date": "2025-11-24",
+          "heading": "Nanobiotix Provides Third Quarter 2025 Operational and Financial Update Along With 2026 Clinical Outlook Financial found"
+        },
+        {
+          "filing_date": "2025-05-21",
+          "accession": "0001171843-25-003371",
+          "kind": "interim_update",
+          "report_date": "2025-05-21",
+          "heading": "Nanobiotix Provides First Quarter 2025 Operational and Financial Update Dosing of a first patient in the CONVERGE study,"
+        },
+        {
+          "filing_date": "2025-03-31",
+          "accession": "0001171843-25-001845",
+          "kind": "advisory",
+          "report_date": "2025-03-31",
+          "heading": "NANOBIOTIX to Announce Fourth Quarter and Full Year 2024 Operational and Financial Update on April 2, 2025 Conference ca"
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0001171843-24-006193",
+          "kind": "interim_update",
+          "report_date": "2024-11-12",
+          "heading": "NANOBIOTIX Provides Third Quarter 2024 Update and Progress on Nanotherapeutics Platforms Transferred US sponsorship of g"
+        },
+        {
+          "filing_date": "2024-09-03",
+          "accession": "0001171843-24-005027",
+          "kind": "advisory",
+          "report_date": "2024-09-03",
+          "heading": "Nanobiotix to Present at H.C. Wainwright 26th Annual Global Investment Conference PARIS and CAMBRIDGE, Mass., Sept. 03, "
+        },
+        {
+          "filing_date": "2024-06-12",
+          "accession": "0001171843-24-003412",
+          "kind": "advisory",
+          "report_date": "2024-06-12",
+          "heading": "NANOBIOTIX to Host Virtual KOL Event Discussing Potential of NBTXR3 Combined With Immunotherapy in Head and Neck Cancer "
+        },
+        {
+          "filing_date": "2024-05-23",
+          "accession": "0001171843-24-003082",
+          "kind": "advisory",
+          "report_date": "2024-05-23",
+          "heading": "NANOBIOTIX to Present at the Jefferies Global Healthcare Conference PARIS and CAMBRIDGE, Mass., May 23, 2024 (GLOBE NEWS"
+        },
+        {
+          "filing_date": "2024-05-22",
+          "accession": "0001171843-24-003043",
+          "kind": "interim_update",
+          "report_date": "2024-05-22",
+          "heading": "NANOBIOTIX Provides First Quarter 2024 Operational and Financial Update PARIS and CAMBRIDGE, Mass., May 22, 2024 (GLOBE "
+        },
+        {
+          "filing_date": "2024-05-15",
+          "accession": "0001171843-24-002913",
+          "kind": "advisory",
+          "report_date": "2024-05-15",
+          "heading": "NANOBIOTIX to Announce First Quarter Operational and Financial Update on May 22, 2024 Conference call and webcast schedu"
+        },
+        {
+          "filing_date": "2024-04-17",
+          "accession": "0001171843-24-002059",
+          "kind": "advisory",
+          "report_date": "2024-04-17",
+          "heading": "NANOBIOTIX to Announce Fourth Quarter and Full Year 2023 Operational and Financial Update on April 24, 2024 Conference c"
+        },
+        {
+          "filing_date": "2024-03-06",
+          "accession": "0001171843-24-001213",
+          "kind": "advisory",
+          "report_date": "2024-03-06",
+          "heading": "Nanobiotix to Present at Upcoming Investor Conferences in March PARIS and CAMBRIDGE, Mass., March 06, 2024 (GLOBE NEWSWI"
+        },
+        {
+          "filing_date": "2024-01-31",
+          "accession": "0001171843-24-000489",
+          "kind": "advisory",
+          "report_date": "2024-01-31",
+          "heading": "Nanobiotix to Present at the Guggenheim 6th Annual Biotechnology Conference PARIS and CAMBRIDGE, Mass., Jan. 31, 2024 (G"
+        },
+        {
+          "filing_date": "2023-11-13",
+          "accession": "0001171843-23-007025",
+          "kind": "interim_update",
+          "report_date": "2023-11-13",
+          "heading": "NANOBIOTIX Provides Third Quarter 2023 Operational and Financial Update $2.5 billion global licensing, co-development, a"
+        },
+        {
+          "filing_date": "2023-11-09",
+          "accession": "0001171843-23-006957",
+          "kind": "advisory",
+          "report_date": "2023-11-09",
+          "heading": "NANOBIOTIX to Announce Third Quarter 2023 Operational and Financial Update on November 13, 2023 Conference call and webc"
+        },
+        {
+          "filing_date": "2023-10-23",
+          "accession": "0001171843-23-006327",
+          "kind": "preliminary",
+          "report_date": "2023-10-23",
+          "heading": "NANOBIOTIX Announces Updated Preliminary Results From Phase 1 Pancreatic Cancer Trial and New Exploratory Analysis From "
+        }
+      ],
+      "six_k_scanned": 118,
+      "six_k_window_from": "2023-10-11",
+      "reporting_lag_days": {
+        "median": 92,
+        "min": 80,
+        "max": 115,
+        "n": 6,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "1H26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-09-24",
+        "accession": "0001171843-26-006217",
+        "results_exhibit": {
+          "name": "exh_991.htm",
+          "type": "EX-99.1",
+          "kb": 19
+        }
+      },
+      "has_model": false,
+      "active": true
+    },
+    "NUVL": {
+      "company_name": "Nuvalent, Inc.",
+      "cik": "0001861560",
+      "cik_source": "hand-resolved override (EDGAR company search)",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (nuvl-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001861560-26-000020",
+          "form": "8-K",
+          "primary_doc": "nuvl-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Nuvalent Highlights Recent Pipeline Progress, Reiterates Key Anticipated Milestones, and Reports First Quarter 2026 Financial Results NDA submitted for neladalkib in TKI pre-treated advanced ALK-posit",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 100
+          }
+        },
+        {
+          "filing_date": "2026-02-26",
+          "accession": "0001193125-26-073304",
+          "form": "8-K",
+          "primary_doc": "nuvl-20260226.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 57,
+          "heading": "Nuvalent Outlines Recent Pipeline Progress, Reiterates Key Anticipated Milestones, and Reports Fourth Quarter and Full Year 2025 Financial Results Commercial preparations well underway to support pote",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 125
+          }
+        },
+        {
+          "filing_date": "2025-10-30",
+          "accession": "0001193125-25-257347",
+          "form": "8-K",
+          "primary_doc": "nuvl-20251030.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 30,
+          "heading": "Nuvalent Highlights Recent Pipeline Progress, Reiterates Key Anticipated Milestones, and Reports Third Quarter 2025 Financial Results Completed rolling NDA submission for zidesamtinib in TKI pre-treat",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 118
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0000950170-25-104531",
+          "form": "8-K",
+          "primary_doc": "nuvl-20250807.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Nuvalent Highlights Pipeline and Business Achievements, Reiterates Key Anticipated Milestones, and Reports Second Quarter 2025 Financial Results Initiated rolling NDA submission for zidesamtinib for T",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 128
+          }
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0000950170-25-066397",
+          "form": "8-K",
+          "primary_doc": "nuvl-20250508.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 38,
+          "heading": "Nuvalent Outlines Recent Pipeline and Business Progress, Reiterates Key Anticipated Milestones, and Reports First Quarter 2025 Financial Results Topline pivotal data expected for zidesamtinib in TKI p",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 95
+          }
+        },
+        {
+          "filing_date": "2025-02-27",
+          "accession": "0000950170-25-028323",
+          "form": "8-K",
+          "primary_doc": "nuvl-20250227.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 58,
+          "heading": "Nuvalent Outlines Pipeline and Business Progress, Reiterates Key Anticipated Milestones, and Reports Fourth Quarter and Full Year 2024 Financial Results Topline pivotal data expected in 2025 for both ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 117
+          }
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0000950170-24-124514",
+          "form": "8-K",
+          "primary_doc": "nuvl-20241112.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 43,
+          "heading": "Nuvalent Highlights Corporate and Pipeline Achievements, Reiterates Key Anticipated Milestones, and Reports Third Quarter 2024 Financial Results Achievement of all anticipated 2024 milestones and acce",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 120
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0000950170-24-093278",
+          "form": "8-K",
+          "primary_doc": "nuvl-20240808.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Nuvalent Highlights Pipeline Progress, Reiterates Key Anticipated Milestones, and Reports Second Quarter 2024 Financial Results Company plans to host a conference call in conjunction with oral present",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 97
+          }
+        },
+        {
+          "filing_date": "2024-05-09",
+          "accession": "0000950170-24-056223",
+          "form": "8-K",
+          "primary_doc": "nuvl-20240509.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Nuvalent Highlights Pipeline Progress, Reiterates Key Anticipated Milestones, and Reports First Quarter 2024 Financial Results Updates from the ongoing Phase 1/2 ARROS-1 and ALKOVE-1 clinical trials e",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 79
+          }
+        },
+        {
+          "filing_date": "2024-02-27",
+          "accession": "0000950170-24-020604",
+          "form": "8-K",
+          "primary_doc": "nuvl-20240227.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 58,
+          "heading": "Nuvalent Highlights Pipeline Progress, Reiterates Key Anticipated Milestones and Reports Fourth Quarter and Full Year 2023 Financial Results Well-capitalized with operating runway anticipated into 202",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 130
+          }
+        },
+        {
+          "filing_date": "2023-11-14",
+          "accession": "0000950170-23-063338",
+          "form": "8-K",
+          "primary_doc": "nuvl-20231114.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 45,
+          "heading": "Nuvalent Highlights Corporate and Pipeline Achievements and Reports Third Quarter 2023 Financial Results Presented preliminary Phase 1 clinical data from ALKOVE-1 trial of NVL-655, initiated Phase 2 p",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 178
+          }
+        },
+        {
+          "filing_date": "2023-08-10",
+          "accession": "0000950170-23-040936",
+          "form": "8-K",
+          "primary_doc": "nuvl-20230810.htm",
+          "quarter_end": "2023-06-30",
+          "period_label": "2Q23",
+          "days_after_quarter_end": 41,
+          "heading": "Nuvalent Highlights Pipeline Progress and Reports Second Quarter 2023 Financial Results Continued execution across pipeline with clinical trials ongoing for NVL-520 and NVL-655, and advancement of NVL",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "nuvl-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 185
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2026-01-14",
+          "accession": "0001193125-26-012243",
+          "kind": "other",
+          "heading": "Nuvalent Announces OnTarget 2026 Operating Plan Progress and Outlines Key Anticipated 2026 Milestones FDA accepted NDA f"
+        },
+        {
+          "filing_date": "2024-01-09",
+          "accession": "0000950170-24-003376",
+          "kind": "other",
+          "heading": "Nuvalent Announces \u201cOnTarget 2026\u201d Operating Plan and Key Anticipated Milestones Targeting first approved product in 202"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 41,
+        "min": 30,
+        "max": 58,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "1Q26",
+        "quarter_end": "2026-03-31",
+        "filing_date": "2026-05-07",
+        "accession": "0001861560-26-000020",
+        "results_exhibit": {
+          "name": "nuvl-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 100
+        }
+      },
+      "has_model": false,
+      "active": false,
+      "status": "INACTIVE - deregistered",
+      "status_basis": "Acquired by GSK plc (Harmony Row Acquisition Co. tender offer, merger agreement 2026-06-09, completed 2026-07-15: 8-K Items 2.01/3.01/5.01, Form 25-NSE 2026-07-15, Form 15-12G 2026-07-27). Last results 8-K was 1Q26 on 2026-05-07; it did not report 2Q26 and will not report again. Absent from EDGAR's company_tickers.json for the same reason. DROP from the sweep."
+    },
+    "TLX": {
+      "company_name": "Telix Pharmaceuticals Ltd",
+      "cik": "0002007191",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "C3",
+      "filer_type": "6-K",
+      "filer_type_source": "pinned in COMPANY_CONFIG; EDGAR forms in last 24 months agree",
+      "annual_form": "20-F",
+      "half_yearly": true,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 20-F period 2025-12-31 (tlx-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_6k",
+      "results_detection": "6-K whose EX-99 heading announces quarterly/half-year/full-year financial results (no Item codes on a 6-K); the quarterly/half-year report is the 6-K whose reportDate is the period end and differs from the filing date",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-20",
+          "accession": "0001628280-26-058126",
+          "form": "6-K",
+          "primary_doc": "tlx-20260630.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "1H26",
+          "days_after_quarter_end": 51,
+          "heading": "Telix Pharmaceuticals Limited ACN 616 620 369 55 Flemington Road North Melbourne Victoria, 3051 Australia ASX ANNOUNCEMENT Telix 2026 Half-Year Results: Strong Commercial Execution and Momentum in Lat",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "announcement.htm",
+            "type": "EX-99.3",
+            "kb": 24
+          },
+          "report_doc": {
+            "name": "tlx-20260630_d2.htm",
+            "type": "EX-99.4",
+            "kb": 2375
+          }
+        },
+        {
+          "filing_date": "2026-02-19",
+          "accession": "0001628280-26-009887",
+          "form": "6-K",
+          "primary_doc": "k6fy25report.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "FY25",
+          "days_after_quarter_end": 50,
+          "heading": "Telix Pharmaceuticals Limited ACN 616 620 369 55 Flemington Road North Melbourne Victoria, 3051 Australia ASX ANNOUNCEMENT FY 2025 Results: Strong Commercial Growth, Focused Pipeline Investment Melbou",
+          "period_basis": "heading",
+          "results_exhibit": {
+            "name": "a202602y25resultsannounc.htm",
+            "type": "EX-99.3",
+            "kb": 21
+          }
+        },
+        {
+          "filing_date": "2025-08-21",
+          "accession": "0002007191-25-000063",
+          "form": "6-K",
+          "primary_doc": "halfyr6k.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "1H25",
+          "days_after_quarter_end": 52,
+          "heading": "EX-99.1 2 prez.htm EX-99.1",
+          "period_basis": "document name (image-only exhibits)",
+          "results_exhibit": {
+            "name": "results.htm",
+            "type": "EX-99.3",
+            "kb": 0
+          }
+        },
+        {
+          "filing_date": "2025-02-21",
+          "accession": "0002007191-25-000019",
+          "form": "6-K",
+          "primary_doc": "anrep6kfy24.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "FY24",
+          "days_after_quarter_end": 52,
+          "heading": "EX-99.1 2 fy24report.htm EX-99.1",
+          "period_basis": "document name (image-only exhibits)",
+          "results_exhibit": {
+            "name": "fy24report.htm",
+            "type": "EX-99.1",
+            "kb": 12
+          }
+        }
+      ],
+      "other_periodic_6ks": [
+        {
+          "filing_date": "2026-07-21",
+          "accession": "0001628280-26-048922",
+          "kind": "interim_update",
+          "report_date": "2026-06-30",
+          "heading": "Telix Q2 Revenue US$247M, Strong Momentum and Pipeline Progress Melbourne (Australia) and Indianapolis, IN (U.S.) \u2013 July"
+        },
+        {
+          "filing_date": "2026-04-07",
+          "accession": "0001628280-26-023982",
+          "kind": "interim_update",
+          "report_date": "2026-03-31",
+          "heading": "Q1 Business Update 1 Telix media release March 9, 2026. ClinicalTrials.gov ID: NCT06520345. 2 Telix ASX disclosure March"
+        },
+        {
+          "filing_date": "2025-10-14",
+          "accession": "0002007191-25-000071",
+          "kind": "interim_update",
+          "report_date": "2025-10-14",
+          "heading": "EX-99.1 2 prq3.htm EX-99.1"
+        }
+      ],
+      "six_k_scanned": 60,
+      "six_k_window_from": "2023-10-11",
+      "reporting_lag_days": {
+        "median": 52,
+        "min": 50,
+        "max": 52,
+        "n": 4,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "1H26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-20",
+        "accession": "0001628280-26-058126",
+        "results_exhibit": {
+          "name": "announcement.htm",
+          "type": "EX-99.3",
+          "kb": 24
+        }
+      },
+      "has_model": false,
+      "active": true
+    }
+  }
+}

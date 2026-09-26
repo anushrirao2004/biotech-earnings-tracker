@@ -1,0 +1,50 @@
+name: biotech-tracker-scan
+
+on:
+  schedule:
+    # Every two hours, every day, all year (a scan takes ~2 min; hourly would
+    # eat into the free 2,000 min/month shared with the REIT tracker). GitHub
+    # cron is UTC and fires late, badly so at the top of the hour, hence the
+    # odd minute. Advisories come one to three weeks before results.
+    - cron: "41 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      only_tickers:
+        description: "Limit to these tickers, comma-separated. Blank = all."
+        required: false
+        default: ""
+      target_quarter:
+        description: "Override the quarter, e.g. 3Q26. Blank = auto."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tracker-state
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Scan press-release sources
+        env:
+          ONLY_TICKERS:   ${{ inputs.only_tickers }}
+          TARGET_QUARTER: ${{ inputs.target_quarter }}
+        run: python scan.py
+      - name: Persist tracker
+        run: |
+          git config user.name  "biotech-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/
+          git diff --staged --quiet || git commit -m "tracker update [skip ci]"
+          git pull --rebase
+          git push

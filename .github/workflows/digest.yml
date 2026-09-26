@@ -1,0 +1,46 @@
+name: biotech-tracker-digest
+
+on:
+  # No cron here on purpose: an external scheduler (the laptop-side
+  # biotech-earnings-automation task, or any caller with a repo token) fires
+  # this with `gh workflow run biotech-tracker-digest` at the India morning
+  # and evening slots, so the send time is controlled outside GitHub's late
+  # and jittery cron. digest.py itself still refuses weekends unless
+  # force_send=1.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = render the image into the job artifacts, send nothing."
+        required: false
+        default: "0"
+      force_send:
+        description: "1 = send even on a weekend."
+        required: false
+        default: "0"
+
+permissions:
+  contents: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Render and send
+        env:
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN:    ${{ inputs.dry_run }}
+          FORCE_SEND: ${{ inputs.force_send }}
+        run: python digest.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: digest
+          path: state/digest.png
+          if-no-files-found: ignore
