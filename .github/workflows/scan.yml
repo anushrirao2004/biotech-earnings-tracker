@@ -1,12 +1,8 @@
 name: biotech-tracker-scan
 
 on:
-  schedule:
-    # Every two hours, every day, all year (a scan takes ~2 min; hourly would
-    # eat into the free 2,000 min/month shared with the REIT tracker). GitHub
-    # cron is UTC and fires late, badly so at the top of the hour, hence the
-    # odd minute. Advisories come one to three weeks before results.
-    - cron: "41 */2 * * *"
+  # No GitHub cron: cron-job.org dispatches this every two hours. Running both
+  # made two scans overlap and the second failed pushing its state (2026-09-28).
   workflow_dispatch:
     inputs:
       only_tickers:
