@@ -176,13 +176,19 @@
    "status": "expected"
   },
   "NBTX": {
-   "confidence": null,
+   "confidence": "results_seen",
    "estimate_note": "half-yearly filer: no 3Q26 report",
-   "india_slot": null,
-   "india_update_date": null,
-   "quarter": "3Q26",
-   "release_date": null,
-   "status": "not_applicable"
+   "india_slot": "Morning",
+   "india_update_date": "2026-09-25",
+   "period_end": "2026-06-30",
+   "quarter": "1H26",
+   "release_date": "2026-09-24",
+   "released_seen": "2026-09-24",
+   "results_title": "NANOBIOTIX Provides First Half 2026 Operational and Financial Update",
+   "results_url": "https://ir.nanobiotix.com/news-releases/news-release-details/nanobiotix-provides-first-half-2026-operational-and-financial",
+   "session": "after close",
+   "session_assumed": true,
+   "status": "released"
   },
   "NRIX": {
    "confidence": "estimate",
@@ -245,13 +251,34 @@
    "status": "expected"
   },
   "TLX": {
-   "confidence": null,
+   "advisory_title": "Telix H1 2026 Results: Investor Webcast Notification",
+   "announced_on": "2026-07-30",
+   "confidence": "pr",
    "estimate_note": "half-yearly filer: no 3Q26 report",
-   "india_slot": null,
-   "india_update_date": null,
-   "quarter": "3Q26",
-   "release_date": null,
-   "status": "not_applicable"
+   "history": [
+    {
+     "release_date": "2026-08-19",
+     "release_time_et": null,
+     "seen": "2026-09-28 10:39",
+     "session": "after close"
+    }
+   ],
+   "india_slot": "Morning",
+   "india_update_date": "2026-08-20",
+   "period_end": "2026-06-30",
+   "quarter": "1H26",
+   "release_date": "2026-08-19",
+   "release_time_et": null,
+   "release_time_ist": null,
+   "released_seen": "2026-08-19",
+   "results_title": "Telix 2026 Half-Year Results: Strong Commercial Execution and Momentum in Late-Stage Pipeline",
+   "results_url": "https://telixpharma.com/news-views/telix-2026-half-year-results-strong-commercial-execution-and-momentum-in-late-stage-pipeline/",
+   "run_at_ist": "2026-08-19 15:00",
+   "session": "after close",
+   "session_assumed": false,
+   "source_kind": "ir_rss",
+   "source_url": "https://telixpharma.com/news-views/telix-h1-2026-results-investor-webcast-notification/",
+   "status": "released"
   },
   "TYRA": {
    "confidence": "estimate",
@@ -270,5 +297,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-09-28 09:12 IST"
+ "updated": "2026-09-28 10:40 IST"
 }
