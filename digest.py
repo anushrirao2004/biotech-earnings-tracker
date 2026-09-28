@@ -75,32 +75,19 @@ def caption(state, rows, today):
         e = comps[t]
         nxt = f"\nNext confirmed: {t} on {datetime.fromisoformat(d):%d %b} ({e.get('india_slot','?').lower()})"
     from datetime import timedelta
-    # Every active company still without a confirmed date, with its expected
-    # date where the history gives one and "no estimate" where it does not.
-    silent = []
-    for t, e in sorted(comps.items()):
-        if e.get("confidence") == "pr" or e.get("status") in ("released", "not_applicable"):
-            continue
-        if e.get("release_date"):
-            silent.append(f"{t} ~{datetime.fromisoformat(e['release_date']):%d %b}")
-        else:
-            silent.append(f"{t} (no estimate)")
+    # Short caption (user, 2026-09-28): the table carries the detail. Only the
+    # names expected within 10 days without a notice, and any Nasdaq conflict.
     soon = sorted(t for t, e in comps.items()
                   if e.get("confidence") == "estimate" and e.get("release_date")
                   and date.fromisoformat(e["release_date"]) <= today + timedelta(days=10))
-    na = sorted(f"{t} ({e.get('quarter') or '?'})" for t, e in comps.items() if e.get("status") == "not_applicable")
     conflicts = sorted(t for t, e in comps.items() if e.get("nasdaq_conflict"))
     extra = ""
-    if silent:
-        extra += f"\nNo confirmed date yet ({len(silent)}): " + ", ".join(silent)
     if soon:
-        extra += "\nExpected within 10 days without a notice: " + ", ".join(soon)
-    if na:
-        extra += "\nNot applicable this quarter (half-yearly filers): " + ", ".join(na)
+        extra += "\nDue within 10 days, no notice yet: " + ", ".join(soon)
     if conflicts:
-        extra += "\nNasdaq disagrees with the notice, please check: " + ", ".join(conflicts)
+        extra += "\nNasdaq disagrees, check: " + ", ".join(conflicts)
     return (f"Biotech tracker {state.get('quarter')} - {today:%a %d %b}, {datetime.now(IST):%H:%M} IST\n"
-            f"{n_pr} dates confirmed by PR, {n_exp} estimated, {n_rel} already released.{nxt}{extra}")
+            f"{n_pr} confirmed, {n_exp} estimated, {n_rel} released.{nxt}{extra}")
 
 
 def send_photo(path, text):

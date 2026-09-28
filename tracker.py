@@ -66,7 +66,14 @@ def company_target(company, today=None, forced=None):
         ref = common.quarter_end(*forced) + timedelta(days=1)
     else:
         ref = (today or date.today()) + timedelta(days=PRE_ROLL_DAYS)
-    return common.fiscal_target(ref, fye)
+    q, fy = common.fiscal_target(ref, fye)
+    # Half-yearly filers (NBTX, TLX) stay in the loop every quarter (user,
+    # 2026-09-28: "they release anytime"). In a Q1/Q3 season their live
+    # period is the half-year that closed with the previous quarter: H1 (Q2)
+    # during Q3, the full year (Q4 of the prior fiscal year) during Q1.
+    if company.get("half_yearly") and q in (1, 3):
+        q, fy = (2, fy) if q == 3 else (4, fy - 1)
+    return q, fy
 
 
 def company_quarter_end(company, q, fy):
@@ -81,8 +88,9 @@ def company_label(company, q, fy):
 
 
 def not_applicable(company, q):
-    """Half-yearly filers have nothing to report in Q1 or Q3."""
-    return bool(company.get("half_yearly")) and q in (1, 3)
+    """Never, since 2026-09-28: half-yearly filers are tracked on their live
+    half-year period in every quarter (see company_target)."""
+    return False
 
 
 def season_window(company, qe, q=None):

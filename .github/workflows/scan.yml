@@ -35,6 +35,9 @@ jobs:
         env:
           ONLY_TICKERS:   ${{ inputs.only_tickers }}
           TARGET_QUARTER: ${{ inputs.target_quarter }}
+          # For the instant "results announced" alert only; the digest has its own job.
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scan.py
       - name: Persist tracker
         run: |

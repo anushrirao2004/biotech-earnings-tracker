@@ -301,6 +301,29 @@ def body_text(url):
 
 
 # ---------------------------------------------------------------- per company
+def alert_release(ticker, title, link):
+    """Instant Telegram alert the moment a results release is seen (user,
+    2026-09-28): biotechs release without warning, so the reviewer must know
+    at once, laptop on or off. The digest is separate and unchanged."""
+    import requests as _rq
+    token, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+    if not token or not chat:
+        log(f"  {ticker}: (no Telegram secrets in this run, alert not sent)")
+        return False
+    text = f"❗ RESULTS ANNOUNCED: {ticker}\n{title[:140]}"
+    if link:
+        text += f"\n{link}"
+    try:
+        r = _rq.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                     data={"chat_id": chat, "text": text, "disable_web_page_preview": "true"}, timeout=20)
+        ok = r.ok and r.json().get("ok")
+    except Exception as e:  # noqa: BLE001
+        ok = False
+        log(f"  {ticker}: alert failed: {e}")
+    log(f"  {ticker}: instant alert {'sent' if ok else 'FAILED'}")
+    return bool(ok)
+
+
 def scan_company(c, state, seen, q, y, verbose=False):
     ticker = c["ticker"]
     qe = tracker.company_quarter_end(c, q, y)
@@ -374,6 +397,7 @@ def scan_company(c, state, seen, q, y, verbose=False):
                 seen[key] = {"resolved": True, "when": str(date.today())}
                 if changed:
                     log(f"  {ticker}: RESULTS OUT  {title}")
+                    alert_release(ticker, title, link)
                 continue
             # advisory: read the body for date / session / time
             if skind == "google_news":
@@ -466,11 +490,8 @@ def main():
             continue
         cq, cy = targets[t]
         clabel = labels[t]
-        if tracker.not_applicable(c, cq):
-            tracker.set_not_applicable(state, t, f"half-yearly filer: no {common.quarter_label(cq, cy)} report")
-            state["companies"][t]["quarter"] = clabel
-            log(f"  {t}: {clabel} not applicable (half-yearly filer)")
-            continue
+        # Half-yearly filers are never "not applicable" any more: company_target
+        # gives them their live half-year period in every season.
         qe = tracker.company_quarter_end(c, cq, cy)
         fiscal_note = "" if (c.get("fye_month") or 12) == 12 else f" (fiscal, FYE month {c['fye_month']})"
         if verbose or clabel != label:
