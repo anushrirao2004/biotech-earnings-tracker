@@ -392,12 +392,22 @@ def scan_company(c, state, seen, q, y, verbose=False):
                 continue
             found_any = True
             if kind == "results":
-                changed = tracker.set_released(state, ticker, pub or date.today(), link, title,
+                before = dict(state["companies"].get(ticker, {}))
+                seen_on = pub or date.today()
+                changed = tracker.set_released(state, ticker, seen_on, link, title,
                                                c.get("usual_session"))
                 seen[key] = {"resolved": True, "when": str(date.today())}
                 if changed:
                     log(f"  {ticker}: RESULTS OUT  {title}")
-                    alert_release(ticker, title, link)
+                    # Alert only when the release was UNEXPECTED (user, 2026-09-28):
+                    # no date notice, or it landed more than a day off the notice.
+                    expected = None
+                    if before.get("confidence") == "pr" and before.get("release_date"):
+                        expected = date.fromisoformat(before["release_date"])
+                    if expected and abs((seen_on - expected).days) <= 1:
+                        log(f"  {ticker}: released as announced ({expected}); no alert")
+                    else:
+                        alert_release(ticker, title, link)
                 continue
             # advisory: read the body for date / session / time
             if skind == "google_news":
