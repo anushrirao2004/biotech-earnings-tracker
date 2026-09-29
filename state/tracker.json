@@ -86,6 +86,21 @@
    "session_assumed": false,
    "status": "expected"
   },
+  "ELVN": {
+   "confidence": "estimate",
+   "estimate_note": "Nasdaq algorithmic estimate",
+   "india_slot": "Morning",
+   "india_update_date": "2026-11-12",
+   "period_end": "2026-09-30",
+   "quarter": "3Q26",
+   "release_date": "2026-11-11",
+   "release_time_et": null,
+   "release_time_ist": null,
+   "run_at_ist": null,
+   "session": "after close",
+   "session_assumed": false,
+   "status": "expected"
+  },
   "ENGN": {
    "confidence": "results_seen",
    "india_slot": "Evening",
@@ -99,6 +114,21 @@
    "session": "before open",
    "session_assumed": true,
    "status": "released"
+  },
+  "IMNM": {
+   "confidence": "estimate",
+   "estimate_note": "Nasdaq algorithmic estimate",
+   "india_slot": "Morning",
+   "india_update_date": "2026-11-06",
+   "period_end": "2026-09-30",
+   "quarter": "3Q26",
+   "release_date": "2026-11-05",
+   "release_time_et": null,
+   "release_time_ist": null,
+   "run_at_ist": null,
+   "session": "after close",
+   "session_assumed": false,
+   "status": "expected"
   },
   "IOVA": {
    "confidence": "estimate",
@@ -220,6 +250,36 @@
    "session_assumed": false,
    "status": "expected"
   },
+  "ORIC": {
+   "confidence": "estimate",
+   "estimate_note": "Nasdaq algorithmic estimate",
+   "india_slot": "Morning",
+   "india_update_date": "2026-11-13",
+   "period_end": "2026-09-30",
+   "quarter": "3Q26",
+   "release_date": "2026-11-12",
+   "release_time_et": null,
+   "release_time_ist": null,
+   "run_at_ist": null,
+   "session": "after close",
+   "session_assumed": false,
+   "status": "expected"
+  },
+  "REPL": {
+   "confidence": "estimate",
+   "estimate_note": "Nasdaq algorithmic estimate",
+   "india_slot": "Evening",
+   "india_update_date": "2026-11-05",
+   "period_end": "2026-09-30",
+   "quarter": "2Q27",
+   "release_date": "2026-11-05",
+   "release_time_et": null,
+   "release_time_ist": null,
+   "run_at_ist": null,
+   "session": "before open",
+   "session_assumed": false,
+   "status": "expected"
+  },
   "SMMT": {
    "confidence": "estimate",
    "estimate_note": "Nasdaq algorithmic estimate",
@@ -297,5 +357,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-09-29 16:12 IST"
+ "updated": "2026-09-29 17:13 IST"
 }
