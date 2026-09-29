@@ -1,6 +1,6 @@
-"""Draw the digest table as a PNG with PIL. Two-tier header exactly like the
-user's spreadsheet: a merged title over the two per-PR columns and one over
-the three total columns."""
+"""Draw the digest table as a PNG with PIL. Two-tier header: a merged title over
+the per-PR Morning / Evening / Overall columns. Confirmed dates only (user,
+2026-09-29)."""
 import os
 
 from PIL import Image, ImageDraw, ImageFont
@@ -23,14 +23,14 @@ def _font(size, bold=False):
 
 
 def render_table(rows, title, path, scale=2):
-    """rows: list of 6-cell lists. Writes a PNG at `path`."""
+    """rows: list of 4-cell lists (date, PR morning, PR evening, overall). Writes a PNG."""
     f = _font(13 * scale)
     fb = _font(13 * scale, bold=True)
     ft = _font(12 * scale)
     pad = 8 * scale
     row_h = 30 * scale
-    # column widths: date, PR morning (tickers), PR evening, total x3
-    widths = [130, 250, 170, 90, 90, 90]
+    # column widths: date, PR morning (tickers), PR evening (tickers), overall
+    widths = [130, 250, 170, 90]
     widths = [w * scale for w in widths]
     # widen the two per-PR columns to fit the longest ticker list
     tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
@@ -38,7 +38,7 @@ def render_table(rows, title, path, scale=2):
         longest = max((tmp.textlength(r[ci], font=f) for r in rows), default=0) + 2 * pad
         widths[ci] = int(max(widths[ci], longest))
     W = sum(widths) + 2 * pad
-    body = rows or [["no releases tracked yet", "", "", "", "", ""]]
+    body = rows or [["no confirmed dates yet", "", "", ""]]
     H = pad + 26 * scale + 2 * row_h + row_h * len(body) + pad
     img = Image.new("RGB", (W, H), "white")
     d = ImageDraw.Draw(img)
@@ -60,16 +60,15 @@ def render_table(rows, title, path, scale=2):
 
     # header tier 1
     cell(xs[0], top, xs[1], top + 2 * row_h, "India Update Date", fb, grey)
-    cell(xs[1], top, xs[3], top + row_h, "# of biotech models to be updated as per PR", fb, grey)
-    cell(xs[3], top, xs[6], top + row_h, "Total (Including expected results)", fb, grey)
+    cell(xs[1], top, xs[4], top + row_h, "# of biotech models to be updated as per PR", fb, grey)
     # header tier 2
-    for i, name in enumerate(["Morning", "Evening", "Morning", "Evening", "Overall"], start=1):
+    for i, name in enumerate(["Morning", "Evening", "Overall"], start=1):
         cell(xs[i], top + row_h, xs[i + 1], top + 2 * row_h, name, fb, grey)
     # body
     y = top + 2 * row_h
     if not rows:
         # placeholder spans the whole row instead of overflowing the date cell
-        cell(xs[0], y, xs[6], y + row_h, body[0][0], f)
+        cell(xs[0], y, xs[4], y + row_h, body[0][0], f)
         y += row_h
         body = []
     for r in body:

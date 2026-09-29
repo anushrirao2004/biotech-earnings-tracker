@@ -7,8 +7,8 @@ biotechs announce their date late, or never, so the list of who is still
 silent is the useful part.
 
 Columns (user's format, 2026-09-25):
-  India Update Date | # of biotech models to be updated as per PR: Morning | Evening
-                    | Total (Including expected results): Morning | Evening | Overall
+  India Update Date | # of biotech models to be updated as per PR: Morning | Evening | Overall
+  (confirmed dates only - estimated dates dropped, user 2026-09-29)
 Ticker names sit in brackets in the per-PR cells, e.g. "2(BRX, WELL)".
 
 Env: TELEGRAM_TOKEN, TELEGRAM_CHAT_ID (required to send), DRY_RUN=1 to only
@@ -30,28 +30,25 @@ IST = ZoneInfo("Asia/Kolkata")
 
 
 def build_rows(state, today):
-    """One row per India update date from today on, sorted."""
+    """One row per India update date from today on that has a CONFIRMED release
+    (press-release notice). Estimated dates are not shown (user, 2026-09-29): the
+    team's Bloomberg expected dates are the reference for those."""
     per_pr = defaultdict(lambda: {"Morning": [], "Evening": []})
-    total = defaultdict(lambda: {"Morning": 0, "Evening": 0})
     for t, e in state["companies"].items():
         d = e.get("india_update_date")
-        if not d or e.get("status") in ("released", "not_applicable"):
+        if not d or e.get("status") in ("released", "not_applicable") or e.get("confidence") != "pr":
             continue
         if date.fromisoformat(d) < today:
             continue
-        slot = e.get("india_slot") or "Morning"
-        total[d][slot] += 1
-        if e.get("confidence") == "pr":
-            per_pr[d][slot].append(t)
+        per_pr[d][e.get("india_slot") or "Morning"].append(t)
     rows = []
-    for d in sorted(total):
+    for d in sorted(per_pr):
         pm, pe = sorted(per_pr[d]["Morning"]), sorted(per_pr[d]["Evening"])
-        tm, te = total[d]["Morning"], total[d]["Evening"]
         rows.append([
             datetime.fromisoformat(d).strftime("%m/%d/%Y"),
             f"{len(pm)}({', '.join(pm)})" if pm else "0",
             f"{len(pe)}({', '.join(pe)})" if pe else "0",
-            str(tm), str(te), str(tm + te),
+            str(len(pm) + len(pe)),
         ])
     return rows
 
@@ -62,32 +59,25 @@ def render(rows, quarter, updated, path=OUT_PNG):
 
 
 def caption(state, rows, today):
+    """Confirmed / released / not announced yet, the next confirmed date and any
+    Nasdaq conflict. No estimated dates (user, 2026-09-29)."""
     comps = state["companies"]
-    n_pr = sum(1 for e in comps.values() if e.get("confidence") == "pr" and e.get("status") != "released")
-    n_rel = sum(1 for e in comps.values() if e.get("status") == "released")
-    n_exp = sum(1 for e in comps.values() if e.get("confidence") == "estimate")
+    live = {t: e for t, e in comps.items() if e.get("status") != "not_applicable"}
+    n_rel = sum(1 for e in live.values() if e.get("status") == "released")
+    n_pr = sum(1 for e in live.values() if e.get("confidence") == "pr" and e.get("status") != "released")
+    n_none = len(live) - n_rel - n_pr
     nxt = ""
-    upcoming = sorted((e["india_update_date"], t) for t, e in comps.items()
+    upcoming = sorted((e["india_update_date"], t) for t, e in live.items()
                       if e.get("confidence") == "pr" and e.get("status") != "released"
+                      and e.get("india_update_date")
                       and date.fromisoformat(e["india_update_date"]) >= today)
     if upcoming:
         d, t = upcoming[0]
-        e = comps[t]
-        nxt = f"\nNext confirmed: {t} on {datetime.fromisoformat(d):%d %b} ({e.get('india_slot','?').lower()})"
-    from datetime import timedelta
-    # Short caption (user, 2026-09-28): the table carries the detail. Only the
-    # names expected within 10 days without a notice, and any Nasdaq conflict.
-    soon = sorted(t for t, e in comps.items()
-                  if e.get("confidence") == "estimate" and e.get("release_date")
-                  and date.fromisoformat(e["release_date"]) <= today + timedelta(days=10))
-    conflicts = sorted(t for t, e in comps.items() if e.get("nasdaq_conflict"))
-    extra = ""
-    if soon:
-        extra += "\nDue within 10 days, no notice yet: " + ", ".join(soon)
-    if conflicts:
-        extra += "\nNasdaq disagrees, check: " + ", ".join(conflicts)
+        nxt = f"\nNext confirmed: {t} on {datetime.fromisoformat(d):%d %b} ({live[t].get('india_slot', '?').lower()})"
+    conflicts = sorted(t for t, e in live.items() if e.get("nasdaq_conflict"))
+    extra = ("\nNasdaq disagrees with the notice, please check: " + ", ".join(conflicts)) if conflicts else ""
     return (f"Biotech tracker {state.get('quarter')} - {today:%a %d %b}, {datetime.now(IST):%H:%M} IST\n"
-            f"{n_pr} confirmed, {n_exp} estimated, {n_rel} released.{nxt}{extra}")
+            f"{n_pr} dates confirmed by PR, {n_rel} released, {n_none} not announced yet.{nxt}{extra}")
 
 
 def send_photo(path, text):
