@@ -527,5 +527,85 @@
   "active": true,
   "note": "ASX-listed 6-K filer reporting H1 (with Q2) and full year (with Q4) only; Q1/Q3 are not applicable. Releases in the ASX morning = US evening: the H1 2026 6-K was accepted 19 Aug 21:48 ET (EDGAR filing date 20 Aug), i.e. an after-close release for India's next-morning slot. Its quarterly revenue 'trading updates' (Telix Q2 Revenue ...) are not results and are skipped by period_kind.",
   "release_tz": "Australia/Melbourne"
- }
+ },
+  {
+    "ticker": "REPL",
+    "name": "Replimune",
+    "ir_host": "ir.replimune.com",
+    "sources": [
+      {
+        "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=REPL&region=US&lang=en-US",
+        "kind": "yahoo_rss",
+        "verified": true,
+        "body_readable": true,
+        "note": "Yahoo Finance per-ticker feed. The company IR site (ir.replimune.com) answers 403 to automated requests, so it is not read directly. Third-party stories are filtered by the headline-is-ours checks in scan.py. Verified 2026-09-29."
+      }
+    ],
+    "fye_month": 3,
+    "half_yearly": false,
+    "usual_session": "before open",
+    "pinned": false,
+    "active": true,
+    "note": "Fiscal year ends 31 March. Last three results before open (08:05-08:11 ET): FQ1 FY27 14 Aug 2026, FQ4 FY26 29 Jun 2026, FQ3 FY26 3 Feb 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
+  },
+  {
+    "ticker": "ORIC",
+    "name": "ORIC Pharmaceuticals",
+    "ir_host": "investors.oricpharma.com",
+    "sources": [
+      {
+        "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=ORIC&region=US&lang=en-US",
+        "kind": "yahoo_rss",
+        "verified": true,
+        "body_readable": true,
+        "note": "Yahoo Finance per-ticker feed. The company IR site (investors.oricpharma.com) answers 403 to automated requests, so it is not read directly. Third-party stories are filtered by the headline-is-ours checks in scan.py. Verified 2026-09-29."
+      }
+    ],
+    "fye_month": 12,
+    "half_yearly": false,
+    "usual_session": "after close",
+    "pinned": false,
+    "active": true,
+    "note": "Last three results after close (16:10 ET): 2Q26 3 Aug, 1Q26 4 May, 4Q25 23 Feb 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
+  },
+  {
+    "ticker": "IMNM",
+    "name": "Immunome",
+    "ir_host": "investors.immunome.com",
+    "sources": [
+      {
+        "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=IMNM&region=US&lang=en-US",
+        "kind": "yahoo_rss",
+        "verified": true,
+        "body_readable": true,
+        "note": "Yahoo Finance per-ticker feed. The company IR site (investors.immunome.com) answers 403 to automated requests, so it is not read directly. Third-party stories are filtered by the headline-is-ours checks in scan.py. Verified 2026-09-29."
+      }
+    ],
+    "fye_month": 12,
+    "half_yearly": false,
+    "usual_session": "after close",
+    "pinned": false,
+    "active": true,
+    "note": "Last three results after close (16:05 ET): 2Q26 11 Aug, 1Q26 12 May, FY25 3 Mar 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
+  },
+  {
+    "ticker": "ELVN",
+    "name": "Enliven Therapeutics",
+    "ir_host": "ir.enliventherapeutics.com",
+    "sources": [
+      {
+        "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=ELVN&region=US&lang=en-US",
+        "kind": "yahoo_rss",
+        "verified": true,
+        "body_readable": true,
+        "note": "Yahoo Finance per-ticker feed. The company IR site (ir.enliventherapeutics.com) answers 403 to automated requests, so it is not read directly. Third-party stories are filtered by the headline-is-ours checks in scan.py. Verified 2026-09-29."
+      }
+    ],
+    "fye_month": 12,
+    "half_yearly": false,
+    "usual_session": "after close",
+    "pinned": false,
+    "active": true,
+    "note": "Last three results after close (16:10-16:12 ET): 2Q26 5 Aug, 1Q26 7 May, 4Q25 3 Mar 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
+  }
 ]

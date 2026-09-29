@@ -8,7 +8,7 @@
     "NUVL"
   ],
   "_needs_one_time_check": [],
-  "_built": "2026-09-25",
+  "_built": "2026-09-29",
   "companies": {
     "BNTX": {
       "company_name": "BioNTech SE",
@@ -366,7 +366,7 @@
         }
       ],
       "six_k_scanned": 109,
-      "six_k_window_from": "2023-10-11",
+      "six_k_window_from": "2023-10-15",
       "reporting_lag_days": {
         "median": 36,
         "min": 34,
@@ -4207,8 +4207,8 @@
           "heading": "NANOBIOTIX Announces Updated Preliminary Results From Phase 1 Pancreatic Cancer Trial and New Exploratory Analysis From "
         }
       ],
-      "six_k_scanned": 118,
-      "six_k_window_from": "2023-10-11",
+      "six_k_scanned": 117,
+      "six_k_window_from": "2023-10-15",
       "reporting_lag_days": {
         "median": 92,
         "min": 80,
@@ -4551,7 +4551,7 @@
           "quarter_end": "2025-06-30",
           "period_label": "1H25",
           "days_after_quarter_end": 52,
-          "heading": "EX-99.1 2 prez.htm EX-99.1",
+          "heading": "(image-only exhibits, no text: identified by document names halfyr6k.htm prez.htm report.htm results.htm)",
           "period_basis": "document name (image-only exhibits)",
           "results_exhibit": {
             "name": "results.htm",
@@ -4567,7 +4567,7 @@
           "quarter_end": "2024-12-31",
           "period_label": "FY24",
           "days_after_quarter_end": 52,
-          "heading": "EX-99.1 2 fy24report.htm EX-99.1",
+          "heading": "(image-only exhibits, no text: identified by document names anrep6kfy24.htm fy24report.htm fy24cgs.htm earnfy24.htm earnprz24.htm)",
           "period_basis": "document name (image-only exhibits)",
           "results_exhibit": {
             "name": "fy24report.htm",
@@ -4600,7 +4600,7 @@
         }
       ],
       "six_k_scanned": 60,
-      "six_k_window_from": "2023-10-11",
+      "six_k_window_from": "2023-10-15",
       "reporting_lag_days": {
         "median": 52,
         "min": 50,
@@ -4617,6 +4617,1002 @@
           "name": "announcement.htm",
           "type": "EX-99.3",
           "kb": 24
+        }
+      },
+      "has_model": false,
+      "active": true
+    },
+    "REPL": {
+      "company_name": "Replimune Group, Inc.",
+      "cik": "0001737953",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "03-31",
+      "fiscal_year_end_source": "latest 10-K period 2026-03-31 (repl-20260331.htm)",
+      "fye_month": 3,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-14",
+          "accession": "0001104659-26-096483",
+          "form": "8-K",
+          "primary_doc": "tm2623208d1_8k.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "1Q27",
+          "days_after_quarter_end": 45,
+          "heading": "Replimune Reports Fiscal First Quarter 2027 Financial Results and Provides Corporate Update TUDRIQEV\u2122 in combination with nivolumab receives FDA accelerated approval and will launch within 60 days Mic",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2623208d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 63
+          }
+        },
+        {
+          "filing_date": "2026-06-29",
+          "accession": "0001104659-26-078511",
+          "form": "8-K",
+          "primary_doc": "tm2619129d1_8k.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "4Q26",
+          "days_after_quarter_end": 90,
+          "heading": "Replimune Reports Fiscal Fourth Quarter and Year End 2026 Financial Results and Provides Corporate Update Woburn, MA, June 29, 2026 \u2013 Replimune Group, Inc. (Nasdaq: REPL), a clinical stage biotechnolo",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2619129d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 48
+          }
+        },
+        {
+          "filing_date": "2026-02-03",
+          "accession": "0001104659-26-009510",
+          "form": "8-K",
+          "primary_doc": "tm264822d1_8k.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "3Q26",
+          "days_after_quarter_end": 34,
+          "heading": "Replimune Reports Fiscal Third Quarter 2026 Financial Results and Provides Corporate Update April 10, 2026 Target Action Date for RP1 in Advanced Melanoma Woburn, MA, February 3, 2026 \u2013 Replimune Grou",
+          "period_basis": "heading",
+          "items": "1.01,2.02,2.03,9.01",
+          "results_exhibit": {
+            "name": "tm264822d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 53
+          }
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001104659-25-107438",
+          "form": "8-K",
+          "primary_doc": "tm2530417d1_8k.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Replimune Reports Fiscal Second Quarter 2026 Financial Results and Provides Corporate Update Woburn, MA, November 6, 2025 \u2013 Replimune Group, Inc. (Nasdaq: REPL), a clinical stage biotechnology company",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2530417d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 59
+          }
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0001104659-25-074989",
+          "form": "8-K",
+          "primary_doc": "tm2522849d1_8k.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 38,
+          "heading": "Replimune Reports Fiscal First Quarter 2026 Financial Results and Provides Corporate Update Woburn, MA, August 7, 2025 \u2013 Replimune Group, Inc. (Nasdaq: REPL), a clinical stage biotechnology company pi",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2522849d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 41
+          }
+        },
+        {
+          "filing_date": "2025-05-22",
+          "accession": "0001104659-25-051847",
+          "form": "8-K",
+          "primary_doc": "tm2515645d2_8k.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 52,
+          "heading": "Replimune Reports Fiscal Fourth Quarter and Year End 2025 Financial Results and Provides Corporate Update \u00b7 BLA priority review of RP1 plus nivolumab in advanced melanoma proceeding on schedule; manuf",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2515645d2_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 55
+          }
+        },
+        {
+          "filing_date": "2025-02-12",
+          "accession": "0001104659-25-011851",
+          "form": "8-K",
+          "primary_doc": "tm256243d1_8k.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 43,
+          "heading": "Replimune Reports Fiscal Third Quarter 2025 Financial Results and Provides Corporate Update \u00b7 U.S. Food and Drug Administration (FDA) recently accepted the Biologics License Application (BLA) for RP1 ",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm256243d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 62
+          }
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0001104659-24-116413",
+          "form": "8-K",
+          "primary_doc": "tm2428095d1_8k.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 43,
+          "heading": "Replimune Reports Fiscal Second Quarter 2025 Financial Results and Provides Corporate Update \u2022 Completed Pre-Biologics License Application (BLA) meeting with the U.S. Food and Drug Administration (FDA",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2428095d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 54
+          }
+        },
+        {
+          "filing_date": "2024-08-08",
+          "accession": "0001104659-24-087035",
+          "form": "8-K",
+          "primary_doc": "tm2421132d1_8k.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 39,
+          "heading": "Replimune Reports Fiscal First Quarter 2025 Financial Results and Provides Corporate Update \u00b7 Pre-Biologics License Application (BLA) meeting with the U.S. Food and Drug Administration (FDA) scheduled",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2421132d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 46
+          }
+        },
+        {
+          "filing_date": "2024-05-16",
+          "accession": "0001104659-24-062296",
+          "form": "8-K",
+          "primary_doc": "tm2413978d4_8k.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 46,
+          "heading": "Replimune Reports Fiscal Fourth Quarter and Year Ended 2024 Financial Results and Provides Corporate Update \u00b7 Twelve-month primary analysis results by independent central review from the IGNYTE clinic",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2413978d4_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2024-02-08",
+          "accession": "0001104659-24-011951",
+          "form": "8-K",
+          "primary_doc": "tm245513d1_8k.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 39,
+          "heading": "Replimune Reports Fiscal Third Quarter 2024 Financial Results and Provides Corporate Update \u2022 Positive data update in December 2023 for all 140 patients in the IGNYTE clinical trial cohort of RP1 in a",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm245513d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 74
+          }
+        },
+        {
+          "filing_date": "2023-11-07",
+          "accession": "0001104659-23-115027",
+          "form": "8-K",
+          "primary_doc": "tm2330041d1_8k.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 38,
+          "heading": "Replimune Reports Fiscal Second Quarter 2024 Financial Results and Provides Corporate Update The Company plans to hold a conference call in early December to provide a comprehensive RP1 skin cancer pr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2330041d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 115
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 43,
+        "min": 34,
+        "max": 90,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "1Q27",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-14",
+        "accession": "0001104659-26-096483",
+        "results_exhibit": {
+          "name": "tm2623208d1_ex99-1.htm",
+          "type": "EX-99.1",
+          "kb": 63
+        }
+      },
+      "has_model": false,
+      "active": true
+    },
+    "ORIC": {
+      "company_name": "Oric Pharmaceuticals, Inc.",
+      "cik": "0001796280",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (oric-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-03",
+          "accession": "0001193125-26-330568",
+          "form": "8-K",
+          "primary_doc": "oric-20260803.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 34,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Second Quarter 2026 Financial Results and Operational Updates Initiated Himalayas-1 global Phase 3 trial in patients with mCRPC previously treated with abiraterone Entere",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 204
+          }
+        },
+        {
+          "filing_date": "2026-05-04",
+          "accession": "0001193125-26-203993",
+          "form": "8-K",
+          "primary_doc": "oric-20260504.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 34,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports First Quarter 2026 Financial Results and Operational Updates Announced selection of rinzimetostat RP3D in combination with darolutamide for Himalayas-1 Phase 3 global reg",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 162
+          }
+        },
+        {
+          "filing_date": "2026-02-23",
+          "accession": "0001193125-26-063974",
+          "form": "8-K",
+          "primary_doc": "oric-20260223.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 54,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Fourth Quarter and Full Year 2025 Financial Results and Operational Updates Reported rinzimetostat (formerly ORIC-944) Phase 1b data that continue to demonstrate potentia",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 190
+          }
+        },
+        {
+          "filing_date": "2025-11-13",
+          "accession": "0001193125-25-280196",
+          "form": "8-K",
+          "primary_doc": "oric-20251113.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 44,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Third Quarter 2025 Financial Results and Provides Clinical and Operational Updates Announced completion of dose exploration portion of ORIC-944 Phase 1b clinical trial an",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 205
+          }
+        },
+        {
+          "filing_date": "2025-08-12",
+          "accession": "0000950170-25-107313",
+          "form": "8-K",
+          "primary_doc": "oric-20250812.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 43,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Second Quarter 2025 Financial Results and Operational Updates Reported potentially best-in-class clinical efficacy and safety data from ongoing Phase 1b trial of ORIC-944",
+          "period_basis": "heading",
+          "items": "2.02,2.05,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 209
+          }
+        },
+        {
+          "filing_date": "2025-05-05",
+          "accession": "0000950170-25-063540",
+          "form": "8-K",
+          "primary_doc": "oric-20250505.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 35,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports First Quarter 2025 Financial Results and Operational Updates Announced focused registrational clinical development plans for lead programs, extended cash runway, and acce",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 154
+          }
+        },
+        {
+          "filing_date": "2025-02-18",
+          "accession": "0000950170-25-022219",
+          "form": "8-K",
+          "primary_doc": "oric-20250218.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 49,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Fourth Quarter and Full Year 2024 Financial Results and Operational Updates Reported encouraging early safety and efficacy data in ongoing dose escalation trial for ORIC-",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 191
+          }
+        },
+        {
+          "filing_date": "2024-11-12",
+          "accession": "0000950170-24-125386",
+          "form": "8-K",
+          "primary_doc": "oric-20241112.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 43,
+          "heading": "ORIC\u00ae Pharmaceuticals Reports Third Quarter 2024 Financial Results and Operational Updates Presented preclinical data further supporting the potential best-in-class profile of ORIC-114 to treat EGFR e",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 144
+          }
+        },
+        {
+          "filing_date": "2024-08-12",
+          "accession": "0000950170-24-095419",
+          "form": "8-K",
+          "primary_doc": "oric-20240812.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 43,
+          "heading": "ORIC Pharmaceuticals Reports Second Quarter 2024 Financial Results and Operational Updates Initiated dosing of ORIC-944 in combinations with NUBEQA\u00ae (darolutamide) and ERLEADA\u00ae (apalutamide) in the on",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 157
+          }
+        },
+        {
+          "filing_date": "2024-05-06",
+          "accession": "0000950170-24-053551",
+          "form": "8-K",
+          "primary_doc": "oric-20240506.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 36,
+          "heading": "ORIC Pharmaceuticals Reports First Quarter 2024 Financial Results and Operational Updates Initiated three ORIC-114 Phase 1b expansion cohorts in NSCLC patients with EGFR exon 20 insertion, HER2 exon 2",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 112
+          }
+        },
+        {
+          "filing_date": "2024-03-11",
+          "accession": "0000950170-24-029239",
+          "form": "8-K",
+          "primary_doc": "oric-20240311.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 71,
+          "heading": "ORIC Pharmaceuticals Reports Fourth Quarter and Full Year 2023 Financial Results and Operational Updates Presented initial Phase 1b data from three clinical programs that support potential best in cla",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 144
+          }
+        },
+        {
+          "filing_date": "2023-11-06",
+          "accession": "0000950170-23-059392",
+          "form": "8-K",
+          "primary_doc": "oric-20231106.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 37,
+          "heading": "ORIC Pharmaceuticals Reports Third Quarter 2023 Financial Results and Operational Updates Presented initial Phase 1b data for ORIC-114 in patients with EGFR and HER2 Exon 20 mutated NSCLC demonstratin",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "oric-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 193
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2024-01-09",
+          "accession": "0001193125-24-004909",
+          "kind": "other",
+          "heading": "Company Overview January 2024 Forward-Looking Statements This presentation contains forward-looking statements that invo"
+        },
+        {
+          "filing_date": "2023-01-09",
+          "accession": "0001193125-23-004194",
+          "kind": "other",
+          "heading": "ORIC Pharmaceuticals Provides Corporate Update and Highlights Key Upcoming Milestones Initial Phase 1b data for three on"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 43,
+        "min": 34,
+        "max": 71,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-03",
+        "accession": "0001193125-26-330568",
+        "results_exhibit": {
+          "name": "oric-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 204
+        }
+      },
+      "has_model": false,
+      "active": true
+    },
+    "IMNM": {
+      "company_name": "Immunome Inc.",
+      "cik": "0001472012",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (imnm-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-11",
+          "accession": "0001193125-26-344577",
+          "form": "8-K",
+          "primary_doc": "imnm-20260811.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 42,
+          "heading": "Immunome Reports Second Quarter 2026 Financial Results and Provides Business Update August 11, 2026 \u2022 Varegacestat PDUFA target action date set for April 28, 2027, following U.S. FDA acceptance of New",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "imnm-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 186
+          }
+        },
+        {
+          "filing_date": "2026-05-12",
+          "accession": "0001193125-26-219367",
+          "form": "8-K",
+          "primary_doc": "imnm-20260512.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 42,
+          "heading": "Immunome Reports First Quarter 2026 Financial Results and Provides Business Update May 12, 2026 \u2022 New Drug Application (NDA) submitted to the U.S. Food and Drug Administration (FDA) in April 2026 seek",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "imnm-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 179
+          }
+        },
+        {
+          "filing_date": "2026-03-03",
+          "accession": "0001193125-26-088141",
+          "form": "8-K",
+          "primary_doc": "imnm-20260303.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 62,
+          "heading": "Immunome Reports Full Year 2025 Financial Results and Provides Business Update Mar. 3, 2026 \u2022 New Drug Application submission for varegacestat in patients with desmoid tumors planned for 2Q 2026 \u2022 IM-",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "imnm-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 140
+          }
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001193125-25-269538",
+          "form": "8-K",
+          "primary_doc": "imnm-20251106.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 37,
+          "heading": "Immunome Reports Third Quarter 2025 Financial Results and Provides Business Update Nov. 6, 2025 BOTHELL, Wash. \u2013 Immunome, Inc. (Nasdaq: IMNM), a biotechnology company focused on developing first-in-c",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "imnm-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 129
+          }
+        },
+        {
+          "filing_date": "2025-08-06",
+          "accession": "0000950170-25-104015",
+          "form": "8-K",
+          "primary_doc": "imnm-20250806.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 37,
+          "heading": "Immunome Reports Second Quarter 2025 Financial Results and Provides Business Update 8/6/2025 BOTHELL, Wash. \u2013 Immunome, Inc. (Nasdaq: IMNM), a biotechnology company focused on developing first-in-clas",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "imnm-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 128
+          }
+        },
+        {
+          "filing_date": "2025-05-12",
+          "accession": "0001104659-25-047304",
+          "form": "8-K",
+          "primary_doc": "tm2514592d1_8k.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 42,
+          "heading": "Immunome Reports First Quarter 2025 Financial Results and Provides Business Update 5/12/2025 BOTHELL, Wash. \u2013 Immunome, Inc. (Nasdaq: IMNM), a biotechnology company focused on developing first-in-clas",
+          "period_basis": "heading",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "tm2514592d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 48
+          }
+        },
+        {
+          "filing_date": "2025-03-19",
+          "accession": "0001104659-25-025558",
+          "form": "8-K",
+          "primary_doc": "tm259725d1_8k.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 78,
+          "heading": "Immunome Reports Full Year 2024 Financial Results and Provides Business Update 3/19/2025 \u00b7 Topline data for Phase 3 RINGSIDE study of varegacestat in progressing desmoid tumors expected in second half",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm259725d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 64
+          }
+        },
+        {
+          "filing_date": "2024-11-13",
+          "accession": "0001104659-24-117682",
+          "form": "8-K",
+          "primary_doc": "tm2428220d1_8k.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 44,
+          "heading": "Immunome Reports Third Quarter 2024 Financial Results and Provides Business Update 11/13/2024 BOTHELL, Wash. \u2013Immunome, Inc. (Nasdaq: IMNM), a biotechnology company focused on the development of first",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2428220d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 75
+          }
+        },
+        {
+          "filing_date": "2024-08-12",
+          "accession": "0001104659-24-088340",
+          "form": "8-K",
+          "primary_doc": "tm2421310d1_8k.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 43,
+          "heading": "Immunome Reports Second Quarter 2024 Financial Results and Provides Business Update 08/12/2024 BOTHELL, Wash. \u2013 Immunome, Inc. (Nasdaq: IMNM), a biotechnology company focused on the development of fir",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2421310d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 74
+          }
+        },
+        {
+          "filing_date": "2024-05-14",
+          "accession": "0001104659-24-060893",
+          "form": "8-K",
+          "primary_doc": "tm2414252d1_8k.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 44,
+          "heading": "Immunome Reports First Quarter 2024 Financial Results and Provides Business Update - Integration of AL102 and IM-1021 completed - Topline data for Phase 3 RINGSIDE trial of AL102 expected in second ha",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2414252d1_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 54
+          }
+        },
+        {
+          "filing_date": "2024-02-13",
+          "accession": "0001104659-24-019883",
+          "form": "8-K",
+          "primary_doc": "tm245878d1_8k.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 44,
+          "heading": "RISK FACTORS An investment in shares of our common stock involves a high degree of risk. You should carefully consider the following risk factors, together with the information contained in our Annual",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,8.01,9.01",
+          "results_exhibit": {
+            "name": "tm245878d1_ex99-2.htm",
+            "type": "EX-99.2",
+            "kb": 393
+          }
+        },
+        {
+          "filing_date": "2023-11-09",
+          "accession": "0001104659-23-116348",
+          "form": "8-K",
+          "primary_doc": "tm2330142d2_8k.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 40,
+          "heading": "Immunome Reports Third Quarter 2023 Financial Results - Completed merger with Morphimmune and concurrent $125 million private placement investment with leading institutional investors - - Clay B. Sieg",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "tm2330142d2_ex99-1.htm",
+            "type": "EX-99.1",
+            "kb": 101
+          }
+        }
+      ],
+      "other_item_202_8ks": [
+        {
+          "filing_date": "2025-01-29",
+          "accession": "0001104659-25-007198",
+          "kind": "other",
+          "heading": ""
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 43,
+        "min": 37,
+        "max": 78,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-11",
+        "accession": "0001193125-26-344577",
+        "results_exhibit": {
+          "name": "imnm-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 186
+        }
+      },
+      "has_model": false,
+      "active": true
+    },
+    "ELVN": {
+      "company_name": "Enliven Therapeutics, Inc.",
+      "cik": "0001672619",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "sic_description": "Pharmaceutical Preparations",
+      "state_of_incorporation": "DE",
+      "filer_type": "8-K",
+      "filer_type_source": "forms filed in last 24 months",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fiscal_year_end_source": "latest 10-K period 2025-12-31 (elvn-20251231.htm)",
+      "fye_month": 12,
+      "results_source": "edgar_8k_ex99",
+      "results_detection": "Item 2.02 8-K whose EX-99 press-release heading names the quarter and 'financial results'/'results'/'revenue'; preliminary-cash and JPM 2.02s excluded",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-05",
+          "accession": "0001193125-26-335101",
+          "form": "8-K",
+          "primary_doc": "elvn-20260805.htm",
+          "quarter_end": "2026-06-30",
+          "period_label": "2Q26",
+          "days_after_quarter_end": 36,
+          "heading": "Enliven Therapeutics Reports Second Quarter Financial Results and Provides a Business Update Announced positive Phase 1 clinical data for ELVN-001 in CML, demonstrating encouraging ELVN-001 efficacy d",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 224
+          }
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001193125-26-211921",
+          "form": "8-K",
+          "primary_doc": "elvn-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "period_label": "1Q26",
+          "days_after_quarter_end": 37,
+          "heading": "Enliven Therapeutics Reports First Quarter Financial Results and Provides a Business Update Phase 1 data update for ELVN-001 expected mid-2026 Initiation of the Phase 3 ENABLE-2 pivotal trial of ELVN-",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 140
+          }
+        },
+        {
+          "filing_date": "2026-03-03",
+          "accession": "0001193125-26-088195",
+          "form": "8-K",
+          "primary_doc": "elvn-20260303.htm",
+          "quarter_end": "2025-12-31",
+          "period_label": "4Q25",
+          "days_after_quarter_end": 62,
+          "heading": "Enliven Therapeutics Reports Fourth Quarter and Full Year 2025 Financial Results and Provides a Business Update Reported positive initial Phase 1b data for ELVN-001 in CML Initiation of the Phase 3 EN",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 189
+          }
+        },
+        {
+          "filing_date": "2025-11-12",
+          "accession": "0001193125-25-277580",
+          "form": "8-K",
+          "primary_doc": "elvn-20251112.htm",
+          "quarter_end": "2025-09-30",
+          "period_label": "3Q25",
+          "days_after_quarter_end": 43,
+          "heading": "Enliven Therapeutics Reports Third Quarter Financial Results and Provides a Business Update Completed enrollment of the randomized Phase 1b cohorts of the ongoing ENABLE trial of ELVN-001 in CML Remai",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 231
+          }
+        },
+        {
+          "filing_date": "2025-08-13",
+          "accession": "0001193125-25-179837",
+          "form": "8-K",
+          "primary_doc": "elvn-20250813.htm",
+          "quarter_end": "2025-06-30",
+          "period_label": "2Q25",
+          "days_after_quarter_end": 44,
+          "heading": "Enliven Therapeutics Reports Second Quarter Financial Results and Provides a Business Update Announced positive data from the Phase 1 clinical trial of ELVN-001 in CML, reporting a cumulative MMR rate",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 216
+          }
+        },
+        {
+          "filing_date": "2025-05-14",
+          "accession": "0000950170-25-071387",
+          "form": "8-K",
+          "primary_doc": "elvn-20250514.htm",
+          "quarter_end": "2025-03-31",
+          "period_label": "1Q25",
+          "days_after_quarter_end": 44,
+          "heading": "Enliven Therapeutics Reports First Quarter Financial Results and Provides a Business Update Updated data from the Phase 1 ENABLE clinical trial of ELVN-001 in CML to be presented at the EHA 2025 Congr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 145
+          }
+        },
+        {
+          "filing_date": "2025-03-13",
+          "accession": "0000950170-25-038737",
+          "form": "8-K",
+          "primary_doc": "elvn-20250313.htm",
+          "quarter_end": "2024-12-31",
+          "period_label": "4Q24",
+          "days_after_quarter_end": 72,
+          "heading": "Enliven Therapeutics Reports Fourth Quarter and Full Year 2024 Financial Results and Provides a Business Update Updated Phase 1 data for ELVN-001 expected mid-2025 as positive enrollment momentum cont",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 176
+          }
+        },
+        {
+          "filing_date": "2024-11-13",
+          "accession": "0000950170-24-126323",
+          "form": "8-K",
+          "primary_doc": "elvn-20241113.htm",
+          "quarter_end": "2024-09-30",
+          "period_label": "3Q24",
+          "days_after_quarter_end": 44,
+          "heading": "Enliven Therapeutics Reports Third Quarter Financial Results and Provides a Business Update Announced positive data from the Phase 1 clinical trial of ELVN-001 in CML, reporting a cumulative MMR rate ",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 146
+          }
+        },
+        {
+          "filing_date": "2024-08-13",
+          "accession": "0000950170-24-096204",
+          "form": "8-K",
+          "primary_doc": "elvn-20240813.htm",
+          "quarter_end": "2024-06-30",
+          "period_label": "2Q24",
+          "days_after_quarter_end": 44,
+          "heading": "Enliven Therapeutics Reports Second Quarter Financial Results and Provides a Business Update Dosed the first patient in the Phase 1b arm of the clinical trial evaluating ELVN-001 in patients with CML ",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 141
+          }
+        },
+        {
+          "filing_date": "2024-05-14",
+          "accession": "0000950170-24-059544",
+          "form": "8-K",
+          "primary_doc": "elvn-20240514.htm",
+          "quarter_end": "2024-03-31",
+          "period_label": "1Q24",
+          "days_after_quarter_end": 44,
+          "heading": "Enliven Therapeutics Reports First Quarter Financial Results and Provides a Business Update Announced positive proof of concept data from Phase 1 clinical trial of ELVN-001 in CML, achieving an initia",
+          "period_basis": "nearest prior period end",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 124
+          }
+        },
+        {
+          "filing_date": "2024-03-14",
+          "accession": "0000950170-24-031482",
+          "form": "8-K",
+          "primary_doc": "elvn-20240314.htm",
+          "quarter_end": "2023-12-31",
+          "period_label": "4Q23",
+          "days_after_quarter_end": 74,
+          "heading": "Enliven Therapeutics Reports Fourth Quarter and Full Year 2023 Financial Results and Provides a Business Update Initial proof of concept data from Phase 1a trial evaluating ELVN-001 in adults with chr",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 164
+          }
+        },
+        {
+          "filing_date": "2023-11-09",
+          "accession": "0000950170-23-062042",
+          "form": "8-K",
+          "primary_doc": "elvn-20231109.htm",
+          "quarter_end": "2023-09-30",
+          "period_label": "3Q23",
+          "days_after_quarter_end": 40,
+          "heading": "Enliven Therapeutics Reports Third Quarter 2023 Financial Results and Provides a Business Update Company on track to deliver initial proof of concept data for ELVN-001 and ELVN-002 in 2024 Strong bala",
+          "period_basis": "heading",
+          "items": "2.02,9.01",
+          "results_exhibit": {
+            "name": "elvn-ex99_1.htm",
+            "type": "EX-99.1",
+            "kb": 186
+          }
+        }
+      ],
+      "other_item_202_8ks": [],
+      "reporting_lag_days": {
+        "median": 44,
+        "min": 36,
+        "max": 74,
+        "n": 12,
+        "_note": "days after the fiscal period end that the results filing landed; start watching at min-2"
+      },
+      "latest_results": {
+        "period_label": "2Q26",
+        "quarter_end": "2026-06-30",
+        "filing_date": "2026-08-05",
+        "accession": "0001193125-26-335101",
+        "results_exhibit": {
+          "name": "elvn-ex99_1.htm",
+          "type": "EX-99.1",
+          "kb": 224
         }
       },
       "has_model": false,
