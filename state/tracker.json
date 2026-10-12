@@ -230,10 +230,13 @@
    "release_date": "2026-10-12",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-10-12",
+   "results_title": "Nurix Therapeutics Reports Third Quarter 2026 Financial Results and Provides Corporate Update",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/nurix-therapeutics-reports-third-quarter-200500913.html?.tsrc=rss",
    "run_at_ist": null,
    "session": "after close",
    "session_assumed": false,
-   "status": "expected"
+   "status": "released"
   },
   "NUVL": {
    "confidence": "estimate",
@@ -357,5 +360,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-10-13 01:13 IST"
+ "updated": "2026-10-13 02:13 IST"
 }
