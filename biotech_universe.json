@@ -1629,7 +1629,7 @@
         }
       },
       "has_model": true,
-      "active": true
+      "active": false
     },
     "IOVA": {
       "company_name": "IOVANCE BIOTHERAPEUTICS, INC.",
@@ -2381,7 +2381,7 @@
         }
       },
       "has_model": true,
-      "active": true
+      "active": false
     },
     "KURA": {
       "company_name": "Kura Oncology, Inc.",
@@ -3940,7 +3940,7 @@
         }
       },
       "has_model": true,
-      "active": true
+      "active": false
     },
     "NBTX": {
       "company_name": "Nanobiotix S.A.",
@@ -4228,7 +4228,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     },
     "NUVL": {
       "company_name": "Nuvalent, Inc.",
@@ -4620,7 +4620,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     },
     "REPL": {
       "company_name": "Replimune Group, Inc.",
@@ -4864,7 +4864,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     },
     "ORIC": {
       "company_name": "Oric Pharmaceuticals, Inc.",
@@ -5121,7 +5121,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     },
     "IMNM": {
       "company_name": "Immunome Inc.",
@@ -5372,7 +5372,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     },
     "ELVN": {
       "company_name": "Enliven Therapeutics, Inc.",
@@ -5616,7 +5616,7 @@
         }
       },
       "has_model": false,
-      "active": true
+      "active": false
     }
   }
 }

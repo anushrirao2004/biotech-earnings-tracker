@@ -490,6 +490,10 @@ def main():
     targets = {c["ticker"]: tracker.company_target(c, forced=forced) for c in companies}
     labels = {c["ticker"]: tracker.company_label(c, *targets[c["ticker"]]) for c in companies}
     state = tracker.roll_quarter(tracker.load(), q, y, labels)
+    # Inactive names leave the state too, so the digest, its caption and the
+    # laptop scheduler stop listing them (user, 2026-10-13: 12-name list).
+    active = {c["ticker"] for c in companies if c.get("active", True)}
+    state["companies"] = {t: e for t, e in state.get("companies", {}).items() if t in active}
     seen = load_seen()
 
     for c in companies:

@@ -165,7 +165,7 @@
   "half_yearly": false,
   "usual_session": "before open",
   "pinned": true,
-  "active": true,
+  "active": false,
   "note": "Fiscal year ends 31 October: fiscal Q2 FY26 ended 30 Apr 2026 (reported 15 Jun), fiscal Q3 ended 31 Jul (reported 8 Sep). Last three results 8-Ks accepted 07:00-09:15 ET; the two before were after close."
  },
  {
@@ -253,7 +253,7 @@
   "half_yearly": false,
   "usual_session": "after close",
   "pinned": false,
-  "active": true,
+  "active": false,
   "note": "5 of the last 6 results 8-Ks accepted 16:05-17:35 ET; no separate date notice."
  },
  {
@@ -422,7 +422,7 @@
   "half_yearly": false,
   "usual_session": "after close",
   "pinned": false,
-  "active": true,
+  "active": false,
   "note": "New in this tracker (not in the old monitor). 5 of the last 6 results 8-Ks accepted 16:04-16:12 ET; no separate date notice. Tried /rss/pressrelease.aspx (404) and the Q4 JSON service (403) on ir.tyra.bio, and tyra.bio/feed/ (404)."
  },
  {
@@ -456,7 +456,7 @@
   "half_yearly": true,
   "usual_session": "after close",
   "pinned": false,
-  "active": true,
+  "active": false,
   "note": "French 6-K filer reporting H1 (with Q2) and full year (with Q4) only; Q1/Q3 are not applicable. Results 6-K accepted 16:15-16:50 ET; H1 arrives 86-115 days after 30 June (24 Sep 2026, 30 Sep 2025). Its Q1 'Operational and Financial Update' is a cash update, not results."
  },
  {
@@ -490,7 +490,7 @@
   "half_yearly": false,
   "usual_session": "before open",
   "pinned": false,
-  "active": true,
+  "active": false,
   "note": "Results 8-K accepted 06:35 ET every quarter; no separate date notice. GSK agreed to acquire Nuvalent on 9 Jun 2026 and no 2Q26 results 8-K was filed; biotech_universe.json lists NUVL as inactive. Kept active here on instruction; set active:false once the deal closes."
  },
  {
@@ -524,7 +524,7 @@
   "half_yearly": true,
   "usual_session": "after close",
   "pinned": false,
-  "active": true,
+  "active": false,
   "note": "ASX-listed 6-K filer reporting H1 (with Q2) and full year (with Q4) only; Q1/Q3 are not applicable. Releases in the ASX morning = US evening: the H1 2026 6-K was accepted 19 Aug 21:48 ET (EDGAR filing date 20 Aug), i.e. an after-close release for India's next-morning slot. Its quarterly revenue 'trading updates' (Telix Q2 Revenue ...) are not results and are skipped by period_kind.",
   "release_tz": "Australia/Melbourne"
  },
@@ -545,7 +545,7 @@
     "half_yearly": false,
     "usual_session": "before open",
     "pinned": false,
-    "active": true,
+    "active": false,
     "note": "Fiscal year ends 31 March. Last three results before open (08:05-08:11 ET): FQ1 FY27 14 Aug 2026, FQ4 FY26 29 Jun 2026, FQ3 FY26 3 Feb 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
   },
   {
@@ -565,7 +565,7 @@
     "half_yearly": false,
     "usual_session": "after close",
     "pinned": false,
-    "active": true,
+    "active": false,
     "note": "Last three results after close (16:10 ET): 2Q26 3 Aug, 1Q26 4 May, 4Q25 23 Feb 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
   },
   {
@@ -585,7 +585,7 @@
     "half_yearly": false,
     "usual_session": "after close",
     "pinned": false,
-    "active": true,
+    "active": false,
     "note": "Last three results after close (16:05 ET): 2Q26 11 Aug, 1Q26 12 May, FY25 3 Mar 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
   },
   {
@@ -605,7 +605,7 @@
     "half_yearly": false,
     "usual_session": "after close",
     "pinned": false,
-    "active": true,
+    "active": false,
     "note": "Last three results after close (16:10-16:12 ET): 2Q26 5 Aug, 1Q26 7 May, 4Q25 3 Mar 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
   }
 ]
