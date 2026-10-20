@@ -1,4 +1,8 @@
 {
+ "BNTX|advisory|https://finance.yahoo.com/healthcare/articles/biontech-report-third-quarter-2026-104500560.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-10-20"
+ },
  "ENGN|results|https://engene.com/engene-reports-third-quarter-2026-financial-results-and-provides-business-update/": {
   "resolved": true,
   "when": "2026-09-26"

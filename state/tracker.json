@@ -1,14 +1,20 @@
 {
  "companies": {
   "BNTX": {
-   "advisory_title": "Nasdaq: company-confirmed earnings date",
-   "announced_on": "2026-09-26",
+   "advisory_title": "BioNTech to Report Third Quarter 2026 Financial Results and Corporate Update on November 3, 2026",
+   "announced_on": "2026-10-20",
    "confidence": "pr",
    "history": [
     {
      "release_date": "2026-11-03",
      "release_time_et": null,
      "seen": "2026-09-26 18:09",
+     "session": "before open"
+    },
+    {
+     "release_date": "2026-11-03",
+     "release_time_et": "05:45",
+     "seen": "2026-10-20 17:11",
      "session": "before open"
     }
    ],
@@ -18,12 +24,13 @@
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-11-03",
-   "release_time_et": null,
-   "release_time_ist": null,
+   "release_time_et": "05:45",
+   "release_time_ist": "16:15",
    "run_at_ist": "2026-11-03 15:00",
    "session": "before open",
    "session_assumed": false,
-   "source_url": "https://www.nasdaq.com/market-activity/stocks/bntx/earnings",
+   "source_kind": "yahoo_rss",
+   "source_url": "https://finance.yahoo.com/healthcare/articles/biontech-report-third-quarter-2026-104500560.html?.tsrc=rss",
    "status": "announced"
   },
   "CATX": {
@@ -196,5 +203,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-10-20 16:12 IST"
+ "updated": "2026-10-20 17:12 IST"
 }
