@@ -139,19 +139,32 @@
    "status": "expected"
   },
   "KYMR": {
-   "confidence": "estimate",
+   "advisory_title": "Kymera Therapeutics to Report Third Quarter 2026 Financial Results on October 29, 2026",
+   "announced_on": "2026-10-22",
+   "confidence": "pr",
    "estimate_note": "Nasdaq algorithmic estimate",
+   "history": [
+    {
+     "release_date": "2026-10-29",
+     "release_time_et": null,
+     "seen": "2026-10-23 02:12",
+     "session": "before open"
+    }
+   ],
    "india_slot": "Evening",
-   "india_update_date": "2026-11-03",
+   "india_update_date": "2026-10-29",
+   "nasdaq_checked": "2026-10-22",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
-   "release_date": "2026-11-03",
+   "release_date": "2026-10-29",
    "release_time_et": null,
    "release_time_ist": null,
-   "run_at_ist": null,
+   "run_at_ist": "2026-10-29 15:00",
    "session": "before open",
    "session_assumed": false,
-   "status": "expected"
+   "source_kind": "yahoo_rss",
+   "source_url": "https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-report-third-quarter-200100296.html?.tsrc=rss",
+   "status": "announced"
   },
   "NRIX": {
    "confidence": "estimate",
@@ -203,5 +216,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-10-23 01:12 IST"
+ "updated": "2026-10-23 02:12 IST"
 }
