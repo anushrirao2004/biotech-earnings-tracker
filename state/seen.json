@@ -41,6 +41,10 @@
   "resolved": true,
   "when": "2026-10-12"
  },
+ "SNDX|advisory|https://finance.yahoo.com/healthcare/articles/syndax-announce-third-quarter-2026-110000173.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-10-26"
+ },
  "TLX|advisory|https://telixpharma.com/news-views/telix-h1-2026-results-investor-webcast-notification/": {
   "resolved": true,
   "when": "2026-09-28"

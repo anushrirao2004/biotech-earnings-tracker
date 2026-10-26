@@ -200,21 +200,26 @@
    "status": "expected"
   },
   "SNDX": {
-   "confidence": "estimate",
+   "advisory_title": "Syndax to Announce Third Quarter 2026 Financial Results and Host Conference Call and Webcast on November 2, 2026",
+   "announced_on": "2026-10-26",
+   "confidence": "pr",
    "estimate_note": "Nasdaq algorithmic estimate",
    "india_slot": "Morning",
    "india_update_date": "2026-11-03",
+   "nasdaq_checked": "2026-10-26",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-11-02",
    "release_time_et": null,
    "release_time_ist": null,
-   "run_at_ist": null,
+   "run_at_ist": "2026-11-02 15:00",
    "session": "after close",
    "session_assumed": false,
-   "status": "expected"
+   "source_kind": "yahoo_rss",
+   "source_url": "https://finance.yahoo.com/healthcare/articles/syndax-announce-third-quarter-2026-110000173.html?.tsrc=rss",
+   "status": "announced"
   }
  },
  "quarter": "3Q26",
- "updated": "2026-10-26 16:12 IST"
+ "updated": "2026-10-26 17:12 IST"
 }
