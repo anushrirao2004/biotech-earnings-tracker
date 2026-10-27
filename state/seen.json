@@ -15,6 +15,10 @@
   "resolved": true,
   "when": "2026-09-26"
  },
+ "IOVA|advisory|https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-report-third-quarter-110000016.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-10-27"
+ },
  "KURA|advisory|https://finance.yahoo.com/healthcare/articles/caspian-therapeutics-kura-oncology-host-111500214.html?.tsrc=rss": {
   "resolved": false,
   "when": "2026-10-27",
