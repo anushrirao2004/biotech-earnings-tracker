@@ -15,6 +15,11 @@
   "resolved": true,
   "when": "2026-09-26"
  },
+ "IOVA|advisory|https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-host-webcast-positive-230000357.html?.tsrc=rss": {
+  "resolved": false,
+  "when": "2026-10-28",
+  "why": "no date found"
+ },
  "IOVA|advisory|https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-report-third-quarter-110000016.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-27"
