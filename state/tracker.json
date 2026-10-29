@@ -164,12 +164,15 @@
    "release_date": "2026-10-29",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-10-29",
+   "results_title": "Kymera Therapeutics Announces Third Quarter 2026 Financial Results and Reports Positive Results from the KT-579 Phase 1 Healthy Volunteer Trial",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-announces-third-quarter-110000707.html?.tsrc=rss",
    "run_at_ist": "2026-10-29 15:00",
    "session": "before open",
    "session_assumed": false,
    "source_kind": "yahoo_rss",
    "source_url": "https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-report-third-quarter-200100296.html?.tsrc=rss",
-   "status": "announced"
+   "status": "released"
   },
   "NRIX": {
    "confidence": "estimate",
@@ -226,5 +229,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-10-29 16:12 IST"
+ "updated": "2026-10-29 17:12 IST"
 }
