@@ -24,6 +24,11 @@
   "resolved": true,
   "when": "2026-10-27"
  },
+ "IOVA|advisory|https://finance.yahoo.com/healthcare/articles/iovance-gears-report-q3-earnings-161900674.html?.tsrc=rss": {
+  "resolved": false,
+  "when": "2026-11-02",
+  "why": "no date found"
+ },
  "IOVA|results|https://finance.yahoo.com/healthcare/articles/iovance-reports-updated-iov-lun-110000935.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-29"
