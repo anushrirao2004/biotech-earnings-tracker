@@ -3,6 +3,10 @@
   "resolved": true,
   "when": "2026-10-20"
  },
+ "BNTX|results|https://finance.yahoo.com/healthcare/articles/biontech-announces-third-quarter-2026-114500497.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-03"
+ },
  "ENGN|results|https://engene.com/engene-reports-third-quarter-2026-financial-results-and-provides-business-update/": {
   "resolved": true,
   "when": "2026-09-26"
@@ -37,6 +41,10 @@
   "resolved": false,
   "when": "2026-11-03",
   "why": "no date found"
+ },
+ "KURA|advisory|https://finance.yahoo.com/healthcare/articles/kura-oncology-report-third-quarter-115800254.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-03"
  },
  "KURA|advisory|https://ir.kuraoncology.com/news-releases/news-release-details/caspian-therapeutics-and-kura-oncology-host-investor-webcast": {
   "resolved": false,
