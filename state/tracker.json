@@ -103,7 +103,7 @@
    "estimate_note": "Nasdaq algorithmic estimate",
    "india_slot": "Evening",
    "india_update_date": "2026-11-05",
-   "nasdaq_checked": "2026-11-03",
+   "nasdaq_checked": "2026-11-04",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-11-05",
@@ -146,7 +146,7 @@
    ],
    "india_slot": "Morning",
    "india_update_date": "2026-11-11",
-   "nasdaq_checked": "2026-11-03",
+   "nasdaq_checked": "2026-11-04",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-11-10",
@@ -248,5 +248,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-04 05:12 IST"
+ "updated": "2026-11-04 06:12 IST"
 }
