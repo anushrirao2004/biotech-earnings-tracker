@@ -7,6 +7,10 @@
   "resolved": true,
   "when": "2026-11-03"
  },
+ "CLDX|results|https://finance.yahoo.com/healthcare/articles/celldex-reports-third-quarter-financial-210100755.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-05"
+ },
  "ENGN|results|https://engene.com/engene-reports-third-quarter-2026-financial-results-and-provides-business-update/": {
   "resolved": true,
   "when": "2026-09-26"
@@ -40,6 +44,14 @@
  "IOVA|results|https://finance.yahoo.com/healthcare/articles/iovance-reports-updated-iov-lun-110000935.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-29"
+ },
+ "JANX|results|https://finance.yahoo.com/healthcare/articles/janux-therapeutics-reports-third-quarter-210200352.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-05"
+ },
+ "JANX|results|https://investors.januxrx.com/investor-media/news/news-details/2026/Janux-Therapeutics-Reports-Third-Quarter-2026-Financial-Results-and-Business-Highlights/default.aspx": {
+  "resolved": true,
+  "when": "2026-11-05"
  },
  "KURA|advisory|https://finance.yahoo.com/healthcare/articles/caspian-therapeutics-kura-oncology-host-111500214.html?.tsrc=rss": {
   "resolved": false,
