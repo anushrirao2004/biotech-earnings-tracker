@@ -109,12 +109,15 @@
    "release_date": "2026-11-05",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-11-05",
+   "results_title": "Iovance Biotherapeutics Reports Record Third Quarter 2026 Revenue of ~$122M, Business Achievements, and Corporate Updates",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-reports-record-third-120000183.html?.tsrc=rss",
    "run_at_ist": "2026-11-05 15:00",
    "session": "before open",
    "session_assumed": false,
    "source_kind": "yahoo_rss",
    "source_url": "https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-report-third-quarter-110000016.html?.tsrc=rss",
-   "status": "announced"
+   "status": "released"
   },
   "JANX": {
    "confidence": "estimate",
@@ -210,12 +213,12 @@
   },
   "SMMT": {
    "confidence": "estimate",
-   "estimate_note": "Nasdaq algorithmic estimate",
+   "estimate_note": "median days after period end from the 8-K/6-K history",
    "india_slot": "Morning",
-   "india_update_date": "2026-11-10",
+   "india_update_date": "2026-11-07",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
-   "release_date": "2026-11-09",
+   "release_date": "2026-11-06",
    "release_time_et": null,
    "release_time_ist": null,
    "run_at_ist": null,
@@ -253,5 +256,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-05 17:12 IST"
+ "updated": "2026-11-05 18:12 IST"
 }
