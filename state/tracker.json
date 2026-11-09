@@ -83,7 +83,7 @@
   },
   "CLDX": {
    "confidence": "estimate",
-   "estimate_note": "Nasdaq algorithmic estimate",
+   "estimate_note": "median days after period end from the 8-K/6-K history",
    "india_slot": "Morning",
    "india_update_date": "2026-11-10",
    "period_end": "2026-09-30",
@@ -256,5 +256,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-09 23:12 IST"
+ "updated": "2026-11-10 00:12 IST"
 }
