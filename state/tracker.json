@@ -155,12 +155,15 @@
    "release_date": "2026-11-10",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-11-10",
+   "results_title": "Kura Oncology Reports Third Quarter 2026 Financial Results and Corporate Update",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/kura-oncology-reports-third-quarter-210200551.html?.tsrc=rss",
    "run_at_ist": "2026-11-10 15:00",
    "session": "after close",
    "session_assumed": false,
    "source_kind": "yahoo_rss",
    "source_url": "https://finance.yahoo.com/healthcare/articles/kura-oncology-report-third-quarter-115800254.html?.tsrc=rss",
-   "status": "announced"
+   "status": "released"
   },
   "KYMR": {
    "advisory_title": "Kymera Therapeutics to Report Third Quarter 2026 Financial Results on October 29, 2026",
@@ -256,5 +259,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-11 02:12 IST"
+ "updated": "2026-11-11 03:12 IST"
 }
