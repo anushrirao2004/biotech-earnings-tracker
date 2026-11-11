@@ -1,4 +1,8 @@
 {
+ "BIOA|results|https://finance.yahoo.com/healthcare/articles/bioage-labs-reports-third-quarter-213000415.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-11"
+ },
  "BNTX|advisory|https://finance.yahoo.com/healthcare/articles/biontech-report-third-quarter-2026-104500560.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-20"
@@ -107,6 +111,10 @@
   "resolved": true,
   "when": "2026-09-28"
  },
+ "NKTR|advisory|https://finance.yahoo.com/healthcare/articles/nektar-therapeutics-announce-financial-results-220000512.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-11"
+ },
  "NRIX|results|https://finance.yahoo.com/healthcare/articles/nurix-therapeutics-reports-third-quarter-200500913.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-12"
@@ -138,6 +146,10 @@
  "SNDX|results|https://finance.yahoo.com/markets/stocks/articles/syndax-pharmaceuticals-sndx-may-report-130002582.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-26"
+ },
+ "TECX|results|https://finance.yahoo.com/healthcare/articles/tectonic-therapeutic-announces-third-quarter-210100312.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-11"
  },
  "TLX|advisory|https://telixpharma.com/news-views/telix-h1-2026-results-investor-webcast-notification/": {
   "resolved": true,
