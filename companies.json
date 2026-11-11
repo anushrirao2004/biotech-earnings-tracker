@@ -607,5 +607,131 @@
     "pinned": false,
     "active": false,
     "note": "Last three results after close (16:10-16:12 ET): 2Q26 5 Aug, 1Q26 7 May, 4Q25 3 Mar 2026. Added 2026-09-29: in the team's UBS tracker Excel; no model yet."
-  }
+  },
+ {
+  "ticker": "BIOA",
+  "name": "BioAge Labs",
+  "ir_host": "ir.bioagelabs.com",
+  "sources": [
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=BIOA&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed; returns this company's own releases (checked 2026-11-11). Third-party stories are filtered by the headline-is-ours and third-party checks in scan.py."
+   },
+   {
+    "url": "https://ir.bioagelabs.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": false,
+    "body_readable": true,
+    "note": "Q4 IR RSS; 403 (Akamai) from the laptop on 2026-11-11, untested from the GitHub runner. verified false = scan.py skips it; flip to true if it works from Actions."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "model_update": false,
+  "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones). Results 8-K acceptance (EDGAR): 2026-11-05 21:35, 2026-08-05 20:55, 2026-05-08 13:10, 2026-03-24 13:10"
+ },
+ {
+  "ticker": "TECX",
+  "name": "Tectonic Therapeutic",
+  "ir_host": "investors.tectonictx.com",
+  "sources": [
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=TECX&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed; returns this company's own releases (checked 2026-11-11). Third-party stories are filtered by the headline-is-ours and third-party checks in scan.py."
+   },
+   {
+    "url": "https://investors.tectonictx.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": false,
+    "body_readable": true,
+    "note": "Q4 IR RSS; 403 (Akamai) from the laptop on 2026-11-11, untested from the GitHub runner. verified false = scan.py skips it; flip to true if it works from Actions."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "model_update": false,
+  "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones). Results 8-K acceptance (EDGAR): 2026-08-06 20:10, 2026-05-07 20:23, 2026-02-26 21:26, 2025-11-06 21:15"
+ },
+ {
+  "ticker": "EVMN",
+  "name": "Evommune",
+  "ir_host": "investors.evommune.com",
+  "sources": [
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=EVMN&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed; returns this company's own releases (checked 2026-11-11). Third-party stories are filtered by the headline-is-ours and third-party checks in scan.py."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "model_update": false,
+  "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones). Results 8-K acceptance (EDGAR): 2026-08-06 20:06, 2026-05-07 20:13, 2026-03-05 21:05, 2025-12-11 21:06"
+ },
+ {
+  "ticker": "KARD",
+  "name": "Kardigan",
+  "ir_host": "investors.kardigan.com",
+  "sources": [
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=KARD&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed; returns this company's own releases (checked 2026-11-11). Third-party stories are filtered by the headline-is-ours and third-party checks in scan.py."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "before open",
+  "pinned": true,
+  "active": true,
+  "model_update": false,
+  "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones). Results 8-K acceptance (EDGAR): 2026-08-11 11:00"
+ },
+ {
+  "ticker": "NKTR",
+  "name": "Nektar Therapeutics",
+  "ir_host": "ir.nektar.com",
+  "sources": [
+   {
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NKTR&region=US&lang=en-US",
+    "kind": "yahoo_rss",
+    "verified": true,
+    "body_readable": true,
+    "note": "Yahoo Finance per-ticker feed; returns this company's own releases (checked 2026-11-11). Third-party stories are filtered by the headline-is-ours and third-party checks in scan.py."
+   },
+   {
+    "url": "https://ir.nektar.com/rss/news-releases.xml",
+    "kind": "ir_rss",
+    "verified": false,
+    "body_readable": true,
+    "note": "Q4 IR RSS; 403 (Akamai) from the laptop on 2026-11-11, untested from the GitHub runner. verified false = scan.py skips it; flip to true if it works from Actions."
+   }
+  ],
+  "fye_month": 12,
+  "half_yearly": false,
+  "usual_session": "after close",
+  "pinned": true,
+  "active": true,
+  "model_update": false,
+  "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones). Results 8-K acceptance (EDGAR): 2026-08-13 20:25, 2026-05-07 20:30, 2026-03-12 20:45, 2025-11-06 21:24"
+ }
 ]

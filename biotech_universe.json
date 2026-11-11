@@ -5617,6 +5617,323 @@
       },
       "has_model": false,
       "active": false
+    },
+    "BIOA": {
+      "company_name": "BioAge Labs, Inc.",
+      "cik": "0001709941",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "filer_type": "8-K",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fye_month": 12,
+      "results_source": "edgar_8k",
+      "earnings_history": [
+        {
+          "filing_date": "2026-11-05",
+          "accession": "0001193125-26-450008",
+          "form": "8-K",
+          "primary_doc": "bioa-20261105.htm",
+          "quarter_end": "2026-09-30",
+          "days_after_quarter_end": 36,
+          "accepted": "2026-11-05T21:35:15.000Z"
+        },
+        {
+          "filing_date": "2026-08-05",
+          "accession": "0001193125-26-335368",
+          "form": "8-K",
+          "primary_doc": "bioa-20260805.htm",
+          "quarter_end": "2026-06-30",
+          "days_after_quarter_end": 36,
+          "accepted": "2026-08-05T20:55:14.000Z"
+        },
+        {
+          "filing_date": "2026-05-08",
+          "accession": "0001193125-26-213472",
+          "form": "8-K",
+          "primary_doc": "bioa-20260508.htm",
+          "quarter_end": "2026-03-31",
+          "days_after_quarter_end": 38,
+          "accepted": "2026-05-08T13:10:20.000Z"
+        },
+        {
+          "filing_date": "2026-03-24",
+          "accession": "0001193125-26-120864",
+          "form": "8-K",
+          "primary_doc": "bioa-20260324.htm",
+          "quarter_end": "2025-12-31",
+          "days_after_quarter_end": 83,
+          "accepted": "2026-03-24T13:10:30.000Z"
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001193125-25-269986",
+          "form": "8-K",
+          "primary_doc": "bioa-20251106.htm",
+          "quarter_end": "2025-09-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2025-11-06T21:50:26.000Z"
+        },
+        {
+          "filing_date": "2025-08-06",
+          "accession": "0000950170-25-104151",
+          "form": "8-K",
+          "primary_doc": "bioa-20250806.htm",
+          "quarter_end": "2025-06-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2025-08-06T20:35:10.000Z"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 37,
+        "basis": "Q1-Q3 8-K Item 2.02 filings"
+      },
+      "active": true,
+      "model_update": false,
+      "added": "2026-11-11",
+      "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones)."
+    },
+    "TECX": {
+      "company_name": "Tectonic Therapeutic, Inc.",
+      "cik": "0001681087",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "filer_type": "8-K",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fye_month": 12,
+      "results_source": "edgar_8k",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001193125-26-338000",
+          "form": "8-K",
+          "primary_doc": "d114671d8k.htm",
+          "quarter_end": "2026-06-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2026-08-06T20:10:06.000Z"
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001193125-26-212069",
+          "form": "8-K",
+          "primary_doc": "tecx-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "days_after_quarter_end": 37,
+          "accepted": "2026-05-07T20:23:47.000Z"
+        },
+        {
+          "filing_date": "2026-02-26",
+          "accession": "0001193125-26-076843",
+          "form": "8-K",
+          "primary_doc": "tecx-20260226.htm",
+          "quarter_end": "2025-12-31",
+          "days_after_quarter_end": 57,
+          "accepted": "2026-02-26T21:26:23.000Z"
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001193125-25-269573",
+          "form": "8-K",
+          "primary_doc": "tecx-20251106.htm",
+          "quarter_end": "2025-09-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2025-11-06T21:15:50.000Z"
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0001193125-25-175567",
+          "form": "8-K",
+          "primary_doc": "d36621d8k.htm",
+          "quarter_end": "2025-06-30",
+          "days_after_quarter_end": 38,
+          "accepted": "2025-08-07T21:08:54.000Z"
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0000950170-25-066932",
+          "form": "8-K",
+          "primary_doc": "tecx-20250508.htm",
+          "quarter_end": "2025-03-31",
+          "days_after_quarter_end": 38,
+          "accepted": "2025-05-08T20:07:47.000Z"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 37,
+        "basis": "Q1-Q3 8-K Item 2.02 filings"
+      },
+      "active": true,
+      "model_update": false,
+      "added": "2026-11-11",
+      "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones)."
+    },
+    "EVMN": {
+      "company_name": "Evommune, Inc.",
+      "cik": "0002044725",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "filer_type": "8-K",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fye_month": 12,
+      "results_source": "edgar_8k",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-06",
+          "accession": "0001193125-26-337964",
+          "form": "8-K",
+          "primary_doc": "evmn-20260806.htm",
+          "quarter_end": "2026-06-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2026-08-06T20:06:15.000Z"
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001193125-26-211934",
+          "form": "8-K",
+          "primary_doc": "evmn-20260507.htm",
+          "quarter_end": "2026-03-31",
+          "days_after_quarter_end": 37,
+          "accepted": "2026-05-07T20:13:01.000Z"
+        },
+        {
+          "filing_date": "2026-03-05",
+          "accession": "0001193125-26-093920",
+          "form": "8-K",
+          "primary_doc": "evmn-20260305.htm",
+          "quarter_end": "2025-12-31",
+          "days_after_quarter_end": 64,
+          "accepted": "2026-03-05T21:05:58.000Z"
+        },
+        {
+          "filing_date": "2025-12-11",
+          "accession": "0001193125-25-315918",
+          "form": "8-K",
+          "primary_doc": "evmn-20251211.htm",
+          "quarter_end": "2025-09-30",
+          "days_after_quarter_end": 72,
+          "accepted": "2025-12-11T21:06:08.000Z"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 37,
+        "basis": "Q1-Q3 8-K Item 2.02 filings"
+      },
+      "active": true,
+      "model_update": false,
+      "added": "2026-11-11",
+      "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones)."
+    },
+    "KARD": {
+      "company_name": "Kardigan, Inc.",
+      "cik": "0002123613",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "filer_type": "8-K",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fye_month": 12,
+      "results_source": "edgar_8k",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-11",
+          "accession": "0001193125-26-343395",
+          "form": "8-K",
+          "primary_doc": "ck0002123613-20260811.htm",
+          "quarter_end": "2026-06-30",
+          "days_after_quarter_end": 42,
+          "accepted": "2026-08-11T11:00:15.000Z"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 42,
+        "basis": "Q1-Q3 8-K Item 2.02 filings"
+      },
+      "active": true,
+      "model_update": false,
+      "added": "2026-11-11",
+      "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones)."
+    },
+    "NKTR": {
+      "company_name": "NEKTAR THERAPEUTICS",
+      "cik": "0000906709",
+      "cik_source": "company_tickers.json",
+      "exchange": "Nasdaq",
+      "filer_type": "8-K",
+      "annual_form": "10-K",
+      "half_yearly": false,
+      "fiscal_year_end": "12-31",
+      "fye_month": 12,
+      "results_source": "edgar_8k",
+      "earnings_history": [
+        {
+          "filing_date": "2026-08-13",
+          "accession": "0001213900-26-089137",
+          "form": "8-K",
+          "primary_doc": "ea0301929-8k_nektar.htm",
+          "quarter_end": "2026-06-30",
+          "days_after_quarter_end": 44,
+          "accepted": "2026-08-13T20:25:23.000Z"
+        },
+        {
+          "filing_date": "2026-05-07",
+          "accession": "0001213900-26-053369",
+          "form": "8-K",
+          "primary_doc": "ea0289611-8k_nektar.htm",
+          "quarter_end": "2026-03-31",
+          "days_after_quarter_end": 37,
+          "accepted": "2026-05-07T20:30:58.000Z"
+        },
+        {
+          "filing_date": "2026-03-12",
+          "accession": "0001213900-26-027026",
+          "form": "8-K",
+          "primary_doc": "ea0281334-8k_nektar.htm",
+          "quarter_end": "2025-12-31",
+          "days_after_quarter_end": 71,
+          "accepted": "2026-03-12T20:45:08.000Z"
+        },
+        {
+          "filing_date": "2025-11-06",
+          "accession": "0001213900-25-107180",
+          "form": "8-K",
+          "primary_doc": "ea0264261-8k_nektar.htm",
+          "quarter_end": "2025-09-30",
+          "days_after_quarter_end": 37,
+          "accepted": "2025-11-06T21:24:36.000Z"
+        },
+        {
+          "filing_date": "2025-08-07",
+          "accession": "0001213900-25-073100",
+          "form": "8-K",
+          "primary_doc": "ea0252183-8k_nektar.htm",
+          "quarter_end": "2025-06-30",
+          "days_after_quarter_end": 38,
+          "accepted": "2025-08-07T20:26:08.000Z"
+        },
+        {
+          "filing_date": "2025-05-08",
+          "accession": "0001213900-25-041085",
+          "form": "8-K",
+          "primary_doc": "ea0241353-8k_nektar.htm",
+          "quarter_end": "2025-03-31",
+          "days_after_quarter_end": 38,
+          "accepted": "2025-05-08T20:20:26.000Z"
+        }
+      ],
+      "reporting_lag_days": {
+        "median": 38,
+        "basis": "Q1-Q3 8-K Item 2.02 filings"
+      },
+      "active": true,
+      "model_update": false,
+      "added": "2026-11-11",
+      "note": "No model for this name (user, 2026-11-11, from Vineet's 10-Nov forward of UBS's request): tracked for the Telegram alerts, the digest and the UBS earnings tracker ONLY. model_update false = the laptop scheduler never books a model run for it, and scan.py alerts on every release (not only unexpected ones)."
     }
   }
 }

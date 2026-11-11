@@ -404,7 +404,11 @@ def scan_company(c, state, seen, q, y, verbose=False):
                     expected = None
                     if before.get("confidence") == "pr" and before.get("release_date"):
                         expected = date.fromisoformat(before["release_date"])
-                    if expected and abs((seen_on - expected).days) <= 1:
+                    # No-model names (model_update false, user 2026-11-11) get no laptop
+                    # update/mail behind them, so the alert is the only live signal: always send.
+                    if c.get("model_update") is False:
+                        alert_release(ticker, title, link)
+                    elif expected and abs((seen_on - expected).days) <= 1:
                         log(f"  {ticker}: released as announced ({expected}); no alert")
                     else:
                         alert_release(ticker, title, link)
