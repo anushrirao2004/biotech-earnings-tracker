@@ -112,12 +112,12 @@
   },
   "EVMN": {
    "confidence": "estimate",
-   "estimate_note": "Nasdaq algorithmic estimate",
+   "estimate_note": "median days after period end from the 8-K/6-K history",
    "india_slot": "Morning",
-   "india_update_date": "2026-12-11",
+   "india_update_date": "2026-11-07",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
-   "release_date": "2026-12-10",
+   "release_date": "2026-11-06",
    "release_time_et": null,
    "release_time_ist": null,
    "run_at_ist": null,
@@ -344,5 +344,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-12 16:12 IST"
+ "updated": "2026-11-12 17:13 IST"
 }
