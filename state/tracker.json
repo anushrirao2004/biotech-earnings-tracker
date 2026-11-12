@@ -263,12 +263,15 @@
    "release_date": "2026-11-12",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-11-12",
+   "results_title": "Nektar Therapeutics Announces Third Quarter 2026 Financial Results",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/nektar-therapeutics-announces-third-quarter-211500986.html?.tsrc=rss",
    "run_at_ist": "2026-11-12 15:00",
    "session": "after close",
    "session_assumed": false,
    "source_kind": "yahoo_rss",
    "source_url": "https://finance.yahoo.com/healthcare/articles/nektar-therapeutics-announce-financial-results-220000512.html?.tsrc=rss",
-   "status": "announced"
+   "status": "released"
   },
   "NRIX": {
    "confidence": "estimate",
@@ -347,5 +350,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-13 02:12 IST"
+ "updated": "2026-11-13 03:12 IST"
 }

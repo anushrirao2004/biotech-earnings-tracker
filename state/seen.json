@@ -43,6 +43,10 @@
   "resolved": true,
   "when": "2026-09-26"
  },
+ "EVMN|results|https://finance.yahoo.com/healthcare/articles/evommune-reports-third-quarter-2026-210500506.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-12"
+ },
  "IOVA|advisory|https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-host-webcast-positive-230000357.html?.tsrc=rss": {
   "resolved": false,
   "when": "2026-10-30",
@@ -118,6 +122,10 @@
  "NKTR|advisory|https://finance.yahoo.com/healthcare/articles/nektar-therapeutics-announce-financial-results-220000512.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-11"
+ },
+ "NKTR|results|https://finance.yahoo.com/healthcare/articles/nektar-therapeutics-announces-third-quarter-211500986.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-12"
  },
  "NRIX|results|https://finance.yahoo.com/healthcare/articles/nurix-therapeutics-reports-third-quarter-200500913.html?.tsrc=rss": {
   "resolved": true,
