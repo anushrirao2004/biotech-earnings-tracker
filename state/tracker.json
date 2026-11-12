@@ -173,10 +173,13 @@
    "release_date": "2026-11-11",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-11-12",
+   "results_title": "Kardigan Reports Third Quarter 2026 Financial Results and Recent Business Updates",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/kardigan-reports-third-quarter-2026-120000895.html?.tsrc=rss",
    "run_at_ist": null,
    "session": "before open",
    "session_assumed": false,
-   "status": "expected"
+   "status": "released"
   },
   "KURA": {
    "advisory_title": "Kura Oncology to Report Third Quarter Financial Results on November 10",
@@ -344,5 +347,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-12 17:13 IST"
+ "updated": "2026-11-12 18:12 IST"
 }

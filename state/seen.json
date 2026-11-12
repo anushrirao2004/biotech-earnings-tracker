@@ -73,6 +73,10 @@
   "resolved": true,
   "when": "2026-11-05"
  },
+ "KARD|results|https://finance.yahoo.com/healthcare/articles/kardigan-reports-third-quarter-2026-120000895.html?.tsrc=rss": {
+  "resolved": true,
+  "when": "2026-11-12"
+ },
  "KURA|advisory|https://finance.yahoo.com/healthcare/articles/caspian-therapeutics-kura-oncology-host-111500214.html?.tsrc=rss": {
   "resolved": false,
   "when": "2026-11-12",
