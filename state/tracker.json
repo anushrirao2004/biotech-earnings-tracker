@@ -30,6 +30,12 @@
      "release_time_et": "05:45",
      "seen": "2026-10-20 17:11",
      "session": "before open"
+    },
+    {
+     "release_date": "2026-11-03",
+     "release_time_et": null,
+     "seen": "2026-11-13 23:11",
+     "session": "before open"
     }
    ],
    "india_slot": "Evening",
@@ -38,16 +44,16 @@
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-11-03",
-   "release_time_et": "05:45",
-   "release_time_ist": "16:15",
+   "release_time_et": null,
+   "release_time_ist": null,
    "released_seen": "2026-11-03",
    "results_title": "BioNTech Announces Third Quarter 2026 Financial Results and Corporate Update",
    "results_url": "https://finance.yahoo.com/healthcare/articles/biontech-announces-third-quarter-2026-114500497.html?.tsrc=rss",
    "run_at_ist": "2026-11-03 15:00",
    "session": "before open",
    "session_assumed": false,
-   "source_kind": "yahoo_rss",
-   "source_url": "https://finance.yahoo.com/healthcare/articles/biontech-report-third-quarter-2026-104500560.html?.tsrc=rss",
+   "source_kind": "ir_rss",
+   "source_url": "https://investors.biontech.de/news-releases/news-release-details/biontech-report-third-quarter-2026-financial-results-and",
    "status": "released"
   },
   "CATX": {
@@ -75,10 +81,13 @@
    "release_date": "2026-11-09",
    "release_time_et": null,
    "release_time_ist": null,
+   "released_seen": "2026-11-10",
+   "results_title": "Cullinan Therapeutics Provides Corporate Update and Reports Third Quarter 2026 Financial Results",
+   "results_url": "https://investors.cullinantherapeutics.com/news-releases/news-release-details/cullinan-therapeutics-provides-corporate-update-and-reports-9",
    "run_at_ist": null,
    "session": "before open",
    "session_assumed": false,
-   "status": "expected"
+   "status": "released"
   },
   "CGON": {
    "confidence": "estimate",
@@ -144,8 +153,8 @@
    "run_at_ist": "2026-11-05 15:00",
    "session": "before open",
    "session_assumed": false,
-   "source_kind": "yahoo_rss",
-   "source_url": "https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-report-third-quarter-110000016.html?.tsrc=rss",
+   "source_kind": "ir_rss",
+   "source_url": "https://ir.iovance.com/news-releases/news-release-details/iovance-biotherapeutics-report-third-quarter-2026-financial",
    "status": "released"
   },
   "JANX": {
@@ -208,8 +217,8 @@
    "run_at_ist": "2026-11-10 15:00",
    "session": "after close",
    "session_assumed": false,
-   "source_kind": "yahoo_rss",
-   "source_url": "https://finance.yahoo.com/healthcare/articles/kura-oncology-report-third-quarter-115800254.html?.tsrc=rss",
+   "source_kind": "ir_rss",
+   "source_url": "https://ir.kuraoncology.com/news-releases/news-release-details/kura-oncology-report-third-quarter-financial-results-november-10",
    "status": "released"
   },
   "KYMR": {
@@ -239,8 +248,8 @@
    "run_at_ist": "2026-10-29 15:00",
    "session": "before open",
    "session_assumed": false,
-   "source_kind": "yahoo_rss",
-   "source_url": "https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-report-third-quarter-200100296.html?.tsrc=rss",
+   "source_kind": "ir_rss",
+   "source_url": "https://investors.kymeratx.com/news-releases/news-release-details/kymera-therapeutics-report-third-quarter-2026-financial-results",
    "status": "released"
   },
   "NKTR": {
@@ -317,6 +326,18 @@
      "release_time_et": null,
      "seen": "2026-11-04 20:12",
      "session": "after close"
+    },
+    {
+     "release_date": "2026-11-02",
+     "release_time_et": null,
+     "seen": "2026-11-13 23:12",
+     "session": "after close"
+    },
+    {
+     "release_date": "2026-12-14",
+     "release_time_et": null,
+     "seen": "2026-11-13 23:12",
+     "session": "after close"
     }
    ],
    "india_slot": "Morning",
@@ -330,8 +351,8 @@
    "run_at_ist": "2026-12-14 15:00",
    "session": "after close",
    "session_assumed": false,
-   "source_kind": "yahoo_rss",
-   "source_url": "https://finance.yahoo.com/healthcare/articles/syndax-host-ash-investor-event-140100299.html?.tsrc=rss",
+   "source_kind": "ir_rss",
+   "source_url": "https://ir.syndax.com/news-releases/news-release-details/syndax-host-ash-investor-event-person-and-webcast-december-14",
    "status": "announced"
   },
   "TECX": {
@@ -350,5 +371,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-13 22:12 IST"
+ "updated": "2026-11-13 23:12 IST"
 }

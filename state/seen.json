@@ -7,9 +7,17 @@
   "resolved": true,
   "when": "2026-10-20"
  },
+ "BNTX|advisory|https://investors.biontech.de/news-releases/news-release-details/biontech-report-third-quarter-2026-financial-results-and": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "BNTX|results|https://finance.yahoo.com/healthcare/articles/biontech-announces-third-quarter-2026-114500497.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-03"
+ },
+ "BNTX|results|https://investors.biontech.de/news-releases/news-release-details/biontech-announces-third-quarter-2026-financial-results-and": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "CATX|results|https://finance.yahoo.com/healthcare/articles/perspective-therapeutics-provides-recent-business-213000439.html?.tsrc=rss": {
   "resolved": true,
@@ -23,13 +31,25 @@
   "resolved": true,
   "when": "2026-11-10"
  },
+ "CGEM|results|https://investors.cullinantherapeutics.com/news-releases/news-release-details/cullinan-therapeutics-provides-corporate-update-and-reports-9": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "CGON|results|https://finance.yahoo.com/healthcare/articles/cg-oncology-reports-third-quarter-131500895.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-06"
  },
+ "CGON|results|https://ir.cgoncology.com/news-releases/news-release-details/cg-oncology-reports-third-quarter-2026-financial-results-and": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "CLDX|results|https://finance.yahoo.com/healthcare/articles/celldex-reports-third-quarter-financial-210100755.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-05"
+ },
+ "CLDX|results|https://ir.celldex.com/news-releases/news-release-details/celldex-reports-third-quarter-financial-results-and-provides": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "ENGN|results|https://engene.com/engene-reports-third-quarter-2026-financial-results-and-provides-business-update/": {
   "resolved": true,
@@ -61,6 +81,15 @@
   "when": "2026-11-12",
   "why": "no date found"
  },
+ "IOVA|advisory|https://ir.iovance.com/news-releases/news-release-details/iovance-biotherapeutics-host-webcast-positive-data-til-therapy": {
+  "resolved": false,
+  "when": "2026-11-13",
+  "why": "no date found"
+ },
+ "IOVA|advisory|https://ir.iovance.com/news-releases/news-release-details/iovance-biotherapeutics-report-third-quarter-2026-financial": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "IOVA|results|https://finance.yahoo.com/healthcare/articles/iovance-biotherapeutics-reports-record-third-120000183.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-05"
@@ -68,6 +97,14 @@
  "IOVA|results|https://finance.yahoo.com/healthcare/articles/iovance-reports-updated-iov-lun-110000935.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-29"
+ },
+ "IOVA|results|https://ir.iovance.com/news-releases/news-release-details/iovance-biotherapeutics-reports-record-third-quarter-2026": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
+ "IOVA|results|https://ir.iovance.com/news-releases/news-release-details/iovance-reports-updated-iov-lun-202-results-and-adds-precision": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "JANX|results|https://finance.yahoo.com/healthcare/articles/janux-therapeutics-reports-third-quarter-210200352.html?.tsrc=rss": {
   "resolved": true,
@@ -92,8 +129,12 @@
  },
  "KURA|advisory|https://ir.kuraoncology.com/news-releases/news-release-details/caspian-therapeutics-and-kura-oncology-host-investor-webcast": {
   "resolved": false,
-  "when": "2026-10-09",
+  "when": "2026-11-13",
   "why": "no date found"
+ },
+ "KURA|advisory|https://ir.kuraoncology.com/news-releases/news-release-details/kura-oncology-report-third-quarter-financial-results-november-10": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "KURA|results|https://finance.yahoo.com/healthcare/articles/kura-oncology-reports-third-quarter-210200551.html?.tsrc=rss": {
   "resolved": true,
@@ -103,13 +144,25 @@
   "resolved": true,
   "when": "2026-10-27"
  },
+ "KURA|results|https://ir.kuraoncology.com/news-releases/news-release-details/kura-oncology-reports-third-quarter-2026-financial-results-and": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "KYMR|advisory|https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-report-third-quarter-200100296.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-22"
  },
+ "KYMR|advisory|https://investors.kymeratx.com/news-releases/news-release-details/kymera-therapeutics-report-third-quarter-2026-financial-results": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "KYMR|results|https://finance.yahoo.com/healthcare/articles/kymera-therapeutics-announces-third-quarter-110000707.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-29"
+ },
+ "KYMR|results|https://investors.kymeratx.com/news-releases/news-release-details/kymera-therapeutics-announces-third-quarter-2026-financial": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "NBTX|results|https://finance.yahoo.com/healthcare/articles/nanobiotix-provides-first-half-2026-201500535.html?.tsrc=rss": {
   "resolved": true,
@@ -131,6 +184,10 @@
   "resolved": true,
   "when": "2026-10-12"
  },
+ "NRIX|results|https://ir.nurixtx.com/news-releases/news-release-details/nurix-therapeutics-reports-third-quarter-2026-financial-results": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "SMMT|results|https://finance.yahoo.com/healthcare/articles/summit-therapeutics-reports-financial-results-213600354.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-04"
@@ -151,6 +208,14 @@
   "resolved": true,
   "when": "2026-11-04"
  },
+ "SNDX|advisory|https://ir.syndax.com/news-releases/news-release-details/syndax-announce-third-quarter-2026-financial-results-and-host": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
+ "SNDX|advisory|https://ir.syndax.com/news-releases/news-release-details/syndax-host-ash-investor-event-person-and-webcast-december-14": {
+  "resolved": true,
+  "when": "2026-11-13"
+ },
  "SNDX|results|https://finance.yahoo.com/healthcare/articles/syndax-reports-third-quarter-2026-210100397.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-11-02"
@@ -158,6 +223,10 @@
  "SNDX|results|https://finance.yahoo.com/markets/stocks/articles/syndax-pharmaceuticals-sndx-may-report-130002582.html?.tsrc=rss": {
   "resolved": true,
   "when": "2026-10-26"
+ },
+ "SNDX|results|https://ir.syndax.com/news-releases/news-release-details/syndax-reports-third-quarter-2026-financial-results-and-provides": {
+  "resolved": true,
+  "when": "2026-11-13"
  },
  "TECX|results|https://finance.yahoo.com/healthcare/articles/tectonic-therapeutic-announces-third-quarter-210100312.html?.tsrc=rss": {
   "resolved": true,
