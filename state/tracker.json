@@ -287,8 +287,8 @@
    "estimate_note": "median days after period end from the 8-K/6-K history",
    "india_slot": "Morning",
    "india_update_date": "2026-10-13",
-   "period_end": "2026-08-31",
-   "quarter": "3Q26",
+   "period_end": "2026-11-30",
+   "quarter": "4Q26",
    "release_date": "2026-10-12",
    "release_time_et": null,
    "release_time_ist": null,
@@ -342,7 +342,7 @@
    ],
    "india_slot": "Morning",
    "india_update_date": "2026-12-15",
-   "nasdaq_checked": "2026-11-15",
+   "nasdaq_checked": "2026-11-16",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
    "release_date": "2026-12-14",
@@ -371,5 +371,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-16 05:12 IST"
+ "updated": "2026-11-16 06:12 IST"
 }
