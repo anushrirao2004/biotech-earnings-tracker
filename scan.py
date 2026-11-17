@@ -396,7 +396,12 @@ def scan_company(c, state, seen, q, y, verbose=False):
                 seen_on = pub or date.today()
                 changed = tracker.set_released(state, ticker, seen_on, link, title,
                                                c.get("usual_session"))
-                seen[key] = {"resolved": True, "when": str(date.today())}
+                # A rejected sighting stays unresolved, so a later scan retries it
+                # instead of dropping the release for good (EVMN/CGEM 3Q26).
+                done = changed or state["companies"].get(ticker, {}).get("status") == "released"
+                seen[key] = {"resolved": done, "when": str(date.today())}
+                if not changed and not done:
+                    log(f"  {ticker}: results item not taken yet (before confirmed date): {title[:80]}")
                 if changed:
                     log(f"  {ticker}: RESULTS OUT  {title}")
                     # Alert only when the release was UNEXPECTED (user, 2026-09-28):

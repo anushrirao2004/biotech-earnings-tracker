@@ -72,21 +72,17 @@
    "status": "expected"
   },
   "CGEM": {
-   "confidence": "estimate",
-   "estimate_note": "median days after period end from the 8-K/6-K history",
+   "confidence": "results_seen",
    "india_slot": "Evening",
-   "india_update_date": "2026-11-09",
+   "india_update_date": "2026-11-10",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
-   "release_date": "2026-11-09",
-   "release_time_et": null,
-   "release_time_ist": null,
+   "release_date": "2026-11-10",
    "released_seen": "2026-11-10",
    "results_title": "Cullinan Therapeutics Provides Corporate Update and Reports Third Quarter 2026 Financial Results",
    "results_url": "https://investors.cullinantherapeutics.com/news-releases/news-release-details/cullinan-therapeutics-provides-corporate-update-and-reports-9",
-   "run_at_ist": null,
    "session": "before open",
-   "session_assumed": false,
+   "session_assumed": true,
    "status": "released"
   },
   "CGON": {
@@ -120,19 +116,18 @@
    "status": "expected"
   },
   "EVMN": {
-   "confidence": "estimate",
-   "estimate_note": "median days after period end from the 8-K/6-K history",
+   "confidence": "results_seen",
    "india_slot": "Morning",
-   "india_update_date": "2026-11-07",
+   "india_update_date": "2026-11-13",
    "period_end": "2026-09-30",
    "quarter": "3Q26",
-   "release_date": "2026-11-06",
-   "release_time_et": null,
-   "release_time_ist": null,
-   "run_at_ist": null,
+   "release_date": "2026-11-12",
+   "released_seen": "2026-11-12",
+   "results_title": "Evommune Reports Third Quarter 2026 Financial Results",
+   "results_url": "https://finance.yahoo.com/healthcare/articles/evommune-reports-third-quarter-2026-210500506.html?.tsrc=rss",
    "session": "after close",
-   "session_assumed": false,
-   "status": "expected"
+   "session_assumed": true,
+   "status": "released"
   },
   "IOVA": {
    "advisory_title": "Iovance Biotherapeutics to Report Third Quarter 2026 Financial Results and Corporate Updates on Thursday, November 5, 2026",
@@ -371,5 +366,5 @@
   }
  },
  "quarter": "3Q26",
- "updated": "2026-11-17 10:12 IST"
+ "updated": "2026-11-17 13:19 IST"
 }

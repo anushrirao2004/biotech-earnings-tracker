@@ -254,13 +254,21 @@ def set_released(state, ticker, seen_on, url, title, session=None):
     entry = state["companies"].setdefault(ticker, {})
     if entry.get("status") == "released":
         return False
-    # Nothing is released before its announced date: an events entry or a
-    # stale item must not mark a company done.
-    if entry.get("release_date") and seen_on and seen_on.isoformat() < entry["release_date"]:
+    # Nothing is released before a date the COMPANY announced: an events entry
+    # or a stale item must not mark a company done. An estimate (Nasdaq's
+    # algorithm or the 8-K lag median) is only a guess and never blocks a real
+    # release (user, 2026-11-17: EVMN 12-Nov was dropped against a 10-Dec
+    # Nasdaq estimate, CGEM 10-Nov against a 12-Nov one).
+    confirmed = entry.get("confidence") == "pr"
+    if confirmed and entry.get("release_date") and seen_on and seen_on.isoformat() < entry["release_date"]:
         return False
+    if not confirmed:
+        # The guessed date is replaced by the real one below.
+        for k in ("release_date", "release_time_et", "release_time_ist", "run_at_ist", "estimate_note"):
+            entry.pop(k, None)
     entry.update({"status": "released", "released_seen": seen_on.isoformat(),
                   "results_url": url, "results_title": title})
-    if not entry.get("release_date") and seen_on and seen_on != date.today():
+    if not entry.get("release_date") and seen_on:
         india_date, slot, _, assumed = india_slot(seen_on, None, session)
         entry.update({"release_date": seen_on.isoformat(), "india_update_date": india_date.isoformat(),
                       "india_slot": slot, "session": session, "session_assumed": assumed or bool(session),
